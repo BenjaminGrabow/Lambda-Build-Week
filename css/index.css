@@ -159,22 +159,18 @@ body {
   width: 100%;
   margin: 0 auto;
 }
-header h1 {
-  font-size: 5rem;
-  text-align: center;
-  font-family: 'Archivo Black', sans-serif;
-  background: #f9ed69;
+header {
+  display: flex;
 }
-@media (max-width: 500px) {
-  header h1 {
-    font-size: 3.2rem;
-    padding-top: 1rem;
-  }
+header img {
+  height: 15rem;
 }
 header nav {
-  background: #f08a5d;
   width: 100%;
   margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 header nav ul {
   display: flex;
@@ -183,7 +179,7 @@ header nav ul {
 }
 header nav ul li {
   padding: 1rem 1.7rem;
-  font-size: 2rem;
+  font-size: 3rem;
 }
 @media (max-width: 500px) {
   header nav ul li {
@@ -197,6 +193,11 @@ header nav ul li a {
   color: black;
   font-family: 'Orbitron', sans-serif;
 }
+header nav ul li a:hover {
+  cursor: pointer;
+  background: #defcfc;
+  text-decoration: underline;
+}
 .middle-section {
   /* LOGINBOX */
   /* REGISTERBOX */
@@ -204,8 +205,8 @@ header nav ul li a {
 .middle-section .logInBox {
   width: 33%;
   height: 50%;
-  background: #defcfc;
-  color: black;
+  background: black;
+  color: white;
   top: 50%;
   left: 50%;
   position: absolute;
@@ -224,6 +225,7 @@ header nav ul li a {
   left: calc(50% - 50px);
 }
 .middle-section .logInBox h1 {
+  color: white;
   margin: 0;
   padding: 0 0 2rem;
   text-align: center;
@@ -242,10 +244,10 @@ header nav ul li a {
   margin-bottom: 2rem;
   border: none;
   border-bottom: 0.1rem solid #fff;
-  background-color: #a6e3e9;
+  background-color: white;
   outline: none;
   height: 40px;
-  color: #fff;
+  color: black;
   font-family: 'Orbitron', sans-serif;
   font-size: 1.6rem;
 }
@@ -279,8 +281,8 @@ header nav ul li a {
 .middle-section .registerBox {
   width: 33%;
   height: 50%;
-  background: #defcfc;
-  color: black;
+  background: black;
+  color: white;
   top: 50%;
   left: 50%;
   position: absolute;
@@ -299,6 +301,7 @@ header nav ul li a {
   left: calc(50% - 50px);
 }
 .middle-section .registerBox h1 {
+  color: white;
   margin: 0;
   padding: 0 0 2rem;
   font-family: 'Orbitron', sans-serif;
@@ -317,10 +320,10 @@ header nav ul li a {
   margin-bottom: 2rem;
   border: none;
   border-bottom: 0.1rem solid #fff;
-  background-color: #a6e3e9;
+  background-color: white;
   outline: none;
   height: 40px;
-  color: #fff;
+  color: black;
   font-family: 'Orbitron', sans-serif;
   font-size: 1.6rem;
 }
@@ -415,14 +418,14 @@ header nav ul li a {
   align-items: center;
   width: 100%;
   height: 47px;
-  background: #f08a5d;
+  margin: 1rem 0;
 }
 .tabs .topics {
   display: flex;
 }
 .tabs .topics .tab {
   color: black;
-  background-color: #defcfc;
+  background-color: #eeeeee;
   width: 65%;
   font-size: 1.5em;
   font-weight: 800;
@@ -431,9 +434,11 @@ header nav ul li a {
   margin: 0 6rem;
   padding: 0.2rem 2rem;
   font-size: 1.2rem;
-  letter-spacing: 0.2rem;
+  width: 25rem;
+  height: 5rem;
   cursor: pointer;
   font-weight: bold;
+  text-align: center;
 }
 .tabs .topics .tab:hover {
   text-decoration: underline;
@@ -598,106 +603,16 @@ header nav ul li a {
   padding: 3rem 4rem;
   text-align: center;
 }
-.middle-sectionSport .list .header .h2Sport,
-.middle-sectionVideo .list .header .h2Sport,
-.middle-sectionMakeup .list .header .h2Sport,
-.middle-sectionMovie .list .header .h2Sport,
-.middle-sectionParty .list .header .h2Sport,
-.middle-sectionOutdoor .list .header .h2Sport,
-.middle-sectionAdventure .list .header .h2Sport,
-.middle-sectionTravel .list .header .h2Sport,
-.middle-sectionLearning .list .header .h2Sport,
-.middle-sectionBusiness .list .header .h2Sport,
-.middle-sectionSport .list .header .h2Video,
-.middle-sectionVideo .list .header .h2Video,
-.middle-sectionMakeup .list .header .h2Video,
-.middle-sectionMovie .list .header .h2Video,
-.middle-sectionParty .list .header .h2Video,
-.middle-sectionOutdoor .list .header .h2Video,
-.middle-sectionAdventure .list .header .h2Video,
-.middle-sectionTravel .list .header .h2Video,
-.middle-sectionLearning .list .header .h2Video,
-.middle-sectionBusiness .list .header .h2Video,
-.middle-sectionSport .list .header .h2Makeup,
-.middle-sectionVideo .list .header .h2Makeup,
-.middle-sectionMakeup .list .header .h2Makeup,
-.middle-sectionMovie .list .header .h2Makeup,
-.middle-sectionParty .list .header .h2Makeup,
-.middle-sectionOutdoor .list .header .h2Makeup,
-.middle-sectionAdventure .list .header .h2Makeup,
-.middle-sectionTravel .list .header .h2Makeup,
-.middle-sectionLearning .list .header .h2Makeup,
-.middle-sectionBusiness .list .header .h2Makeup,
-.middle-sectionSport .list .header .h2Movie,
-.middle-sectionVideo .list .header .h2Movie,
-.middle-sectionMakeup .list .header .h2Movie,
-.middle-sectionMovie .list .header .h2Movie,
-.middle-sectionParty .list .header .h2Movie,
-.middle-sectionOutdoor .list .header .h2Movie,
-.middle-sectionAdventure .list .header .h2Movie,
-.middle-sectionTravel .list .header .h2Movie,
-.middle-sectionLearning .list .header .h2Movie,
-.middle-sectionBusiness .list .header .h2Movie,
-.middle-sectionSport .list .header .h2Party,
-.middle-sectionVideo .list .header .h2Party,
-.middle-sectionMakeup .list .header .h2Party,
-.middle-sectionMovie .list .header .h2Party,
-.middle-sectionParty .list .header .h2Party,
-.middle-sectionOutdoor .list .header .h2Party,
-.middle-sectionAdventure .list .header .h2Party,
-.middle-sectionTravel .list .header .h2Party,
-.middle-sectionLearning .list .header .h2Party,
-.middle-sectionBusiness .list .header .h2Party,
-.middle-sectionSport .list .header .h2Outdoor,
-.middle-sectionVideo .list .header .h2Outdoor,
-.middle-sectionMakeup .list .header .h2Outdoor,
-.middle-sectionMovie .list .header .h2Outdoor,
-.middle-sectionParty .list .header .h2Outdoor,
-.middle-sectionOutdoor .list .header .h2Outdoor,
-.middle-sectionAdventure .list .header .h2Outdoor,
-.middle-sectionTravel .list .header .h2Outdoor,
-.middle-sectionLearning .list .header .h2Outdoor,
-.middle-sectionBusiness .list .header .h2Outdoor,
-.middle-sectionSport .list .header .h2Adventure,
-.middle-sectionVideo .list .header .h2Adventure,
-.middle-sectionMakeup .list .header .h2Adventure,
-.middle-sectionMovie .list .header .h2Adventure,
-.middle-sectionParty .list .header .h2Adventure,
-.middle-sectionOutdoor .list .header .h2Adventure,
-.middle-sectionAdventure .list .header .h2Adventure,
-.middle-sectionTravel .list .header .h2Adventure,
-.middle-sectionLearning .list .header .h2Adventure,
-.middle-sectionBusiness .list .header .h2Adventure,
-.middle-sectionSport .list .header .h2Travel,
-.middle-sectionVideo .list .header .h2Travel,
-.middle-sectionMakeup .list .header .h2Travel,
-.middle-sectionMovie .list .header .h2Travel,
-.middle-sectionParty .list .header .h2Travel,
-.middle-sectionOutdoor .list .header .h2Travel,
-.middle-sectionAdventure .list .header .h2Travel,
-.middle-sectionTravel .list .header .h2Travel,
-.middle-sectionLearning .list .header .h2Travel,
-.middle-sectionBusiness .list .header .h2Travel,
-.middle-sectionSport .list .header .h2Learning,
-.middle-sectionVideo .list .header .h2Learning,
-.middle-sectionMakeup .list .header .h2Learning,
-.middle-sectionMovie .list .header .h2Learning,
-.middle-sectionParty .list .header .h2Learning,
-.middle-sectionOutdoor .list .header .h2Learning,
-.middle-sectionAdventure .list .header .h2Learning,
-.middle-sectionTravel .list .header .h2Learning,
-.middle-sectionLearning .list .header .h2Learning,
-.middle-sectionBusiness .list .header .h2Learning,
-.middle-sectionSport .list .header .h2Business,
-.middle-sectionVideo .list .header .h2Business,
-.middle-sectionMakeup .list .header .h2Business,
-.middle-sectionMovie .list .header .h2Business,
-.middle-sectionParty .list .header .h2Business,
-.middle-sectionOutdoor .list .header .h2Business,
-.middle-sectionAdventure .list .header .h2Business,
-.middle-sectionTravel .list .header .h2Business,
-.middle-sectionLearning .list .header .h2Business,
-.middle-sectionBusiness .list .header .h2Business {
+.middle-sectionSport .list .header h2,
+.middle-sectionVideo .list .header h2,
+.middle-sectionMakeup .list .header h2,
+.middle-sectionMovie .list .header h2,
+.middle-sectionParty .list .header h2,
+.middle-sectionOutdoor .list .header h2,
+.middle-sectionAdventure .list .header h2,
+.middle-sectionTravel .list .header h2,
+.middle-sectionLearning .list .header h2,
+.middle-sectionBusiness .list .header h2 {
   font-family: 'Orbitron', sans-serif;
   color: black;
   margin-bottom: 1rem;

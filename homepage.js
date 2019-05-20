@@ -18,7 +18,7 @@ class LogInBoxGenerator {
 
     createImage() {
         const image = document.createElement("img");
-        image.src = "/pictures/avatar.png";
+        image.src = "/pictures/Top4.png";
         image.classList.add("avatar");
         this.logInElement.append(image);
     }
@@ -111,7 +111,7 @@ class RegisterBoxGenerator{
 
     createImage() {
         const image = document.createElement("img");
-        image.src = "/pictures/avatar.png";
+        image.src = "/pictures/Top4.png";
         image.classList.add("avatar");
         this.registerElement.append(image);
     }

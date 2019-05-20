@@ -6,8 +6,8 @@
   .logInBox {
     width        : 33%;
     height       : 50%;
-    background   : #defcfc;
-    color        : black;
+    background   : black;
+    color        : white;
     top          : 50%;
     left         : 50%;
     position     : absolute;
@@ -27,6 +27,7 @@
     }
 
     h1 {
+      color: white;
       margin     : 0;
       padding    : 0 0 2rem;
       text-align : center;
@@ -47,10 +48,10 @@
       margin-bottom   : 2rem;
       border          : none;
       border-bottom   : 0.1rem solid #fff;
-      background-color: #a6e3e9;
+      background-color: white;
       outline         : none;
       height          : 40px;
-      color           : #fff;
+      color           : black;
       font-family     : 'Orbitron', sans-serif;
       font-size       : 1.6rem;
     }
@@ -93,8 +94,8 @@
   .registerBox {
     width        : 33%;
     height       : 50%;
-    background   : #defcfc;
-    color        : black;
+    background   : black;
+    color        : white;
     top          : 50%;
     left         : 50%;
     position     : absolute;
@@ -114,6 +115,7 @@
     }
 
     h1 {
+      color: white;
       margin     : 0;
       padding    : 0 0 2rem;
       font-family: 'Orbitron', sans-serif;
@@ -134,10 +136,10 @@
       margin-bottom   : 2rem;
       border          : none;
       border-bottom   : 0.1rem solid #fff;
-      background-color: #a6e3e9;
+      background-color: white;
       outline         : none;
       height          : 40px;
-      color           : #fff;
+      color           : black;
       font-family     : 'Orbitron', sans-serif;
       font-size       : 1.6rem;
     }
@@ -245,19 +247,22 @@
   align-items: center;
   width: 100%;
   height: 47px;
-  background: #f08a5d;
+  margin: 1rem 0;
+ 
   
   .topics {
     display: flex;
-    
+
     .tab {
-     .button(@bg-color: #defcfc);
+     .button(@bg-color: #eeeeee);
       margin: 0 6rem;
       padding: 0.2rem 2rem;
       font-size: 1.2rem;
-      letter-spacing: 0.2rem;
+     width: 25rem;
+     height: 5rem;
       cursor: pointer;
       font-weight: bold;
+      text-align: center;
 
       &:hover {
         text-decoration: underline;
@@ -364,16 +369,7 @@
       padding         : 3rem 4rem;
       text-align      : center;
 
-      .h2Sport,
-      .h2Video,
-      .h2Makeup,
-      .h2Movie,
-      .h2Party,
-      .h2Outdoor,
-      .h2Adventure,
-      .h2Travel,
-      .h2Learning,
-      .h2Business {
+      h2 {
         font-family  : 'Orbitron', sans-serif;
         color        : black;
         margin-bottom: 1rem;

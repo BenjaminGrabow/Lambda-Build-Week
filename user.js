@@ -11,98 +11,42 @@ const listTravel = document.querySelector(".middle-sectionTravel");
 const listLearning = document.querySelector(".middle-sectionLearning");
 const listBusiness = document.querySelector(".middle-sectionBusiness");
 const buttonSection = document.querySelector(".categories");
-const h3 = document.createElement("h3");
-const h2Sport = document.querySelector(".h2Sport");
-const h2Video = document.querySelector(".h2Video");
-const h2Makeup = document.querySelector(".h2Makeup");
-const h2Movie = document.querySelector(".h2Movie");
-const h2Party = document.querySelector(".h2Party");
-const h2Outdoor = document.querySelector(".h2Outdoor");
-const h2Adventure = document.querySelector(".h2Adventure");
-const h2Travel = document.querySelector(".h2Travel");
-const h2Learning = document.querySelector(".h2Learning");
-const h2Business = document.querySelector(".h2Business");
 
-buttons[0].addEventListener("click", () => {
+buttons.forEach((button) => button.addEventListener('click', (event) => {
+  buttonSection.style.display = "none";
+ if(event.target.textContent === "Sport"){
   listSport.style.display = "block";
   listSport.style.display = "flex";
-  buttonSection.style.display = "none";
-  h3.textContent = "Sport";
-  h2Sport.insertAdjacentElement('beforeend', h3);
-
-});
-
-buttons[1].addEventListener("click", () => {
+ } else if(event.target.textContent === "Video-Game"){
   listVideo.style.display = "block";
   listVideo.style.display = "flex";
-  buttonSection.style.display = "none";
-  h3.textContent = "Video Game";
-  h2Video.insertAdjacentElement('beforeend', h3);
-});
-
-buttons[2].addEventListener("click", () => {
+ } else if(event.target.textContent === "Makeup"){
   listMakeup.style.display = "block";
   listMakeup.style.display = "flex";
-  buttonSection.style.display = "none";
-  h3.textContent = "Makeup";
-  h2Makeup.insertAdjacentElement('beforeend', h3);
-});
-
-buttons[3].addEventListener("click", () => {
+ } else if(event.target.textContent === "Movie"){
   listMovie.style.display = "block";
   listMovie.style.display = "flex";
-  buttonSection.style.display = "none";
-  h3.textContent = "Movie";
-  h2Movie.insertAdjacentElement('beforeend', h3);
-});
-
-buttons[4].addEventListener("click", () => {
+ } else if(event.target.textContent === "Party"){
   listParty.style.display = "block";
   listParty.style.display = "flex";
-  buttonSection.style.display = "none";
-  h3.textContent = "Party";
-  h2Party.insertAdjacentElement('beforeend', h3);
-});
-
-buttons[5].addEventListener("click", () => {
+ } else if(event.target.textContent === "Outdoor"){
   listOutdoor.style.display = "block";
   listOutdoor.style.display = "flex";
-  buttonSection.style.display = "none";
-  h3.textContent = "Outdoor";
-  h2Outdoor.insertAdjacentElement('beforeend', h3);
-});
-
-buttons[6].addEventListener("click", () => {
+ } else if(event.target.textContent === "Adventure"){
   listAdventure.style.display = "block";
   listAdventure.style.display = "flex";
-  buttonSection.style.display = "none";
-  h3.textContent = "Adventure";
-  h2Adventure.insertAdjacentElement('beforeend', h3);
-});
-
-buttons[7].addEventListener("click", () => {
+ } else if(event.target.textContent === "Travel"){
   listTravel.style.display = "block";
   listTravel.style.display = "flex";
-  buttonSection.style.display = "none";
-  h3.textContent = "Travel";
-  h2Travel.insertAdjacentElement('beforeend', h3);
-});
-
-buttons[8].addEventListener("click", () => {
+ } else if(event.target.textContent === "Learning"){
   listLearning.style.display = "block";
   listLearning.style.display = "flex";
-  buttonSection.style.display = "none";
-  h3.textContent = "Learning";
-  h2Learning.insertAdjacentElement('beforeend', h3);
-});
-
-buttons[9].addEventListener("click", () => {
+ } else if(event.target.textContent === "Business"){
   listBusiness.style.display = "block";
   listBusiness.style.display = "flex";
-  buttonSection.style.display = "none";
-  h3.textContent = "Business";
-  h2Business.insertAdjacentElement('beforeend', h3);
-});
+ }
+}));
+
 // Create a "close" button and append it to each list item
 const myNodelist = document.querySelectorAll(".li");
 
