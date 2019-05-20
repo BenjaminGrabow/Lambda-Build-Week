@@ -342,6 +342,53 @@ header nav ul li a {
   background: #f08a5d;
   color: #000;
 }
+.carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  position: relative;
+  overflow: hidden;
+}
+@media (min-width: 1200px) {
+  .carousel {
+    width: 1200px;
+  }
+}
+.carousel .left-button,
+.carousel .right-button {
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  background-color: #333;
+  font-size: 40px;
+  border-radius: 50%;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+.carousel .left-button:hover,
+.carousel .right-button:hover {
+  color: #333;
+  background-color: #fff;
+  border: 2px solid #333;
+}
+.carousel .left-button {
+  top: 50%;
+  left: 25px;
+  transform: translate(0, -50%);
+}
+.carousel .right-button {
+  top: 50%;
+  right: 25px;
+  transform: translate(0, -50%);
+}
+.carousel img {
+  height: 500px;
+  width: 100%;
+  display: none;
+}
 .middle-container {
   display: flex;
   flex-direction: column;
@@ -2154,4 +2201,8 @@ footer .copyright {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+footer .copyright p {
+  font-size: 2rem;
+  font-weight: bold;
 }

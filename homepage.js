@@ -194,3 +194,41 @@ logInButton[3].addEventListener("click", () => {
     registerBox.style.display = "block";
     TweenMax.to(".registerBox", 2, {x:"-50%", ease: Bounce.easeOut});
 });
+
+// Carousel
+class Carousel {
+    constructor(carouselElement) {
+    this.carouselElement = carouselElement;
+    this.left = carouselElement.querySelector(".left-button");
+    this.right = carouselElement.querySelector(".right-button");
+    this.img = carouselElement.querySelectorAll("img");
+    this.right.addEventListener('click', () => this.rightPicture());
+    this.left.addEventListener('click', () => this.leftPicture());
+    this.index = 0;
+    this.img[0].style.display = "block";
+    }
+    
+    rightPicture() {
+    this.img[this.index].style.display = "none";
+    this.index += 1;
+     
+    if(this.index > 3) {
+    this.index -= 4;
+    }
+     
+    console.log(this.index)
+    this.img[this.index].style.display = "block";
+    }
+     
+    leftPicture() {
+    this.img[this.index].style.display = "none";
+    this.index -= 1;
+    if(this.index < 0) {
+    this.index += 4;
+    }
+    this.img[this.index].style.display = "block";
+    }
+    }
+     
+    let carousel = document.querySelectorAll(".carousel").forEach( el => new Carousel(el));
+     
