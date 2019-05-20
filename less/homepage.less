@@ -1,0 +1,397 @@
+// !!!!!!!!!!!!!!!  HOMEPAGE  !!!!!!!!!!!!!!
+
+.middle-section {
+
+  /* LOGINBOX */
+  .logInBox {
+    width        : 33%;
+    height       : 50%;
+    background   : #defcfc;
+    color        : black;
+    top          : 50%;
+    left         : 50%;
+    position     : absolute;
+    transform    : translate(-250%, -50%);
+    box-sizing   : border-box;
+    padding      : 7rem 3rem;
+    display      : none;
+    border-radius: 4rem;
+
+    .avatar {
+      width        : 100px;
+      height       : 100px;
+      border-radius: 50%;
+      position     : absolute;
+      top          : -50px;
+      left         : calc(50% - 50px);
+    }
+
+    h1 {
+      margin     : 0;
+      padding    : 0 0 2rem;
+      text-align : center;
+      font-family: 'Orbitron', sans-serif;
+      font-size  : 2.2rem;
+    }
+
+    p {
+      font-family: 'Orbitron', sans-serif;
+      margin     : 0;
+      padding    : 0;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+      width           : 100%;
+      margin-bottom   : 2rem;
+      border          : none;
+      border-bottom   : 0.1rem solid #fff;
+      background-color: #a6e3e9;
+      outline         : none;
+      height          : 40px;
+      color           : #fff;
+      font-family     : 'Orbitron', sans-serif;
+      font-size       : 1.6rem;
+    }
+
+    button {
+      font-family  : 'Orbitron', sans-serif;
+      width        : 100%;
+      margin-bottom: 2rem;
+      border       : none;
+      outline      : none;
+      height       : 40px;
+      background   : #fb2525;
+      color        : #fff;
+      font-size    : 1.8rem;
+      border-radius: 2rem;
+
+      &:hover {
+        cursor    : pointer;
+        background: #f08a5d;
+        color     : #000;
+      }
+    }
+
+
+    a {
+      font-family    : 'Orbitron', sans-serif;
+      text-decoration: none;
+      font-size      : 1.6rem;
+      line-height    : 3rem;
+      color          : black;
+
+      &:hover {
+        color: #f08a5d;
+      }
+    }
+
+  }
+
+  /* REGISTERBOX */
+  .registerBox {
+    width     : 33%;
+    height    : 50%;
+    background: #ffc107;
+    color     : black;
+    top       : 50%;
+    left      : 50%;
+    position  : absolute;
+    transform : translate(-250%, -50%);
+    box-sizing: border-box;
+    padding   : 7rem 3rem;
+    display   : none;
+
+    .avatar {
+      width        : 100px;
+      height       : 100px;
+      border-radius: 50%;
+      position     : absolute;
+      top          : -50px;
+      left         : calc(50% - 50px);
+    }
+
+    h1 {
+      margin     : 0;
+      padding    : 0 0 2rem;
+      font-family: 'Orbitron', sans-serif;
+      text-align : center;
+      font-size  : 2.2rem;
+    }
+
+    p {
+      font-family: 'Orbitron', sans-serif;
+      margin     : 0;
+      padding    : 0;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+      width        : 100%;
+      margin-bottom: 2rem;
+      border       : none;
+      border-bottom: 0.1rem solid #fff;
+      background   : #f08a5d;
+      outline      : none;
+      height       : 40px;
+      color        : #fff;
+      font-family  : 'Orbitron', sans-serif;
+      font-size    : 1.6rem;
+    }
+
+    button {
+      width        : 100%;
+      margin-bottom: 20px;
+      border       : none;
+      outline      : none;
+      height       : 40px;
+      background   : #fb2525;
+      color        : #fff;
+      font-family  : 'Orbitron', sans-serif;
+      font-size    : 1.8rem;
+      border-radius: 2rem;
+      text-align   : center;
+
+      &:hover {
+        cursor    : pointer;
+        background: #f08a5d;
+        color     : #000;
+      }
+    }
+  }
+}
+
+
+// MIDDLE CONTAINER
+.middle-container {
+  display       : flex;
+  flex-direction: column;
+
+  .middle {
+
+    display: flex;
+
+    .middle1 {
+      width     : 50%;
+      padding   : 8rem 8rem;
+      background: #ffc107;
+    }
+
+    .middle2 {
+      width     : 50%;
+      padding   : 4rem 4rem;
+      background: #dc3545;
+    }
+
+    .middle3 {
+      width     : 50%;
+      padding   : 8rem 8rem;
+      background: #007bff;
+    }
+
+    .middle4 {
+      width     : 50%;
+      padding   : 4rem 4rem;
+      background: #fff;
+    }
+
+    .middle5 {
+      width     : 50%;
+      padding   : 8rem 8rem;
+      background: #343a40;
+    }
+
+    .middle6 {
+      width     : 50%;
+      padding   : 4rem 4rem;
+      background: #ffc107
+    }
+  }
+}
+
+// !!!!!!!!!!!!!!!!!!!!!!!!!!UserPage!!!!!!!!!!!!!
+// !!!!! BUTTONS !!!!!!!!
+.categories {
+  display       : flex;
+  flex-direction: column;
+  align-items   : center;
+
+  h2 {
+    font-family: 'Archivo Black', sans-serif;
+  }
+
+  .btn {
+    .button(@bg-color: #defcfc);
+    .center();
+    padding: 2rem 0;
+    margin : 1rem 0;
+    cursor : pointer;
+
+    @media @phone {
+      margin-bottom: 1.5rem;
+      height       : 5em;
+      width        : @width;
+    }
+
+    &:hover {
+      .animation();
+    }
+  }
+
+  .btn2,
+  .btn4,
+  .btn6,
+  .btn8,
+  .btn10 {
+    background-color: #a6e3e9;
+  }
+}
+
+// !!!!!!! LISTS !!!!!
+.middle-sectionSport,
+.middle-sectionVideo,
+.middle-sectionMakeup,
+.middle-sectionMovie,
+.middle-sectionParty,
+.middle-sectionOutdoor,
+.middle-sectionAdventure,
+.middle-sectionTravel,
+.middle-sectionLearning,
+.middle-sectionBusiness,
+  {
+
+  display       : none;
+  flex-direction: column;
+  align-items   : center;
+
+  .list {
+    width: 80%;
+
+    ul li {
+      cursor     : pointer;
+      position   : relative;
+      padding    : 1.2rem 0.8rem 1.2rem 4rem;
+      background : #defcfc;
+      font-size  : 1.8rem;
+      font-family: 'Archivo Black', sans-serif;
+    }
+
+    /* Set all odd list items to a different color (zebra-stripes) */
+    ul li:nth-child(odd) {
+      background: #a6e3e9;
+
+      &:hover {
+        background: #ddd;
+      }
+    }
+
+    .close {
+      position: absolute;
+      right   : 0;
+      top     : 0;
+      padding : 1.2rem 1.6rem 1.2rem 1.6rem;
+
+      &:hover {
+        background-color: #f44336;
+        color           : white;
+      }
+    }
+
+    .header {
+      background-color: #defcfc;
+      padding         : 3rem 4rem;
+      text-align      : center;
+
+      .h2sport, .h2VIdeo, .h2 {
+        font-family  : 'Orbitron', sans-serif;
+        color        : black;
+        margin-bottom: 1rem;
+      }
+
+      h3 {
+        font-family: 'Orbitron', sans-serif;
+        margin     : 0.7rem 0;
+      }
+    }
+
+    /* Clear floats after the header */
+    .header:after {
+      content: "";
+      display: table;
+      clear  : both;
+    }
+
+    input {
+      margin       : 0;
+      border       : none;
+      border-radius: 0;
+      width        : 75%;
+      padding      : 1rem;
+      float        : left;
+      font-size    : 1.6rem;
+    }
+
+    .addBtnSport,
+    .addBtnVideo,
+    .addBtnMakeup,
+    .addBtnMovie,
+    .addBtnParty,
+    .addBtnOutdoor,
+    .addBtnAdventure,
+    .addBtnTravel,
+    .addBtnLearning,
+    .addBtnBusiness {
+      padding   : 1rem;
+      width     : 25%;
+      background: #d9d9d9;
+      color     : #555;
+      float     : left;
+      text-align: center;
+      font-size : 1.6rem;
+      cursor    : pointer;
+
+      border-radius: 0;
+
+      &:hover {
+        background-color: #bbb;
+      }
+    }
+
+    .goBack {
+      display        : flex;
+      justify-content: center;
+
+      .goBackBtnSport,
+      .goBackBtnVideo,
+      .goBackBtnMakeup,
+      .goBackBtnMovie,
+      .goBackBtnParty,
+      .goBackBtnOutdoor,
+      .goBackBtnAdventure,
+      .goBackBtnTravel,
+      .goBackBtnLearning,
+      .goBackBtnBusiness,
+        {
+          
+        .button(@bg-color: #defcfc);
+        .center();
+        padding: 2rem 0;
+        margin : 1rem 0;
+        cursor : pointer;
+
+        @media @phone {
+          margin-bottom: 1.5rem;
+          height       : 5em;
+          width        : @width;
+        }
+
+        &:hover {
+          .animation();
+        }
+
+      }
+    }
+  }
+}

@@ -1,0 +1,44 @@
+// Mixins Here
+.center() {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.center-only-justify() {
+    display: flex;
+    justify-content: center;
+}
+
+// Parametric mixins
+.button(@color: black, @bg-color: #ffc107, @width: 65%, @fs: 1.5em, @weight: 800, @radius: 1em) {
+    color           : @color;
+    background-color: @bg-color;
+    width           : @width;
+    font-size       : @fs;
+    font-weight: @weight;
+    border-radius   : @radius;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.animation(@bg-color: rgb(196, 24, 53), @percent: 10%, @color: black, @delay: 0.5) {
+    background-color: lighten(@bg-color, @percent);
+    color: @color;
+    transition: @delay ease-in-out;
+}
+
+.btn {
+    .button();
+    .center();
+    cursor: pointer;
+
+    @media @phone {
+      margin-bottom: 1.5rem;
+      height       : 5em;
+      width        : @width;
+    }
+
+    &:hover {
+      .animation();
+    }
+  }

@@ -1,0 +1,1185 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.btn {
+  color: black;
+  background-color: #ffc107;
+  width: 65%;
+  font-size: 1.5em;
+  font-weight: 800;
+  border-radius: 1em;
+  font-family: 'Orbitron', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+@media (max-width: 500px) {
+  .btn {
+    margin-bottom: 1.5rem;
+    height: 5em;
+    width: 100%;
+  }
+}
+.btn:hover {
+  background-color: #e52a4a;
+  color: black;
+  transition: 0.5 ease-in-out;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  color: #5E6164;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: #23293B;
+}
+h2 {
+  font-size: 3.2rem;
+}
+h3 {
+  font-size: 2.8rem;
+}
+p {
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
+body {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+header h1 {
+  font-size: 5rem;
+  text-align: center;
+  font-family: 'Archivo Black', sans-serif;
+  background: #f9ed69;
+}
+@media (max-width: 500px) {
+  header h1 {
+    font-size: 3.2rem;
+    padding-top: 1rem;
+  }
+}
+header nav {
+  background: #f08a5d;
+  width: 100%;
+  margin: 0 auto;
+}
+header nav ul {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+header nav ul li {
+  padding: 1rem 1.7rem;
+  font-size: 2rem;
+}
+@media (max-width: 500px) {
+  header nav ul li {
+    font-size: 1.7rem;
+    padding: 1rem 1.2rem;
+    font-weight: 700;
+  }
+}
+header nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-family: 'Orbitron', sans-serif;
+}
+.middle-section {
+  /* LOGINBOX */
+  /* REGISTERBOX */
+}
+.middle-section .logInBox {
+  width: 33%;
+  height: 50%;
+  background: #defcfc;
+  color: black;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-250%, -50%);
+  box-sizing: border-box;
+  padding: 7rem 3rem;
+  display: none;
+  border-radius: 4rem;
+}
+.middle-section .logInBox .avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: absolute;
+  top: -50px;
+  left: calc(50% - 50px);
+}
+.middle-section .logInBox h1 {
+  margin: 0;
+  padding: 0 0 2rem;
+  text-align: center;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2.2rem;
+}
+.middle-section .logInBox p {
+  font-family: 'Orbitron', sans-serif;
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+}
+.middle-section .logInBox input[type="text"],
+.middle-section .logInBox input[type="password"] {
+  width: 100%;
+  margin-bottom: 2rem;
+  border: none;
+  border-bottom: 0.1rem solid #fff;
+  background-color: #a6e3e9;
+  outline: none;
+  height: 40px;
+  color: #fff;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.6rem;
+}
+.middle-section .logInBox button {
+  font-family: 'Orbitron', sans-serif;
+  width: 100%;
+  margin-bottom: 2rem;
+  border: none;
+  outline: none;
+  height: 40px;
+  background: #fb2525;
+  color: #fff;
+  font-size: 1.8rem;
+  border-radius: 2rem;
+}
+.middle-section .logInBox button:hover {
+  cursor: pointer;
+  background: #f08a5d;
+  color: #000;
+}
+.middle-section .logInBox a {
+  font-family: 'Orbitron', sans-serif;
+  text-decoration: none;
+  font-size: 1.6rem;
+  line-height: 3rem;
+  color: black;
+}
+.middle-section .logInBox a:hover {
+  color: #f08a5d;
+}
+.middle-section .registerBox {
+  width: 33%;
+  height: 50%;
+  background: #ffc107;
+  color: black;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-250%, -50%);
+  box-sizing: border-box;
+  padding: 7rem 3rem;
+  display: none;
+}
+.middle-section .registerBox .avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: absolute;
+  top: -50px;
+  left: calc(50% - 50px);
+}
+.middle-section .registerBox h1 {
+  margin: 0;
+  padding: 0 0 2rem;
+  font-family: 'Orbitron', sans-serif;
+  text-align: center;
+  font-size: 2.2rem;
+}
+.middle-section .registerBox p {
+  font-family: 'Orbitron', sans-serif;
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+}
+.middle-section .registerBox input[type="text"],
+.middle-section .registerBox input[type="password"] {
+  width: 100%;
+  margin-bottom: 2rem;
+  border: none;
+  border-bottom: 0.1rem solid #fff;
+  background: #f08a5d;
+  outline: none;
+  height: 40px;
+  color: #fff;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.6rem;
+}
+.middle-section .registerBox button {
+  width: 100%;
+  margin-bottom: 20px;
+  border: none;
+  outline: none;
+  height: 40px;
+  background: #fb2525;
+  color: #fff;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.8rem;
+  border-radius: 2rem;
+  text-align: center;
+}
+.middle-section .registerBox button:hover {
+  cursor: pointer;
+  background: #f08a5d;
+  color: #000;
+}
+.middle-container {
+  display: flex;
+  flex-direction: column;
+}
+.middle-container .middle {
+  display: flex;
+}
+.middle-container .middle .middle1 {
+  width: 50%;
+  padding: 8rem 8rem;
+  background: #ffc107;
+}
+.middle-container .middle .middle2 {
+  width: 50%;
+  padding: 4rem 4rem;
+  background: #dc3545;
+}
+.middle-container .middle .middle3 {
+  width: 50%;
+  padding: 8rem 8rem;
+  background: #007bff;
+}
+.middle-container .middle .middle4 {
+  width: 50%;
+  padding: 4rem 4rem;
+  background: #fff;
+}
+.middle-container .middle .middle5 {
+  width: 50%;
+  padding: 8rem 8rem;
+  background: #343a40;
+}
+.middle-container .middle .middle6 {
+  width: 50%;
+  padding: 4rem 4rem;
+  background: #ffc107;
+}
+.categories {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.categories h2 {
+  font-family: 'Archivo Black', sans-serif;
+}
+.categories .btn {
+  color: black;
+  background-color: #defcfc;
+  width: 65%;
+  font-size: 1.5em;
+  font-weight: 800;
+  border-radius: 1em;
+  font-family: 'Orbitron', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
+  margin: 1rem 0;
+  cursor: pointer;
+}
+@media (max-width: 500px) {
+  .categories .btn {
+    margin-bottom: 1.5rem;
+    height: 5em;
+    width: 100%;
+  }
+}
+.categories .btn:hover {
+  background-color: #e52a4a;
+  color: black;
+  transition: 0.5 ease-in-out;
+}
+.categories .btn2,
+.categories .btn4,
+.categories .btn6,
+.categories .btn8,
+.categories .btn10 {
+  background-color: #a6e3e9;
+}
+.middle-sectionSport,
+.middle-sectionVideo,
+.middle-sectionMakeup,
+.middle-sectionMovie,
+.middle-sectionParty,
+.middle-sectionOutdoor,
+.middle-sectionAdventure,
+.middle-sectionTravel,
+.middle-sectionLearning,
+.middle-sectionBusiness {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+}
+.middle-sectionSport .list,
+.middle-sectionVideo .list,
+.middle-sectionMakeup .list,
+.middle-sectionMovie .list,
+.middle-sectionParty .list,
+.middle-sectionOutdoor .list,
+.middle-sectionAdventure .list,
+.middle-sectionTravel .list,
+.middle-sectionLearning .list,
+.middle-sectionBusiness .list {
+  width: 80%;
+  /* Set all odd list items to a different color (zebra-stripes) */
+  /* Clear floats after the header */
+}
+.middle-sectionSport .list ul li,
+.middle-sectionVideo .list ul li,
+.middle-sectionMakeup .list ul li,
+.middle-sectionMovie .list ul li,
+.middle-sectionParty .list ul li,
+.middle-sectionOutdoor .list ul li,
+.middle-sectionAdventure .list ul li,
+.middle-sectionTravel .list ul li,
+.middle-sectionLearning .list ul li,
+.middle-sectionBusiness .list ul li {
+  cursor: pointer;
+  position: relative;
+  padding: 1.2rem 0.8rem 1.2rem 4rem;
+  background: #defcfc;
+  font-size: 1.8rem;
+  font-family: 'Archivo Black', sans-serif;
+}
+.middle-sectionSport .list ul li:nth-child(odd),
+.middle-sectionVideo .list ul li:nth-child(odd),
+.middle-sectionMakeup .list ul li:nth-child(odd),
+.middle-sectionMovie .list ul li:nth-child(odd),
+.middle-sectionParty .list ul li:nth-child(odd),
+.middle-sectionOutdoor .list ul li:nth-child(odd),
+.middle-sectionAdventure .list ul li:nth-child(odd),
+.middle-sectionTravel .list ul li:nth-child(odd),
+.middle-sectionLearning .list ul li:nth-child(odd),
+.middle-sectionBusiness .list ul li:nth-child(odd) {
+  background: #a6e3e9;
+}
+.middle-sectionSport .list ul li:nth-child(odd):hover,
+.middle-sectionVideo .list ul li:nth-child(odd):hover,
+.middle-sectionMakeup .list ul li:nth-child(odd):hover,
+.middle-sectionMovie .list ul li:nth-child(odd):hover,
+.middle-sectionParty .list ul li:nth-child(odd):hover,
+.middle-sectionOutdoor .list ul li:nth-child(odd):hover,
+.middle-sectionAdventure .list ul li:nth-child(odd):hover,
+.middle-sectionTravel .list ul li:nth-child(odd):hover,
+.middle-sectionLearning .list ul li:nth-child(odd):hover,
+.middle-sectionBusiness .list ul li:nth-child(odd):hover {
+  background: #ddd;
+}
+.middle-sectionSport .list .close,
+.middle-sectionVideo .list .close,
+.middle-sectionMakeup .list .close,
+.middle-sectionMovie .list .close,
+.middle-sectionParty .list .close,
+.middle-sectionOutdoor .list .close,
+.middle-sectionAdventure .list .close,
+.middle-sectionTravel .list .close,
+.middle-sectionLearning .list .close,
+.middle-sectionBusiness .list .close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 1.2rem 1.6rem 1.2rem 1.6rem;
+}
+.middle-sectionSport .list .close:hover,
+.middle-sectionVideo .list .close:hover,
+.middle-sectionMakeup .list .close:hover,
+.middle-sectionMovie .list .close:hover,
+.middle-sectionParty .list .close:hover,
+.middle-sectionOutdoor .list .close:hover,
+.middle-sectionAdventure .list .close:hover,
+.middle-sectionTravel .list .close:hover,
+.middle-sectionLearning .list .close:hover,
+.middle-sectionBusiness .list .close:hover {
+  background-color: #f44336;
+  color: white;
+}
+.middle-sectionSport .list .header,
+.middle-sectionVideo .list .header,
+.middle-sectionMakeup .list .header,
+.middle-sectionMovie .list .header,
+.middle-sectionParty .list .header,
+.middle-sectionOutdoor .list .header,
+.middle-sectionAdventure .list .header,
+.middle-sectionTravel .list .header,
+.middle-sectionLearning .list .header,
+.middle-sectionBusiness .list .header {
+  background-color: #defcfc;
+  padding: 3rem 4rem;
+  text-align: center;
+}
+.middle-sectionSport .list .header .h2sport,
+.middle-sectionVideo .list .header .h2sport,
+.middle-sectionMakeup .list .header .h2sport,
+.middle-sectionMovie .list .header .h2sport,
+.middle-sectionParty .list .header .h2sport,
+.middle-sectionOutdoor .list .header .h2sport,
+.middle-sectionAdventure .list .header .h2sport,
+.middle-sectionTravel .list .header .h2sport,
+.middle-sectionLearning .list .header .h2sport,
+.middle-sectionBusiness .list .header .h2sport,
+.middle-sectionSport .list .header .h2VIdeo,
+.middle-sectionVideo .list .header .h2VIdeo,
+.middle-sectionMakeup .list .header .h2VIdeo,
+.middle-sectionMovie .list .header .h2VIdeo,
+.middle-sectionParty .list .header .h2VIdeo,
+.middle-sectionOutdoor .list .header .h2VIdeo,
+.middle-sectionAdventure .list .header .h2VIdeo,
+.middle-sectionTravel .list .header .h2VIdeo,
+.middle-sectionLearning .list .header .h2VIdeo,
+.middle-sectionBusiness .list .header .h2VIdeo,
+.middle-sectionSport .list .header .h2,
+.middle-sectionVideo .list .header .h2,
+.middle-sectionMakeup .list .header .h2,
+.middle-sectionMovie .list .header .h2,
+.middle-sectionParty .list .header .h2,
+.middle-sectionOutdoor .list .header .h2,
+.middle-sectionAdventure .list .header .h2,
+.middle-sectionTravel .list .header .h2,
+.middle-sectionLearning .list .header .h2,
+.middle-sectionBusiness .list .header .h2 {
+  font-family: 'Orbitron', sans-serif;
+  color: black;
+  margin-bottom: 1rem;
+}
+.middle-sectionSport .list .header h3,
+.middle-sectionVideo .list .header h3,
+.middle-sectionMakeup .list .header h3,
+.middle-sectionMovie .list .header h3,
+.middle-sectionParty .list .header h3,
+.middle-sectionOutdoor .list .header h3,
+.middle-sectionAdventure .list .header h3,
+.middle-sectionTravel .list .header h3,
+.middle-sectionLearning .list .header h3,
+.middle-sectionBusiness .list .header h3 {
+  font-family: 'Orbitron', sans-serif;
+  margin: 0.7rem 0;
+}
+.middle-sectionSport .list .header:after,
+.middle-sectionVideo .list .header:after,
+.middle-sectionMakeup .list .header:after,
+.middle-sectionMovie .list .header:after,
+.middle-sectionParty .list .header:after,
+.middle-sectionOutdoor .list .header:after,
+.middle-sectionAdventure .list .header:after,
+.middle-sectionTravel .list .header:after,
+.middle-sectionLearning .list .header:after,
+.middle-sectionBusiness .list .header:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.middle-sectionSport .list input,
+.middle-sectionVideo .list input,
+.middle-sectionMakeup .list input,
+.middle-sectionMovie .list input,
+.middle-sectionParty .list input,
+.middle-sectionOutdoor .list input,
+.middle-sectionAdventure .list input,
+.middle-sectionTravel .list input,
+.middle-sectionLearning .list input,
+.middle-sectionBusiness .list input {
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  width: 75%;
+  padding: 1rem;
+  float: left;
+  font-size: 1.6rem;
+}
+.middle-sectionSport .list .addBtnSport,
+.middle-sectionVideo .list .addBtnSport,
+.middle-sectionMakeup .list .addBtnSport,
+.middle-sectionMovie .list .addBtnSport,
+.middle-sectionParty .list .addBtnSport,
+.middle-sectionOutdoor .list .addBtnSport,
+.middle-sectionAdventure .list .addBtnSport,
+.middle-sectionTravel .list .addBtnSport,
+.middle-sectionLearning .list .addBtnSport,
+.middle-sectionBusiness .list .addBtnSport,
+.middle-sectionSport .list .addBtnVideo,
+.middle-sectionVideo .list .addBtnVideo,
+.middle-sectionMakeup .list .addBtnVideo,
+.middle-sectionMovie .list .addBtnVideo,
+.middle-sectionParty .list .addBtnVideo,
+.middle-sectionOutdoor .list .addBtnVideo,
+.middle-sectionAdventure .list .addBtnVideo,
+.middle-sectionTravel .list .addBtnVideo,
+.middle-sectionLearning .list .addBtnVideo,
+.middle-sectionBusiness .list .addBtnVideo,
+.middle-sectionSport .list .addBtnMakeup,
+.middle-sectionVideo .list .addBtnMakeup,
+.middle-sectionMakeup .list .addBtnMakeup,
+.middle-sectionMovie .list .addBtnMakeup,
+.middle-sectionParty .list .addBtnMakeup,
+.middle-sectionOutdoor .list .addBtnMakeup,
+.middle-sectionAdventure .list .addBtnMakeup,
+.middle-sectionTravel .list .addBtnMakeup,
+.middle-sectionLearning .list .addBtnMakeup,
+.middle-sectionBusiness .list .addBtnMakeup,
+.middle-sectionSport .list .addBtnMovie,
+.middle-sectionVideo .list .addBtnMovie,
+.middle-sectionMakeup .list .addBtnMovie,
+.middle-sectionMovie .list .addBtnMovie,
+.middle-sectionParty .list .addBtnMovie,
+.middle-sectionOutdoor .list .addBtnMovie,
+.middle-sectionAdventure .list .addBtnMovie,
+.middle-sectionTravel .list .addBtnMovie,
+.middle-sectionLearning .list .addBtnMovie,
+.middle-sectionBusiness .list .addBtnMovie,
+.middle-sectionSport .list .addBtnParty,
+.middle-sectionVideo .list .addBtnParty,
+.middle-sectionMakeup .list .addBtnParty,
+.middle-sectionMovie .list .addBtnParty,
+.middle-sectionParty .list .addBtnParty,
+.middle-sectionOutdoor .list .addBtnParty,
+.middle-sectionAdventure .list .addBtnParty,
+.middle-sectionTravel .list .addBtnParty,
+.middle-sectionLearning .list .addBtnParty,
+.middle-sectionBusiness .list .addBtnParty,
+.middle-sectionSport .list .addBtnOutdoor,
+.middle-sectionVideo .list .addBtnOutdoor,
+.middle-sectionMakeup .list .addBtnOutdoor,
+.middle-sectionMovie .list .addBtnOutdoor,
+.middle-sectionParty .list .addBtnOutdoor,
+.middle-sectionOutdoor .list .addBtnOutdoor,
+.middle-sectionAdventure .list .addBtnOutdoor,
+.middle-sectionTravel .list .addBtnOutdoor,
+.middle-sectionLearning .list .addBtnOutdoor,
+.middle-sectionBusiness .list .addBtnOutdoor,
+.middle-sectionSport .list .addBtnAdventure,
+.middle-sectionVideo .list .addBtnAdventure,
+.middle-sectionMakeup .list .addBtnAdventure,
+.middle-sectionMovie .list .addBtnAdventure,
+.middle-sectionParty .list .addBtnAdventure,
+.middle-sectionOutdoor .list .addBtnAdventure,
+.middle-sectionAdventure .list .addBtnAdventure,
+.middle-sectionTravel .list .addBtnAdventure,
+.middle-sectionLearning .list .addBtnAdventure,
+.middle-sectionBusiness .list .addBtnAdventure,
+.middle-sectionSport .list .addBtnTravel,
+.middle-sectionVideo .list .addBtnTravel,
+.middle-sectionMakeup .list .addBtnTravel,
+.middle-sectionMovie .list .addBtnTravel,
+.middle-sectionParty .list .addBtnTravel,
+.middle-sectionOutdoor .list .addBtnTravel,
+.middle-sectionAdventure .list .addBtnTravel,
+.middle-sectionTravel .list .addBtnTravel,
+.middle-sectionLearning .list .addBtnTravel,
+.middle-sectionBusiness .list .addBtnTravel,
+.middle-sectionSport .list .addBtnLearning,
+.middle-sectionVideo .list .addBtnLearning,
+.middle-sectionMakeup .list .addBtnLearning,
+.middle-sectionMovie .list .addBtnLearning,
+.middle-sectionParty .list .addBtnLearning,
+.middle-sectionOutdoor .list .addBtnLearning,
+.middle-sectionAdventure .list .addBtnLearning,
+.middle-sectionTravel .list .addBtnLearning,
+.middle-sectionLearning .list .addBtnLearning,
+.middle-sectionBusiness .list .addBtnLearning,
+.middle-sectionSport .list .addBtnBusiness,
+.middle-sectionVideo .list .addBtnBusiness,
+.middle-sectionMakeup .list .addBtnBusiness,
+.middle-sectionMovie .list .addBtnBusiness,
+.middle-sectionParty .list .addBtnBusiness,
+.middle-sectionOutdoor .list .addBtnBusiness,
+.middle-sectionAdventure .list .addBtnBusiness,
+.middle-sectionTravel .list .addBtnBusiness,
+.middle-sectionLearning .list .addBtnBusiness,
+.middle-sectionBusiness .list .addBtnBusiness {
+  padding: 1rem;
+  width: 25%;
+  background: #d9d9d9;
+  color: #555;
+  float: left;
+  text-align: center;
+  font-size: 1.6rem;
+  cursor: pointer;
+  border-radius: 0;
+}
+.middle-sectionSport .list .addBtnSport:hover,
+.middle-sectionVideo .list .addBtnSport:hover,
+.middle-sectionMakeup .list .addBtnSport:hover,
+.middle-sectionMovie .list .addBtnSport:hover,
+.middle-sectionParty .list .addBtnSport:hover,
+.middle-sectionOutdoor .list .addBtnSport:hover,
+.middle-sectionAdventure .list .addBtnSport:hover,
+.middle-sectionTravel .list .addBtnSport:hover,
+.middle-sectionLearning .list .addBtnSport:hover,
+.middle-sectionBusiness .list .addBtnSport:hover,
+.middle-sectionSport .list .addBtnVideo:hover,
+.middle-sectionVideo .list .addBtnVideo:hover,
+.middle-sectionMakeup .list .addBtnVideo:hover,
+.middle-sectionMovie .list .addBtnVideo:hover,
+.middle-sectionParty .list .addBtnVideo:hover,
+.middle-sectionOutdoor .list .addBtnVideo:hover,
+.middle-sectionAdventure .list .addBtnVideo:hover,
+.middle-sectionTravel .list .addBtnVideo:hover,
+.middle-sectionLearning .list .addBtnVideo:hover,
+.middle-sectionBusiness .list .addBtnVideo:hover,
+.middle-sectionSport .list .addBtnMakeup:hover,
+.middle-sectionVideo .list .addBtnMakeup:hover,
+.middle-sectionMakeup .list .addBtnMakeup:hover,
+.middle-sectionMovie .list .addBtnMakeup:hover,
+.middle-sectionParty .list .addBtnMakeup:hover,
+.middle-sectionOutdoor .list .addBtnMakeup:hover,
+.middle-sectionAdventure .list .addBtnMakeup:hover,
+.middle-sectionTravel .list .addBtnMakeup:hover,
+.middle-sectionLearning .list .addBtnMakeup:hover,
+.middle-sectionBusiness .list .addBtnMakeup:hover,
+.middle-sectionSport .list .addBtnMovie:hover,
+.middle-sectionVideo .list .addBtnMovie:hover,
+.middle-sectionMakeup .list .addBtnMovie:hover,
+.middle-sectionMovie .list .addBtnMovie:hover,
+.middle-sectionParty .list .addBtnMovie:hover,
+.middle-sectionOutdoor .list .addBtnMovie:hover,
+.middle-sectionAdventure .list .addBtnMovie:hover,
+.middle-sectionTravel .list .addBtnMovie:hover,
+.middle-sectionLearning .list .addBtnMovie:hover,
+.middle-sectionBusiness .list .addBtnMovie:hover,
+.middle-sectionSport .list .addBtnParty:hover,
+.middle-sectionVideo .list .addBtnParty:hover,
+.middle-sectionMakeup .list .addBtnParty:hover,
+.middle-sectionMovie .list .addBtnParty:hover,
+.middle-sectionParty .list .addBtnParty:hover,
+.middle-sectionOutdoor .list .addBtnParty:hover,
+.middle-sectionAdventure .list .addBtnParty:hover,
+.middle-sectionTravel .list .addBtnParty:hover,
+.middle-sectionLearning .list .addBtnParty:hover,
+.middle-sectionBusiness .list .addBtnParty:hover,
+.middle-sectionSport .list .addBtnOutdoor:hover,
+.middle-sectionVideo .list .addBtnOutdoor:hover,
+.middle-sectionMakeup .list .addBtnOutdoor:hover,
+.middle-sectionMovie .list .addBtnOutdoor:hover,
+.middle-sectionParty .list .addBtnOutdoor:hover,
+.middle-sectionOutdoor .list .addBtnOutdoor:hover,
+.middle-sectionAdventure .list .addBtnOutdoor:hover,
+.middle-sectionTravel .list .addBtnOutdoor:hover,
+.middle-sectionLearning .list .addBtnOutdoor:hover,
+.middle-sectionBusiness .list .addBtnOutdoor:hover,
+.middle-sectionSport .list .addBtnAdventure:hover,
+.middle-sectionVideo .list .addBtnAdventure:hover,
+.middle-sectionMakeup .list .addBtnAdventure:hover,
+.middle-sectionMovie .list .addBtnAdventure:hover,
+.middle-sectionParty .list .addBtnAdventure:hover,
+.middle-sectionOutdoor .list .addBtnAdventure:hover,
+.middle-sectionAdventure .list .addBtnAdventure:hover,
+.middle-sectionTravel .list .addBtnAdventure:hover,
+.middle-sectionLearning .list .addBtnAdventure:hover,
+.middle-sectionBusiness .list .addBtnAdventure:hover,
+.middle-sectionSport .list .addBtnTravel:hover,
+.middle-sectionVideo .list .addBtnTravel:hover,
+.middle-sectionMakeup .list .addBtnTravel:hover,
+.middle-sectionMovie .list .addBtnTravel:hover,
+.middle-sectionParty .list .addBtnTravel:hover,
+.middle-sectionOutdoor .list .addBtnTravel:hover,
+.middle-sectionAdventure .list .addBtnTravel:hover,
+.middle-sectionTravel .list .addBtnTravel:hover,
+.middle-sectionLearning .list .addBtnTravel:hover,
+.middle-sectionBusiness .list .addBtnTravel:hover,
+.middle-sectionSport .list .addBtnLearning:hover,
+.middle-sectionVideo .list .addBtnLearning:hover,
+.middle-sectionMakeup .list .addBtnLearning:hover,
+.middle-sectionMovie .list .addBtnLearning:hover,
+.middle-sectionParty .list .addBtnLearning:hover,
+.middle-sectionOutdoor .list .addBtnLearning:hover,
+.middle-sectionAdventure .list .addBtnLearning:hover,
+.middle-sectionTravel .list .addBtnLearning:hover,
+.middle-sectionLearning .list .addBtnLearning:hover,
+.middle-sectionBusiness .list .addBtnLearning:hover,
+.middle-sectionSport .list .addBtnBusiness:hover,
+.middle-sectionVideo .list .addBtnBusiness:hover,
+.middle-sectionMakeup .list .addBtnBusiness:hover,
+.middle-sectionMovie .list .addBtnBusiness:hover,
+.middle-sectionParty .list .addBtnBusiness:hover,
+.middle-sectionOutdoor .list .addBtnBusiness:hover,
+.middle-sectionAdventure .list .addBtnBusiness:hover,
+.middle-sectionTravel .list .addBtnBusiness:hover,
+.middle-sectionLearning .list .addBtnBusiness:hover,
+.middle-sectionBusiness .list .addBtnBusiness:hover {
+  background-color: #bbb;
+}
+.middle-sectionSport .list .goBack,
+.middle-sectionVideo .list .goBack,
+.middle-sectionMakeup .list .goBack,
+.middle-sectionMovie .list .goBack,
+.middle-sectionParty .list .goBack,
+.middle-sectionOutdoor .list .goBack,
+.middle-sectionAdventure .list .goBack,
+.middle-sectionTravel .list .goBack,
+.middle-sectionLearning .list .goBack,
+.middle-sectionBusiness .list .goBack {
+  display: flex;
+  justify-content: center;
+}
+.middle-sectionSport .list .goBack .goBackBtnSport,
+.middle-sectionVideo .list .goBack .goBackBtnSport,
+.middle-sectionMakeup .list .goBack .goBackBtnSport,
+.middle-sectionMovie .list .goBack .goBackBtnSport,
+.middle-sectionParty .list .goBack .goBackBtnSport,
+.middle-sectionOutdoor .list .goBack .goBackBtnSport,
+.middle-sectionAdventure .list .goBack .goBackBtnSport,
+.middle-sectionTravel .list .goBack .goBackBtnSport,
+.middle-sectionLearning .list .goBack .goBackBtnSport,
+.middle-sectionBusiness .list .goBack .goBackBtnSport,
+.middle-sectionSport .list .goBack .goBackBtnVideo,
+.middle-sectionVideo .list .goBack .goBackBtnVideo,
+.middle-sectionMakeup .list .goBack .goBackBtnVideo,
+.middle-sectionMovie .list .goBack .goBackBtnVideo,
+.middle-sectionParty .list .goBack .goBackBtnVideo,
+.middle-sectionOutdoor .list .goBack .goBackBtnVideo,
+.middle-sectionAdventure .list .goBack .goBackBtnVideo,
+.middle-sectionTravel .list .goBack .goBackBtnVideo,
+.middle-sectionLearning .list .goBack .goBackBtnVideo,
+.middle-sectionBusiness .list .goBack .goBackBtnVideo,
+.middle-sectionSport .list .goBack .goBackBtnMakeup,
+.middle-sectionVideo .list .goBack .goBackBtnMakeup,
+.middle-sectionMakeup .list .goBack .goBackBtnMakeup,
+.middle-sectionMovie .list .goBack .goBackBtnMakeup,
+.middle-sectionParty .list .goBack .goBackBtnMakeup,
+.middle-sectionOutdoor .list .goBack .goBackBtnMakeup,
+.middle-sectionAdventure .list .goBack .goBackBtnMakeup,
+.middle-sectionTravel .list .goBack .goBackBtnMakeup,
+.middle-sectionLearning .list .goBack .goBackBtnMakeup,
+.middle-sectionBusiness .list .goBack .goBackBtnMakeup,
+.middle-sectionSport .list .goBack .goBackBtnMovie,
+.middle-sectionVideo .list .goBack .goBackBtnMovie,
+.middle-sectionMakeup .list .goBack .goBackBtnMovie,
+.middle-sectionMovie .list .goBack .goBackBtnMovie,
+.middle-sectionParty .list .goBack .goBackBtnMovie,
+.middle-sectionOutdoor .list .goBack .goBackBtnMovie,
+.middle-sectionAdventure .list .goBack .goBackBtnMovie,
+.middle-sectionTravel .list .goBack .goBackBtnMovie,
+.middle-sectionLearning .list .goBack .goBackBtnMovie,
+.middle-sectionBusiness .list .goBack .goBackBtnMovie,
+.middle-sectionSport .list .goBack .goBackBtnParty,
+.middle-sectionVideo .list .goBack .goBackBtnParty,
+.middle-sectionMakeup .list .goBack .goBackBtnParty,
+.middle-sectionMovie .list .goBack .goBackBtnParty,
+.middle-sectionParty .list .goBack .goBackBtnParty,
+.middle-sectionOutdoor .list .goBack .goBackBtnParty,
+.middle-sectionAdventure .list .goBack .goBackBtnParty,
+.middle-sectionTravel .list .goBack .goBackBtnParty,
+.middle-sectionLearning .list .goBack .goBackBtnParty,
+.middle-sectionBusiness .list .goBack .goBackBtnParty,
+.middle-sectionSport .list .goBack .goBackBtnOutdoor,
+.middle-sectionVideo .list .goBack .goBackBtnOutdoor,
+.middle-sectionMakeup .list .goBack .goBackBtnOutdoor,
+.middle-sectionMovie .list .goBack .goBackBtnOutdoor,
+.middle-sectionParty .list .goBack .goBackBtnOutdoor,
+.middle-sectionOutdoor .list .goBack .goBackBtnOutdoor,
+.middle-sectionAdventure .list .goBack .goBackBtnOutdoor,
+.middle-sectionTravel .list .goBack .goBackBtnOutdoor,
+.middle-sectionLearning .list .goBack .goBackBtnOutdoor,
+.middle-sectionBusiness .list .goBack .goBackBtnOutdoor,
+.middle-sectionSport .list .goBack .goBackBtnAdventure,
+.middle-sectionVideo .list .goBack .goBackBtnAdventure,
+.middle-sectionMakeup .list .goBack .goBackBtnAdventure,
+.middle-sectionMovie .list .goBack .goBackBtnAdventure,
+.middle-sectionParty .list .goBack .goBackBtnAdventure,
+.middle-sectionOutdoor .list .goBack .goBackBtnAdventure,
+.middle-sectionAdventure .list .goBack .goBackBtnAdventure,
+.middle-sectionTravel .list .goBack .goBackBtnAdventure,
+.middle-sectionLearning .list .goBack .goBackBtnAdventure,
+.middle-sectionBusiness .list .goBack .goBackBtnAdventure,
+.middle-sectionSport .list .goBack .goBackBtnTravel,
+.middle-sectionVideo .list .goBack .goBackBtnTravel,
+.middle-sectionMakeup .list .goBack .goBackBtnTravel,
+.middle-sectionMovie .list .goBack .goBackBtnTravel,
+.middle-sectionParty .list .goBack .goBackBtnTravel,
+.middle-sectionOutdoor .list .goBack .goBackBtnTravel,
+.middle-sectionAdventure .list .goBack .goBackBtnTravel,
+.middle-sectionTravel .list .goBack .goBackBtnTravel,
+.middle-sectionLearning .list .goBack .goBackBtnTravel,
+.middle-sectionBusiness .list .goBack .goBackBtnTravel,
+.middle-sectionSport .list .goBack .goBackBtnLearning,
+.middle-sectionVideo .list .goBack .goBackBtnLearning,
+.middle-sectionMakeup .list .goBack .goBackBtnLearning,
+.middle-sectionMovie .list .goBack .goBackBtnLearning,
+.middle-sectionParty .list .goBack .goBackBtnLearning,
+.middle-sectionOutdoor .list .goBack .goBackBtnLearning,
+.middle-sectionAdventure .list .goBack .goBackBtnLearning,
+.middle-sectionTravel .list .goBack .goBackBtnLearning,
+.middle-sectionLearning .list .goBack .goBackBtnLearning,
+.middle-sectionBusiness .list .goBack .goBackBtnLearning,
+.middle-sectionSport .list .goBack .goBackBtnBusiness,
+.middle-sectionVideo .list .goBack .goBackBtnBusiness,
+.middle-sectionMakeup .list .goBack .goBackBtnBusiness,
+.middle-sectionMovie .list .goBack .goBackBtnBusiness,
+.middle-sectionParty .list .goBack .goBackBtnBusiness,
+.middle-sectionOutdoor .list .goBack .goBackBtnBusiness,
+.middle-sectionAdventure .list .goBack .goBackBtnBusiness,
+.middle-sectionTravel .list .goBack .goBackBtnBusiness,
+.middle-sectionLearning .list .goBack .goBackBtnBusiness,
+.middle-sectionBusiness .list .goBack .goBackBtnBusiness {
+  color: black;
+  background-color: #defcfc;
+  width: 65%;
+  font-size: 1.5em;
+  font-weight: 800;
+  border-radius: 1em;
+  font-family: 'Orbitron', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
+  margin: 1rem 0;
+  cursor: pointer;
+}
+@media (max-width: 500px) {
+  .middle-sectionSport .list .goBack .goBackBtnSport,
+  .middle-sectionVideo .list .goBack .goBackBtnSport,
+  .middle-sectionMakeup .list .goBack .goBackBtnSport,
+  .middle-sectionMovie .list .goBack .goBackBtnSport,
+  .middle-sectionParty .list .goBack .goBackBtnSport,
+  .middle-sectionOutdoor .list .goBack .goBackBtnSport,
+  .middle-sectionAdventure .list .goBack .goBackBtnSport,
+  .middle-sectionTravel .list .goBack .goBackBtnSport,
+  .middle-sectionLearning .list .goBack .goBackBtnSport,
+  .middle-sectionBusiness .list .goBack .goBackBtnSport,
+  .middle-sectionSport .list .goBack .goBackBtnVideo,
+  .middle-sectionVideo .list .goBack .goBackBtnVideo,
+  .middle-sectionMakeup .list .goBack .goBackBtnVideo,
+  .middle-sectionMovie .list .goBack .goBackBtnVideo,
+  .middle-sectionParty .list .goBack .goBackBtnVideo,
+  .middle-sectionOutdoor .list .goBack .goBackBtnVideo,
+  .middle-sectionAdventure .list .goBack .goBackBtnVideo,
+  .middle-sectionTravel .list .goBack .goBackBtnVideo,
+  .middle-sectionLearning .list .goBack .goBackBtnVideo,
+  .middle-sectionBusiness .list .goBack .goBackBtnVideo,
+  .middle-sectionSport .list .goBack .goBackBtnMakeup,
+  .middle-sectionVideo .list .goBack .goBackBtnMakeup,
+  .middle-sectionMakeup .list .goBack .goBackBtnMakeup,
+  .middle-sectionMovie .list .goBack .goBackBtnMakeup,
+  .middle-sectionParty .list .goBack .goBackBtnMakeup,
+  .middle-sectionOutdoor .list .goBack .goBackBtnMakeup,
+  .middle-sectionAdventure .list .goBack .goBackBtnMakeup,
+  .middle-sectionTravel .list .goBack .goBackBtnMakeup,
+  .middle-sectionLearning .list .goBack .goBackBtnMakeup,
+  .middle-sectionBusiness .list .goBack .goBackBtnMakeup,
+  .middle-sectionSport .list .goBack .goBackBtnMovie,
+  .middle-sectionVideo .list .goBack .goBackBtnMovie,
+  .middle-sectionMakeup .list .goBack .goBackBtnMovie,
+  .middle-sectionMovie .list .goBack .goBackBtnMovie,
+  .middle-sectionParty .list .goBack .goBackBtnMovie,
+  .middle-sectionOutdoor .list .goBack .goBackBtnMovie,
+  .middle-sectionAdventure .list .goBack .goBackBtnMovie,
+  .middle-sectionTravel .list .goBack .goBackBtnMovie,
+  .middle-sectionLearning .list .goBack .goBackBtnMovie,
+  .middle-sectionBusiness .list .goBack .goBackBtnMovie,
+  .middle-sectionSport .list .goBack .goBackBtnParty,
+  .middle-sectionVideo .list .goBack .goBackBtnParty,
+  .middle-sectionMakeup .list .goBack .goBackBtnParty,
+  .middle-sectionMovie .list .goBack .goBackBtnParty,
+  .middle-sectionParty .list .goBack .goBackBtnParty,
+  .middle-sectionOutdoor .list .goBack .goBackBtnParty,
+  .middle-sectionAdventure .list .goBack .goBackBtnParty,
+  .middle-sectionTravel .list .goBack .goBackBtnParty,
+  .middle-sectionLearning .list .goBack .goBackBtnParty,
+  .middle-sectionBusiness .list .goBack .goBackBtnParty,
+  .middle-sectionSport .list .goBack .goBackBtnOutdoor,
+  .middle-sectionVideo .list .goBack .goBackBtnOutdoor,
+  .middle-sectionMakeup .list .goBack .goBackBtnOutdoor,
+  .middle-sectionMovie .list .goBack .goBackBtnOutdoor,
+  .middle-sectionParty .list .goBack .goBackBtnOutdoor,
+  .middle-sectionOutdoor .list .goBack .goBackBtnOutdoor,
+  .middle-sectionAdventure .list .goBack .goBackBtnOutdoor,
+  .middle-sectionTravel .list .goBack .goBackBtnOutdoor,
+  .middle-sectionLearning .list .goBack .goBackBtnOutdoor,
+  .middle-sectionBusiness .list .goBack .goBackBtnOutdoor,
+  .middle-sectionSport .list .goBack .goBackBtnAdventure,
+  .middle-sectionVideo .list .goBack .goBackBtnAdventure,
+  .middle-sectionMakeup .list .goBack .goBackBtnAdventure,
+  .middle-sectionMovie .list .goBack .goBackBtnAdventure,
+  .middle-sectionParty .list .goBack .goBackBtnAdventure,
+  .middle-sectionOutdoor .list .goBack .goBackBtnAdventure,
+  .middle-sectionAdventure .list .goBack .goBackBtnAdventure,
+  .middle-sectionTravel .list .goBack .goBackBtnAdventure,
+  .middle-sectionLearning .list .goBack .goBackBtnAdventure,
+  .middle-sectionBusiness .list .goBack .goBackBtnAdventure,
+  .middle-sectionSport .list .goBack .goBackBtnTravel,
+  .middle-sectionVideo .list .goBack .goBackBtnTravel,
+  .middle-sectionMakeup .list .goBack .goBackBtnTravel,
+  .middle-sectionMovie .list .goBack .goBackBtnTravel,
+  .middle-sectionParty .list .goBack .goBackBtnTravel,
+  .middle-sectionOutdoor .list .goBack .goBackBtnTravel,
+  .middle-sectionAdventure .list .goBack .goBackBtnTravel,
+  .middle-sectionTravel .list .goBack .goBackBtnTravel,
+  .middle-sectionLearning .list .goBack .goBackBtnTravel,
+  .middle-sectionBusiness .list .goBack .goBackBtnTravel,
+  .middle-sectionSport .list .goBack .goBackBtnLearning,
+  .middle-sectionVideo .list .goBack .goBackBtnLearning,
+  .middle-sectionMakeup .list .goBack .goBackBtnLearning,
+  .middle-sectionMovie .list .goBack .goBackBtnLearning,
+  .middle-sectionParty .list .goBack .goBackBtnLearning,
+  .middle-sectionOutdoor .list .goBack .goBackBtnLearning,
+  .middle-sectionAdventure .list .goBack .goBackBtnLearning,
+  .middle-sectionTravel .list .goBack .goBackBtnLearning,
+  .middle-sectionLearning .list .goBack .goBackBtnLearning,
+  .middle-sectionBusiness .list .goBack .goBackBtnLearning,
+  .middle-sectionSport .list .goBack .goBackBtnBusiness,
+  .middle-sectionVideo .list .goBack .goBackBtnBusiness,
+  .middle-sectionMakeup .list .goBack .goBackBtnBusiness,
+  .middle-sectionMovie .list .goBack .goBackBtnBusiness,
+  .middle-sectionParty .list .goBack .goBackBtnBusiness,
+  .middle-sectionOutdoor .list .goBack .goBackBtnBusiness,
+  .middle-sectionAdventure .list .goBack .goBackBtnBusiness,
+  .middle-sectionTravel .list .goBack .goBackBtnBusiness,
+  .middle-sectionLearning .list .goBack .goBackBtnBusiness,
+  .middle-sectionBusiness .list .goBack .goBackBtnBusiness {
+    margin-bottom: 1.5rem;
+    height: 5em;
+    width: 100%;
+  }
+}
+.middle-sectionSport .list .goBack .goBackBtnSport:hover,
+.middle-sectionVideo .list .goBack .goBackBtnSport:hover,
+.middle-sectionMakeup .list .goBack .goBackBtnSport:hover,
+.middle-sectionMovie .list .goBack .goBackBtnSport:hover,
+.middle-sectionParty .list .goBack .goBackBtnSport:hover,
+.middle-sectionOutdoor .list .goBack .goBackBtnSport:hover,
+.middle-sectionAdventure .list .goBack .goBackBtnSport:hover,
+.middle-sectionTravel .list .goBack .goBackBtnSport:hover,
+.middle-sectionLearning .list .goBack .goBackBtnSport:hover,
+.middle-sectionBusiness .list .goBack .goBackBtnSport:hover,
+.middle-sectionSport .list .goBack .goBackBtnVideo:hover,
+.middle-sectionVideo .list .goBack .goBackBtnVideo:hover,
+.middle-sectionMakeup .list .goBack .goBackBtnVideo:hover,
+.middle-sectionMovie .list .goBack .goBackBtnVideo:hover,
+.middle-sectionParty .list .goBack .goBackBtnVideo:hover,
+.middle-sectionOutdoor .list .goBack .goBackBtnVideo:hover,
+.middle-sectionAdventure .list .goBack .goBackBtnVideo:hover,
+.middle-sectionTravel .list .goBack .goBackBtnVideo:hover,
+.middle-sectionLearning .list .goBack .goBackBtnVideo:hover,
+.middle-sectionBusiness .list .goBack .goBackBtnVideo:hover,
+.middle-sectionSport .list .goBack .goBackBtnMakeup:hover,
+.middle-sectionVideo .list .goBack .goBackBtnMakeup:hover,
+.middle-sectionMakeup .list .goBack .goBackBtnMakeup:hover,
+.middle-sectionMovie .list .goBack .goBackBtnMakeup:hover,
+.middle-sectionParty .list .goBack .goBackBtnMakeup:hover,
+.middle-sectionOutdoor .list .goBack .goBackBtnMakeup:hover,
+.middle-sectionAdventure .list .goBack .goBackBtnMakeup:hover,
+.middle-sectionTravel .list .goBack .goBackBtnMakeup:hover,
+.middle-sectionLearning .list .goBack .goBackBtnMakeup:hover,
+.middle-sectionBusiness .list .goBack .goBackBtnMakeup:hover,
+.middle-sectionSport .list .goBack .goBackBtnMovie:hover,
+.middle-sectionVideo .list .goBack .goBackBtnMovie:hover,
+.middle-sectionMakeup .list .goBack .goBackBtnMovie:hover,
+.middle-sectionMovie .list .goBack .goBackBtnMovie:hover,
+.middle-sectionParty .list .goBack .goBackBtnMovie:hover,
+.middle-sectionOutdoor .list .goBack .goBackBtnMovie:hover,
+.middle-sectionAdventure .list .goBack .goBackBtnMovie:hover,
+.middle-sectionTravel .list .goBack .goBackBtnMovie:hover,
+.middle-sectionLearning .list .goBack .goBackBtnMovie:hover,
+.middle-sectionBusiness .list .goBack .goBackBtnMovie:hover,
+.middle-sectionSport .list .goBack .goBackBtnParty:hover,
+.middle-sectionVideo .list .goBack .goBackBtnParty:hover,
+.middle-sectionMakeup .list .goBack .goBackBtnParty:hover,
+.middle-sectionMovie .list .goBack .goBackBtnParty:hover,
+.middle-sectionParty .list .goBack .goBackBtnParty:hover,
+.middle-sectionOutdoor .list .goBack .goBackBtnParty:hover,
+.middle-sectionAdventure .list .goBack .goBackBtnParty:hover,
+.middle-sectionTravel .list .goBack .goBackBtnParty:hover,
+.middle-sectionLearning .list .goBack .goBackBtnParty:hover,
+.middle-sectionBusiness .list .goBack .goBackBtnParty:hover,
+.middle-sectionSport .list .goBack .goBackBtnOutdoor:hover,
+.middle-sectionVideo .list .goBack .goBackBtnOutdoor:hover,
+.middle-sectionMakeup .list .goBack .goBackBtnOutdoor:hover,
+.middle-sectionMovie .list .goBack .goBackBtnOutdoor:hover,
+.middle-sectionParty .list .goBack .goBackBtnOutdoor:hover,
+.middle-sectionOutdoor .list .goBack .goBackBtnOutdoor:hover,
+.middle-sectionAdventure .list .goBack .goBackBtnOutdoor:hover,
+.middle-sectionTravel .list .goBack .goBackBtnOutdoor:hover,
+.middle-sectionLearning .list .goBack .goBackBtnOutdoor:hover,
+.middle-sectionBusiness .list .goBack .goBackBtnOutdoor:hover,
+.middle-sectionSport .list .goBack .goBackBtnAdventure:hover,
+.middle-sectionVideo .list .goBack .goBackBtnAdventure:hover,
+.middle-sectionMakeup .list .goBack .goBackBtnAdventure:hover,
+.middle-sectionMovie .list .goBack .goBackBtnAdventure:hover,
+.middle-sectionParty .list .goBack .goBackBtnAdventure:hover,
+.middle-sectionOutdoor .list .goBack .goBackBtnAdventure:hover,
+.middle-sectionAdventure .list .goBack .goBackBtnAdventure:hover,
+.middle-sectionTravel .list .goBack .goBackBtnAdventure:hover,
+.middle-sectionLearning .list .goBack .goBackBtnAdventure:hover,
+.middle-sectionBusiness .list .goBack .goBackBtnAdventure:hover,
+.middle-sectionSport .list .goBack .goBackBtnTravel:hover,
+.middle-sectionVideo .list .goBack .goBackBtnTravel:hover,
+.middle-sectionMakeup .list .goBack .goBackBtnTravel:hover,
+.middle-sectionMovie .list .goBack .goBackBtnTravel:hover,
+.middle-sectionParty .list .goBack .goBackBtnTravel:hover,
+.middle-sectionOutdoor .list .goBack .goBackBtnTravel:hover,
+.middle-sectionAdventure .list .goBack .goBackBtnTravel:hover,
+.middle-sectionTravel .list .goBack .goBackBtnTravel:hover,
+.middle-sectionLearning .list .goBack .goBackBtnTravel:hover,
+.middle-sectionBusiness .list .goBack .goBackBtnTravel:hover,
+.middle-sectionSport .list .goBack .goBackBtnLearning:hover,
+.middle-sectionVideo .list .goBack .goBackBtnLearning:hover,
+.middle-sectionMakeup .list .goBack .goBackBtnLearning:hover,
+.middle-sectionMovie .list .goBack .goBackBtnLearning:hover,
+.middle-sectionParty .list .goBack .goBackBtnLearning:hover,
+.middle-sectionOutdoor .list .goBack .goBackBtnLearning:hover,
+.middle-sectionAdventure .list .goBack .goBackBtnLearning:hover,
+.middle-sectionTravel .list .goBack .goBackBtnLearning:hover,
+.middle-sectionLearning .list .goBack .goBackBtnLearning:hover,
+.middle-sectionBusiness .list .goBack .goBackBtnLearning:hover,
+.middle-sectionSport .list .goBack .goBackBtnBusiness:hover,
+.middle-sectionVideo .list .goBack .goBackBtnBusiness:hover,
+.middle-sectionMakeup .list .goBack .goBackBtnBusiness:hover,
+.middle-sectionMovie .list .goBack .goBackBtnBusiness:hover,
+.middle-sectionParty .list .goBack .goBackBtnBusiness:hover,
+.middle-sectionOutdoor .list .goBack .goBackBtnBusiness:hover,
+.middle-sectionAdventure .list .goBack .goBackBtnBusiness:hover,
+.middle-sectionTravel .list .goBack .goBackBtnBusiness:hover,
+.middle-sectionLearning .list .goBack .goBackBtnBusiness:hover,
+.middle-sectionBusiness .list .goBack .goBackBtnBusiness:hover {
+  background-color: #e52a4a;
+  color: black;
+  transition: 0.5 ease-in-out;
+}
