@@ -126,31 +126,6 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-.btn {
-  color: black;
-  background-color: #ffc107;
-  width: 65%;
-  font-size: 1.5em;
-  font-weight: 800;
-  border-radius: 1em;
-  font-family: 'Orbitron', sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-}
-@media (max-width: 500px) {
-  .btn {
-    margin-bottom: 1.5rem;
-    height: 5em;
-    width: 100%;
-  }
-}
-.btn:hover {
-  background-color: #e52a4a;
-  color: black;
-  transition: 0.5 ease-in-out;
-}
 * {
   box-sizing: border-box;
 }
@@ -555,36 +530,106 @@ header nav ul li a {
   padding: 3rem 4rem;
   text-align: center;
 }
-.middle-sectionSport .list .header .h2sport,
-.middle-sectionVideo .list .header .h2sport,
-.middle-sectionMakeup .list .header .h2sport,
-.middle-sectionMovie .list .header .h2sport,
-.middle-sectionParty .list .header .h2sport,
-.middle-sectionOutdoor .list .header .h2sport,
-.middle-sectionAdventure .list .header .h2sport,
-.middle-sectionTravel .list .header .h2sport,
-.middle-sectionLearning .list .header .h2sport,
-.middle-sectionBusiness .list .header .h2sport,
-.middle-sectionSport .list .header .h2VIdeo,
-.middle-sectionVideo .list .header .h2VIdeo,
-.middle-sectionMakeup .list .header .h2VIdeo,
-.middle-sectionMovie .list .header .h2VIdeo,
-.middle-sectionParty .list .header .h2VIdeo,
-.middle-sectionOutdoor .list .header .h2VIdeo,
-.middle-sectionAdventure .list .header .h2VIdeo,
-.middle-sectionTravel .list .header .h2VIdeo,
-.middle-sectionLearning .list .header .h2VIdeo,
-.middle-sectionBusiness .list .header .h2VIdeo,
-.middle-sectionSport .list .header .h2,
-.middle-sectionVideo .list .header .h2,
-.middle-sectionMakeup .list .header .h2,
-.middle-sectionMovie .list .header .h2,
-.middle-sectionParty .list .header .h2,
-.middle-sectionOutdoor .list .header .h2,
-.middle-sectionAdventure .list .header .h2,
-.middle-sectionTravel .list .header .h2,
-.middle-sectionLearning .list .header .h2,
-.middle-sectionBusiness .list .header .h2 {
+.middle-sectionSport .list .header .h2Sport,
+.middle-sectionVideo .list .header .h2Sport,
+.middle-sectionMakeup .list .header .h2Sport,
+.middle-sectionMovie .list .header .h2Sport,
+.middle-sectionParty .list .header .h2Sport,
+.middle-sectionOutdoor .list .header .h2Sport,
+.middle-sectionAdventure .list .header .h2Sport,
+.middle-sectionTravel .list .header .h2Sport,
+.middle-sectionLearning .list .header .h2Sport,
+.middle-sectionBusiness .list .header .h2Sport,
+.middle-sectionSport .list .header .h2Video,
+.middle-sectionVideo .list .header .h2Video,
+.middle-sectionMakeup .list .header .h2Video,
+.middle-sectionMovie .list .header .h2Video,
+.middle-sectionParty .list .header .h2Video,
+.middle-sectionOutdoor .list .header .h2Video,
+.middle-sectionAdventure .list .header .h2Video,
+.middle-sectionTravel .list .header .h2Video,
+.middle-sectionLearning .list .header .h2Video,
+.middle-sectionBusiness .list .header .h2Video,
+.middle-sectionSport .list .header .h2Makeup,
+.middle-sectionVideo .list .header .h2Makeup,
+.middle-sectionMakeup .list .header .h2Makeup,
+.middle-sectionMovie .list .header .h2Makeup,
+.middle-sectionParty .list .header .h2Makeup,
+.middle-sectionOutdoor .list .header .h2Makeup,
+.middle-sectionAdventure .list .header .h2Makeup,
+.middle-sectionTravel .list .header .h2Makeup,
+.middle-sectionLearning .list .header .h2Makeup,
+.middle-sectionBusiness .list .header .h2Makeup,
+.middle-sectionSport .list .header .h2Movie,
+.middle-sectionVideo .list .header .h2Movie,
+.middle-sectionMakeup .list .header .h2Movie,
+.middle-sectionMovie .list .header .h2Movie,
+.middle-sectionParty .list .header .h2Movie,
+.middle-sectionOutdoor .list .header .h2Movie,
+.middle-sectionAdventure .list .header .h2Movie,
+.middle-sectionTravel .list .header .h2Movie,
+.middle-sectionLearning .list .header .h2Movie,
+.middle-sectionBusiness .list .header .h2Movie,
+.middle-sectionSport .list .header .h2Party,
+.middle-sectionVideo .list .header .h2Party,
+.middle-sectionMakeup .list .header .h2Party,
+.middle-sectionMovie .list .header .h2Party,
+.middle-sectionParty .list .header .h2Party,
+.middle-sectionOutdoor .list .header .h2Party,
+.middle-sectionAdventure .list .header .h2Party,
+.middle-sectionTravel .list .header .h2Party,
+.middle-sectionLearning .list .header .h2Party,
+.middle-sectionBusiness .list .header .h2Party,
+.middle-sectionSport .list .header .h2Outdoor,
+.middle-sectionVideo .list .header .h2Outdoor,
+.middle-sectionMakeup .list .header .h2Outdoor,
+.middle-sectionMovie .list .header .h2Outdoor,
+.middle-sectionParty .list .header .h2Outdoor,
+.middle-sectionOutdoor .list .header .h2Outdoor,
+.middle-sectionAdventure .list .header .h2Outdoor,
+.middle-sectionTravel .list .header .h2Outdoor,
+.middle-sectionLearning .list .header .h2Outdoor,
+.middle-sectionBusiness .list .header .h2Outdoor,
+.middle-sectionSport .list .header .h2Adventure,
+.middle-sectionVideo .list .header .h2Adventure,
+.middle-sectionMakeup .list .header .h2Adventure,
+.middle-sectionMovie .list .header .h2Adventure,
+.middle-sectionParty .list .header .h2Adventure,
+.middle-sectionOutdoor .list .header .h2Adventure,
+.middle-sectionAdventure .list .header .h2Adventure,
+.middle-sectionTravel .list .header .h2Adventure,
+.middle-sectionLearning .list .header .h2Adventure,
+.middle-sectionBusiness .list .header .h2Adventure,
+.middle-sectionSport .list .header .h2Travel,
+.middle-sectionVideo .list .header .h2Travel,
+.middle-sectionMakeup .list .header .h2Travel,
+.middle-sectionMovie .list .header .h2Travel,
+.middle-sectionParty .list .header .h2Travel,
+.middle-sectionOutdoor .list .header .h2Travel,
+.middle-sectionAdventure .list .header .h2Travel,
+.middle-sectionTravel .list .header .h2Travel,
+.middle-sectionLearning .list .header .h2Travel,
+.middle-sectionBusiness .list .header .h2Travel,
+.middle-sectionSport .list .header .h2Learning,
+.middle-sectionVideo .list .header .h2Learning,
+.middle-sectionMakeup .list .header .h2Learning,
+.middle-sectionMovie .list .header .h2Learning,
+.middle-sectionParty .list .header .h2Learning,
+.middle-sectionOutdoor .list .header .h2Learning,
+.middle-sectionAdventure .list .header .h2Learning,
+.middle-sectionTravel .list .header .h2Learning,
+.middle-sectionLearning .list .header .h2Learning,
+.middle-sectionBusiness .list .header .h2Learning,
+.middle-sectionSport .list .header .h2Business,
+.middle-sectionVideo .list .header .h2Business,
+.middle-sectionMakeup .list .header .h2Business,
+.middle-sectionMovie .list .header .h2Business,
+.middle-sectionParty .list .header .h2Business,
+.middle-sectionOutdoor .list .header .h2Business,
+.middle-sectionAdventure .list .header .h2Business,
+.middle-sectionTravel .list .header .h2Business,
+.middle-sectionLearning .list .header .h2Business,
+.middle-sectionBusiness .list .header .h2Business {
   font-family: 'Orbitron', sans-serif;
   color: black;
   margin-bottom: 1rem;
