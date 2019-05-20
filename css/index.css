@@ -2116,13 +2116,13 @@ footer #wrapper .box:hover {
 }
 footer #wrapper #facebook:hover {
   background-color: #3b5998;
-  box-shadow: inset 0 0 0 22px #3A5795;
+  box-shadow: inset 0 0 0 2.2rem #3A5795;
   transform: rotate(360deg) scale(1.15);
   transition: 1s;
 }
 footer #wrapper #twitter:hover {
   background-color: #55acee;
-  box-shadow: inset 0 0 0 22px #3A5795;
+  box-shadow: inset 0 0 0 2.2rem #3A5795;
   transform: rotate(360deg) scale(1.15);
   transition: 1s;
 }
@@ -2134,7 +2134,7 @@ footer #wrapper #google:hover {
 }
 footer #wrapper #linkedin:hover {
   background-color: #007bb5;
-  box-shadow: inset 0 0 0 22px #3A5795;
+  box-shadow: inset 0 0 0 2.2rem #3A5795;
   transform: rotate(360deg) scale(1.15);
   transition: 1s;
 }
