@@ -29,6 +29,7 @@ buttons[0].addEventListener("click", () => {
   buttonSection.style.display = "none";
   h3.textContent = "Sport";
   h2Sport.insertAdjacentElement('beforeend', h3);
+
 });
 
 buttons[1].addEventListener("click", () => {
@@ -119,6 +120,9 @@ close.forEach(el => el.addEventListener("click", () => el.parentElement.style.di
 
 // !!!!!! LIST Generator Sport !!!!!!!!!!!!
 // Create new element when clicked for Sport
+
+
+
 function addElementSport() {
   const li = document.createElement("li");
   const inputValue = document.querySelector(".inputSport").value;
@@ -143,6 +147,7 @@ function addElementSport() {
 
 const addBtnSport = document.querySelector(".addBtnSport");
 addBtnSport.addEventListener("click", () => addElementSport());
+/////!!!! TRY WITH MAP !! Array.from(element);
 
 // Create new element when clicked for Video
 function addElementVideo() {
