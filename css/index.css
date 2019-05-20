@@ -279,7 +279,7 @@ header nav ul li a {
 .middle-section .registerBox {
   width: 33%;
   height: 50%;
-  background: #ffc107;
+  background: #defcfc;
   color: black;
   top: 50%;
   left: 50%;
@@ -288,6 +288,7 @@ header nav ul li a {
   box-sizing: border-box;
   padding: 7rem 3rem;
   display: none;
+  border-radius: 4rem;
 }
 .middle-section .registerBox .avatar {
   width: 100px;
@@ -316,7 +317,7 @@ header nav ul li a {
   margin-bottom: 2rem;
   border: none;
   border-bottom: 0.1rem solid #fff;
-  background: #f08a5d;
+  background-color: #a6e3e9;
   outline: none;
   height: 40px;
   color: #fff;
