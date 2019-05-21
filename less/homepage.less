@@ -233,24 +233,24 @@
     display: flex;
 
     .tab {
-     .button(@bg-color: #eeeeee);
+     .button(@bg-color: #eeeeee, @radius: 9rem);
       margin: 0 2rem 3rem 0;
-      
       padding: 0.2rem 2rem;
-      font-size: 1.2rem;
+      font-size: 2rem;
      width: 25rem;
      height: 5rem;
       cursor: pointer;
       font-weight: bold;
+      font-family: 'Dancing Script', cursive;
       text-align: center;
 
       &:hover {
         text-decoration: underline;
       }
     }
-
+    
     .active-tab {
-      .animation(@bg-color: #32dbc6);
+      .animation(@bg-color: #deecff);
       color: #333;
       border: 2px solid #333;
     }

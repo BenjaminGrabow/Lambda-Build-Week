@@ -410,22 +410,23 @@ header nav ul li a:hover {
   width: 65%;
   font-size: 1.5em;
   font-weight: 800;
-  border-radius: 1em;
+  border-radius: 9rem;
   font-family: 'Orbitron', sans-serif;
   margin: 0 2rem 3rem 0;
   padding: 0.2rem 2rem;
-  font-size: 1.2rem;
+  font-size: 2rem;
   width: 25rem;
   height: 5rem;
   cursor: pointer;
   font-weight: bold;
+  font-family: 'Dancing Script', cursive;
   text-align: center;
 }
 .tabs .topics .tab:hover {
   text-decoration: underline;
 }
 .tabs .topics .active-tab {
-  background-color: #5de3d2;
+  background-color: #ffffff;
   color: black;
   transition: 0.5 ease-in-out;
   color: #333;
