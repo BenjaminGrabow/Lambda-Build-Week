@@ -92,7 +92,7 @@ class LogInBoxGenerator {
 document.querySelectorAll(".logInBox").forEach(login => new LogInBoxGenerator(login));
 
 // RegisterBoxGenerator
-class RegisterBoxGenerator{
+class RegisterBoxGenerator {
     constructor(registerElement) {
         this.registerElement = registerElement;
         this.createImage();
@@ -106,7 +106,7 @@ class RegisterBoxGenerator{
         this.createParagraph3();
         this.createInput3();
         this.createButton();
-        
+
     }
 
     createImage() {
@@ -129,7 +129,7 @@ class RegisterBoxGenerator{
         this.registerElement.insertAdjacentElement('beforeend', form);
     }
 
-    createParagraph()  {
+    createParagraph() {
         const paragraph = document.createElement("p");
         paragraph.textContent = "Username";
         this.form.insertAdjacentElement('beforeend', paragraph);
@@ -183,7 +183,7 @@ const logInBox = document.querySelector(".logInBox")
 logInButton[2].addEventListener("click", () => {
     registerBox.style.display = "none";
     logInBox.style.display = "block";
-    TweenMax.to(".logInBox", 2, {x:"-50%", ease: Bounce.easeOut});
+    TweenMax.to(".logInBox", 2, { x: "-50%", ease: Bounce.easeOut });
 });
 
 // Show registerBox
@@ -192,83 +192,73 @@ const registerBox = document.querySelector(".registerBox")
 logInButton[3].addEventListener("click", () => {
     logInBox.style.display = "none";
     registerBox.style.display = "block";
-    TweenMax.to(".registerBox", 2, {x:"-50%", ease: Bounce.easeOut});
+    TweenMax.to(".registerBox", 2, { x: "-50%", ease: Bounce.easeOut });
 });
 
 // Carousel
 class Carousel {
     constructor(carouselElement) {
-    this.carouselElement = carouselElement;
-    this.left = carouselElement.querySelector(".left-button");
-    this.right = carouselElement.querySelector(".right-button");
-    this.img = carouselElement.querySelectorAll("img");
-    this.right.addEventListener('click', () => this.rightPicture());
-    this.left.addEventListener('click', () => this.leftPicture());
-    this.index = 0;
-    this.img[0].style.display = "block";
+        this.carouselElement = carouselElement;
+        this.left = carouselElement.querySelector(".left-button");
+        this.right = carouselElement.querySelector(".right-button");
+        this.img = carouselElement.querySelectorAll("img");
+        this.right.addEventListener('click', () => this.rightPicture());
+        this.left.addEventListener('click', () => this.leftPicture());
+        this.index = 0;
+        this.img[0].style.display = "block";
     }
 
     rightPicture() {
-    this.img[this.index].style.display = "none";
-    this.index += 1;
-     
-    if(this.index > 3) {
-    this.index -= 4;
+        this.img[this.index].style.display = "none";
+        this.index += 1;
+        if (this.index > 3) {
+            this.index -= 4;
+        }
+        this.img[this.index].style.display = "block";
     }
-     
-    console.log(this.index)
-    this.img[this.index].style.display = "block";
-    }
-     
+
     leftPicture() {
-    this.img[this.index].style.display = "none";
-    this.index -= 1;
-    if(this.index < 0) {
-    this.index += 4;
+        this.img[this.index].style.display = "none";
+        this.index -= 1;
+        if (this.index < 0) {
+            this.index += 4;
+        }
+        this.img[this.index].style.display = "block";
     }
-    this.img[this.index].style.display = "block";
-    }
-    }
-     
-    let carousel = document.querySelectorAll(".carousel").forEach( el => new Carousel(el));
+}
+
+let carousel = document.querySelectorAll(".carousel").forEach(el => new Carousel(el));
 
 // TAB SECTION
 class TabLink {
-    constructor(tabElement){
-      this.tabElement = tabElement;
-      this.tabData = tabElement.dataset.tab;
-      this.cards = document.querySelectorAll(`.card[data-tab="${this.tabData}"]`);
-      this.cards = Array.from(this.cards).map(card => new TabCard(card))
-      this.tabElement.addEventListener("click", () => this.selectTab());
-    }
-  
-    selectTab(){
-      const tabs = document.querySelectorAll(".tab");
-      tabs.forEach(tab => tab.classList.remove("active-tab"));
-      const cards = document.querySelectorAll(".card");
-      cards.forEach(card => card.style.display = "none");
-      this.tabElement.classList.add("active-tab");
-      this.cards.forEach(card => card.selectCard());
-    }
-  }
-  
-  class TabCard {
-    constructor(cardElement){
-      this.cardElement = cardElement;
+    constructor(tabElement) {
+        this.tabElement = tabElement;
+        this.tabData = tabElement.dataset.tab;
+        this.cards = document.querySelectorAll(`.card[data-tab="${this.tabData}"]`);
+        this.cards = Array.from(this.cards).map(card => new TabCard(card))
+        this.tabElement.addEventListener("click", () => this.selectTab());
     }
 
-    selectCard(){
-      const cardsContainer = document.querySelector(".cards-container");
-      cardsContainer.style.display = "flex";
-      this.cardElement.style.display = "flex";
+    selectTab() {
+        const tabs = document.querySelectorAll(".tab");
+        tabs.forEach(tab => tab.classList.remove("active-tab"));
+        const cards = document.querySelectorAll(".card");
+        cards.forEach(card => card.style.display = "none");
+        this.tabElement.classList.add("active-tab");
+        this.cards.forEach(card => card.selectCard());
     }
-  }
-  
-  let tabs = document.querySelectorAll(".tab").forEach(tab => new TabLink(tab));
+}
 
-  const docWidth = document.documentElement.offsetWidth;
-[].forEach.call(document.querySelectorAll('*'), (el) => {
-  if (el.offsetWidth > docWidth) {
-    console.log(el);
-  }
-});
+class TabCard {
+    constructor(cardElement) {
+        this.cardElement = cardElement;
+    }
+
+    selectCard() {
+        const cardsContainer = document.querySelector(".cards-container");
+        cardsContainer.style.display = "flex";
+        this.cardElement.style.display = "flex";
+    }
+}
+
+let tabs = document.querySelectorAll(".tab").forEach(tab => new TabLink(tab));

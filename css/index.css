@@ -154,13 +154,17 @@ p {
   font-size: 1.6rem;
   line-height: 1.4;
 }
-body {
-  max-width: 1200px;
+.container {
+  max-width: 2200px;
   width: 100%;
-  margin: 0 auto;
 }
 header {
   display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
 }
 header img {
   height: 15rem;
@@ -349,14 +353,9 @@ header nav ul li a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 500px;
+  height: 90vh;
   position: relative;
   overflow: hidden;
-}
-@media (min-width: 1200px) {
-  .carousel {
-    width: 1200px;
-  }
 }
 .carousel .left-button,
 .carousel .right-button {
@@ -388,7 +387,7 @@ header nav ul li a:hover {
   transform: translate(0, -50%);
 }
 .carousel img {
-  height: 500px;
+  height: 100%;
   width: 100%;
   display: none;
 }
@@ -542,6 +541,7 @@ header nav ul li a:hover {
 .middle-sectionTravel .list,
 .middle-sectionLearning .list,
 .middle-sectionBusiness .list {
+  margin-top: 20rem;
   width: 80%;
   /* Set all odd list items to a different color (zebra-stripes) */
   /* Clear floats after the header */
