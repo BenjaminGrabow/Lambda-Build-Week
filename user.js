@@ -42,30 +42,31 @@ myNodelist.forEach(el => {
 const close = document.querySelectorAll(".close");
 close.forEach(el => el.addEventListener("click", () => el.parentElement.style.display = "none"));
 
-
 // Create element when add button get clicked
 const addBtn = document.querySelectorAll(".addBtn");
 addBtn.forEach((button) => button.addEventListener("click", (event) => {
-// Get every add button and loop through -> add to each add button the event listener
+  // Get every add button and loop through -> add to each add button the event listener
   let inputElement = event.currentTarget.parentNode.children[2].value;
-// safe what you wrote in the input element
+  // safe what you wrote in the input element
   let inputClass = event.currentTarget.parentNode.children[2];
-// Get the input element 
+  // Get the input element 
   let inputClassName = inputClass.getAttribute('class');
-// Get the input element class
+  // Get the input element class
   let li = document.createElement("li");
-// create a new li element which get's later added to the unordered list
+  // create a new li element which get's later added to the unordered list
   let EveryInputElement = document.querySelectorAll(`.${inputClassName}`);
-// get every input element
+  // get every input element
   let liValue;
   let uLTarget = event.target.parentNode.parentNode.children[1];
-// Get the unordered list element where the li element gets appended
+  // Get the unordered list element where the li element gets appended
+
   EveryInputElement.forEach((currentvalue) => { liValue = li.textContent = currentvalue.value; })
-// The for each method loops through every input element and the actual input which is written down get's assigned to the liValue variable
+  // The for each method loops through every input element and the actual input which is written down get's assigned to the liValue variable
   let uLClassName = uLTarget.getAttribute('class');
-// Get from the unordered list the class
+  // Get from the unordered list the class
+
   if (liValue === inputElement && liValue === "") {
-// if the actual liValue is the inputElement (without the line it would alert every time) and if the liValue is empty make a alert
+    // if the actual liValue is the inputElement (without the line it would alert every time) and if the liValue is empty make a alert
     alert("You must write something!");
   } else {
     li.textContent = inputElement;
@@ -73,32 +74,18 @@ addBtn.forEach((button) => button.addEventListener("click", (event) => {
     document.querySelector(`.${uLClassName}`).appendChild(li);
     // append the the li element with the textcontent to the current unordered list
     document.querySelectorAll(".input").forEach(input => input.value = '');
-    // make the inpt field empty again
+    // make the input field empty again
+
+    const button = document.createElement("button");
+    // create a new button
+    button.textContent = "X";
+    // make the textcontent to a x for style reason 
+    button.className = "close";
+    // add the class close to the button
+    li.appendChild(button);
+    // append the button to the new created li element
+    const close = document.querySelectorAll(".close");
+    close.forEach(el => el.addEventListener("click", () => el.parentElement.style.display = "none"));
+    // loop through all close buttons and add the eventlistener -> when the button get's clicked make the li element with the close button away
   }
 }));
-
-// // Create new element when clicked for Business
-// function addElementBusiness() {
-//   const li = document.createElement("li");
-//   const inputValue = document.querySelector(".inputBusiness").value;
-//   li.textContent = inputValue;
-
-//   if (inputValue === '') {
-//     alert("You must write something!");
-//   } else {
-//     document.querySelector(".uLBusiness").appendChild(li);
-//   }
-//   document.querySelector(".inputBusiness").value = "";
-
-
-//   const button = document.createElement("button");
-//   button.textContent = "X";
-//   button.className = "close";
-//   li.appendChild(button);
-
-//   const close = document.querySelectorAll(".close");
-//   close.forEach(el => el.addEventListener("click", () => el.parentElement.style.display = "none"));
-// }
-
-// const addBtnBusiness = document.querySelector(".addBtnBusiness");
-// addBtnBusiness.addEventListener("click", () => addElementBusiness());
