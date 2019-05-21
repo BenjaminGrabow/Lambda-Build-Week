@@ -266,6 +266,7 @@ let tabs = document.querySelectorAll(".tab").forEach(tab => new TabLink(tab));
 // Subcribe effect 
 const subcribe = document.querySelector(".button-Subcribe");
 subcribe.addEventListener("click", () => {
-    TweenMax.to(".button-Subcribe", 5, { x: "-110%", ease: Bounce.easeOut });
+    TweenMax.to(".button-Subcribe", 10, { x: "-80%", ease: Bounce.easeOut });
     subcribe.value = "Thank you";
+    subcribe.style.width = "25%";
 });
