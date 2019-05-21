@@ -329,37 +329,63 @@ addBtnBusiness.addEventListener("click", () => addElementBusiness());
 
 
 // !!!!!!!!! GO BACK BUTTON !!!!!!!!!
-const goBackBtn = document.querySelectorAll(".goBackBtn");
-goBackBtnSport.forEach(button => button.addEventListener('click', () => {
-if( listSport.style.display = "flex"){
+const goBackBtnSport = document.querySelector(".goBackBtnSport");
+goBackBtnSport.addEventListener("click", () => {
   listSport.style.display = "none";
   buttonSection.style.display = "flex";
-} else if(listVideo.style.display = "flex"){
+});
+
+const goBackBtnVideo = document.querySelector(".goBackBtnVideo");
+goBackBtnVideo.addEventListener("click", () => {
   listVideo.style.display = "none";
   buttonSection.style.display = "flex";
-} else if(listMakeup.style.display = "flex"){
+});
+
+
+const goBackBtnMakeup = document.querySelector(".goBackBtnMakeup");
+goBackBtnMakeup.addEventListener("click", () => {
   listMakeup.style.display = "none";
   buttonSection.style.display = "flex";
-} else if(listMovie.style.display = "flex"){
+});
+
+const goBackBtnMovie = document.querySelector(".goBackBtnMovie");
+goBackBtnMovie.addEventListener("click", () => {
   listMovie.style.display = "none";
   buttonSection.style.display = "flex";
-} else if(listParty.style.display = "none"){
+});
+
+const goBackBtnParty = document.querySelector(".goBackBtnParty");
+goBackBtnParty.addEventListener("click", () => {
   listParty.style.display = "none";
   buttonSection.style.display = "flex";
-} else if( listOutdoor.style.display = "flex"){
+});
+
+const goBackBtnOutdoor = document.querySelector(".goBackBtnOutdoor");
+goBackBtnOutdoor.addEventListener("click", () => {
   listOutdoor.style.display = "none";
   buttonSection.style.display = "flex";
-} else if(listAdventure.style.display = "flex"){
+});
+
+const goBackBtnAdventure = document.querySelector(".goBackBtnAdventure");
+goBackBtnAdventure.addEventListener("click", () => {
   listAdventure.style.display = "none";
   buttonSection.style.display = "flex";
-} else if(listTravel.style.display = "flex"){
+});
+
+const goBackBtnTravel = document.querySelector(".goBackBtnTravel");
+goBackBtnTravel.addEventListener("click", () => {
   listTravel.style.display = "none";
   buttonSection.style.display = "flex";
-} else if( listLearning.style.display = "flex"){
+});
+
+const goBackBtnLearning = document.querySelector(".goBackBtnLearning");
+goBackBtnLearning.addEventListener("click", () => {
   listLearning.style.display = "none";
   buttonSection.style.display = "flex";
-} else if(listBusiness.style.display = "flex"){
+});
+
+const goBackBtnBusiness = document.querySelector(".goBackBtnBusiness");
+goBackBtnBusiness.addEventListener("click", () => {
   listBusiness.style.display = "none";
   buttonSection.style.display = "flex";
-}
-}));
+});
