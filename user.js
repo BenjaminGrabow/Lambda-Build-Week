@@ -15,34 +15,24 @@ const buttonSection = document.querySelector(".categories");
 buttons.forEach((button) => button.addEventListener('click', (event) => {
   buttonSection.style.display = "none";
  if(event.target.textContent === "Sport"){
-  listSport.style.display = "block";
   listSport.style.display = "flex";
  } else if(event.target.textContent === "Video-Game"){
-  listVideo.style.display = "block";
   listVideo.style.display = "flex";
  } else if(event.target.textContent === "Makeup"){
-  listMakeup.style.display = "block";
   listMakeup.style.display = "flex";
  } else if(event.target.textContent === "Movie"){
-  listMovie.style.display = "block";
   listMovie.style.display = "flex";
  } else if(event.target.textContent === "Party"){
-  listParty.style.display = "block";
   listParty.style.display = "flex";
  } else if(event.target.textContent === "Outdoor"){
-  listOutdoor.style.display = "block";
   listOutdoor.style.display = "flex";
  } else if(event.target.textContent === "Adventure"){
-  listAdventure.style.display = "block";
   listAdventure.style.display = "flex";
  } else if(event.target.textContent === "Travel"){
-  listTravel.style.display = "block";
   listTravel.style.display = "flex";
  } else if(event.target.textContent === "Learning"){
-  listLearning.style.display = "block";
   listLearning.style.display = "flex";
  } else if(event.target.textContent === "Business"){
-  listBusiness.style.display = "block";
   listBusiness.style.display = "flex";
  }
 }));
