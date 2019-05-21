@@ -199,8 +199,8 @@ header nav ul li a {
 }
 header nav ul li a:hover {
   cursor: pointer;
-  background: #defcfc;
   text-decoration: underline;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
 }
 .middle-section {
   /* LOGINBOX */
@@ -423,6 +423,7 @@ header nav ul li a:hover {
 }
 .tabs .topics .tab:hover {
   text-decoration: underline;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
 }
 .tabs .topics .active-tab {
   background-color: #ffffff;
@@ -480,6 +481,7 @@ header nav ul li a:hover {
   flex-direction: column;
   align-items: center;
   margin: 13rem 0 2rem 0;
+  /* Set all odd list items to a different color */
 }
 .categories h2 {
   font-family: 'Archivo Black', sans-serif;
@@ -510,26 +512,23 @@ header nav ul li a:hover {
   background-color: #e52a4a;
   color: black;
   transition: 0.5 ease-in-out;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
 }
-.categories .btn2,
-.categories .btn4,
-.categories .btn6,
-.categories .btn8,
-.categories .btn10 {
+.categories .btn:nth-child(odd) {
   background-color: #eaeaea;
 }
-.middle-section {
+.middle-section1 {
   display: none;
   flex-direction: column;
   align-items: center;
 }
-.middle-section .list {
+.middle-section1 .list {
   margin-top: 20rem;
   width: 80%;
-  /* Set all odd list items to a different color (zebra-stripes) */
+  /* Set all odd list items to a different color */
   /* Clear floats after the header */
 }
-.middle-section .list ul li {
+.middle-section1 .list ul li {
   cursor: pointer;
   position: relative;
   padding: 1.2rem 0.8rem 1.2rem 4rem;
@@ -537,42 +536,42 @@ header nav ul li a:hover {
   font-size: 1.8rem;
   font-family: 'Archivo Black', sans-serif;
 }
-.middle-section .list ul li:nth-child(odd) {
+.middle-section1 .list ul li:nth-child(odd) {
   background: #a6e3e9;
 }
-.middle-section .list ul li:nth-child(odd):hover {
+.middle-section1 .list ul li:nth-child(odd):hover {
   background: #ddd;
 }
-.middle-section .list .close {
+.middle-section1 .list .close {
   position: absolute;
   right: 0;
   top: 0;
   padding: 1.2rem 1.6rem 1.2rem 1.6rem;
 }
-.middle-section .list .close:hover {
+.middle-section1 .list .close:hover {
   background-color: #f44336;
   color: white;
 }
-.middle-section .list .header {
+.middle-section1 .list .header {
   background-color: #defcfc;
   padding: 3rem 4rem;
   text-align: center;
 }
-.middle-section .list .header h2 {
+.middle-section1 .list .header h2 {
   font-family: 'Orbitron', sans-serif;
   color: black;
   margin-bottom: 1rem;
 }
-.middle-section .list .header h3 {
+.middle-section1 .list .header h3 {
   font-family: 'Orbitron', sans-serif;
   margin: 0.7rem 0;
 }
-.middle-section .list .header:after {
+.middle-section1 .list .header:after {
   content: "";
   display: table;
   clear: both;
 }
-.middle-section .list input {
+.middle-section1 .list input {
   margin: 0;
   border: none;
   border-radius: 0;
@@ -581,7 +580,7 @@ header nav ul li a:hover {
   float: left;
   font-size: 1.6rem;
 }
-.middle-section .list .addBtn {
+.middle-section1 .list .addBtn {
   padding: 1rem;
   width: 25%;
   background: #d9d9d9;
@@ -592,14 +591,14 @@ header nav ul li a:hover {
   cursor: pointer;
   border-radius: 0;
 }
-.middle-section .list .addBtn:hover {
+.middle-section1 .list .addBtn:hover {
   background-color: #bbb;
 }
-.middle-section .list .goBack {
+.middle-section1 .list .goBack {
   display: flex;
   justify-content: center;
 }
-.middle-section .list .goBack .goBackBtn {
+.middle-section1 .list .goBack .goBackBtn {
   color: black;
   background-color: #eaeaea;
   width: 65%;
@@ -615,13 +614,13 @@ header nav ul li a:hover {
   cursor: pointer;
 }
 @media (max-width: 500px) {
-  .middle-section .list .goBack .goBackBtn {
+  .middle-section1 .list .goBack .goBackBtn {
     margin-bottom: 1.5rem;
     height: 5em;
     width: 100%;
   }
 }
-.middle-section .list .goBack .goBackBtn:hover {
+.middle-section1 .list .goBack .goBackBtn:hover {
   background-color: #e52a4a;
   color: black;
   transition: 0.5 ease-in-out;
@@ -1495,7 +1494,7 @@ footer #wrapper {
   margin: 0rem;
   display: flex;
   align-self: center;
-  margin: 0 0 3rem 0;
+  margin: 1rem 0 3.5rem 0;
 }
 footer #wrapper .box {
   width: 25%;
@@ -1566,15 +1565,18 @@ footer .newsletter .newsletter-container2 #mail {
 footer .newsletter .newsletter-container2 .button-Subcribe {
   background-color: #00aee9;
   border: 0;
-  border-radius: 27px;
+  border-radius: 2.7rem;
   color: #fff;
-  height: 56px;
-  padding: 0 25px;
+  height: 5.6rem;
+  padding: 0 2.5rem;
   position: absolute;
   left: 56%;
+  font-family: 'Dancing Script', cursive;
+  width: 10%;
+  font-size: 2rem;
 }
 footer .newsletter .newsletter-container2 .button-Subcribe:hover {
-  background: black;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
 }
 footer .copyright {
   font-family: 'Orbitron', sans-serif;

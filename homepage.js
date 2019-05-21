@@ -238,7 +238,7 @@ class TabLink {
         this.cards = Array.from(this.cards).map(card => new TabCard(card))
         this.tabElement.addEventListener("click", () => this.selectTab());
     }
-
+    
     selectTab() {
         const tabs = document.querySelectorAll(".tab");
         tabs.forEach(tab => tab.classList.remove("active-tab"));
@@ -253,7 +253,7 @@ class TabCard {
     constructor(cardElement) {
         this.cardElement = cardElement;
     }
-
+    
     selectCard() {
         const cardsContainer = document.querySelector(".cards-container");
         cardsContainer.style.display = "flex";

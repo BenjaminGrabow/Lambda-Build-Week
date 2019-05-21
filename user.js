@@ -1,5 +1,5 @@
 const buttons = document.querySelectorAll(".btn");
-const lists = document.querySelectorAll(".middle-section");
+const lists = document.querySelectorAll(".middle-section1");
 const buttonSection = document.querySelector(".categories");
 
 //Show me the list if I click on the category button
