@@ -265,3 +265,10 @@ class TabLink {
   }
   
   let tabs = document.querySelectorAll(".tab").forEach(tab => new TabLink(tab));
+
+  const docWidth = document.documentElement.offsetWidth;
+[].forEach.call(document.querySelectorAll('*'), (el) => {
+  if (el.offsetWidth > docWidth) {
+    console.log(el);
+  }
+});
