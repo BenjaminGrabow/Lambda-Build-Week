@@ -1,7 +1,7 @@
 // LogInBoxGenerator 
 class LogInBoxGenerator {
     constructor(logInElement) {
-    // constructor function
+        // constructor function
         this.logInElement = logInElement;
         // assign the loginelement which is the div with the loginBox class to this.loginElement
         this.createImage();
@@ -19,7 +19,7 @@ class LogInBoxGenerator {
         this.createLineBreak();
         this.createAnchor2();
     }
-
+    
     createImage() {
         const image = document.createElement("img");
         // create a img element
@@ -30,13 +30,13 @@ class LogInBoxGenerator {
         this.logInElement.append(image);
         // append the created image to this.loginElement(the div with the class loginBox )
     }
-
+    
     createH1() {
         const h1 = document.createElement("h1");
         h1.textContent = "Login Here";
         this.logInElement.insertAdjacentElement('beforeend', h1);
     }
-
+    
     createForm() {
         const form = document.createElement("form");
         form.classList.add("logInForm");
@@ -44,52 +44,52 @@ class LogInBoxGenerator {
         this.logInElement.insertAdjacentElement('beforeend', form);
         // now we created the form and must assign the form to thisForm to have access to the form in the next methods
     }
-
+    
     createParagraph() {
         const paragraph = document.createElement("p");
         paragraph.textContent = "Username";
         this.form.insertAdjacentElement('beforeend', paragraph);
         // we must now append (append method would also be usable like with that method) the p to the form and not to this.loginBox because we want it to append inside the form
     }
-
+    
     createInput() {
         const input = document.createElement("input");
         input.type = "text";
         input.placeholder = "Enter Username";
         this.form.insertAdjacentElement('beforeend', input);
     }
-
+    
     createParagraph2() {
         const paragraph2 = document.createElement("p");
         paragraph2.textContent = "Password";
         this.form.insertAdjacentElement('beforeend', paragraph2);
     }
-
+    
     createInput2() {
         const input2 = document.createElement("input");
         input2.type = "password";
         input2.placeholder = "Enter Password";
         this.form.insertAdjacentElement('beforeend', input2);
     }
-
+    
     createButton() {
         const button = document.createElement("button");
         button.textContent = "Login"
         this.form.insertAdjacentElement('beforeend', button);
     }
-
+    
     createAnchor() {
         const anchor = document.createElement("a");
         anchor.href = "#";
         anchor.textContent = "Lost your password?";
         this.form.insertAdjacentElement('beforeend', anchor);
     }
-
+    
     createLineBreak() {
         const br = document.createElement("br");
         this.form.insertAdjacentElement('beforeend', br);
     }
-
+    
     createAnchor2() {
         const anchor2 = document.createElement("a");
         anchor2.href = "#";
@@ -100,6 +100,8 @@ class LogInBoxGenerator {
 
 document.querySelectorAll(".logInBox").forEach(login => new LogInBoxGenerator(login));
 // get the loginbox class from the div which is in the html file -> loop through and generate a new loginbox
+// we must have the method where the new LogInBoxGenerator get's created under the constructor function because 
+// the console cannot access 'LogInBoxGenerator' before initialization
 
 // RegisterBoxGenerator
 class RegisterBoxGenerator {
@@ -216,36 +218,60 @@ logInButton[3].addEventListener("click", () => {
 // Carousel
 class Carousel {
     constructor(carouselElement) {
+        // constructor function
         this.carouselElement = carouselElement;
+        // assign the element with the carousel function to this carouselElement
+        // In JavaScript, the thing called this is the 
+        // object that "owns" the code. The value of this ,
+        // when used in an object, is the object itself.
+        // In a constructor function this does not have a value.
+        // It is a substitute for the new object.
         this.left = carouselElement.querySelector(".left-button");
+        // assign the element with the class left-button to this element
         this.right = carouselElement.querySelector(".right-button");
+        // same like one line up
         this.img = carouselElement.querySelectorAll("img");
+        // get the images and assign them to this.img
         this.right.addEventListener('click', () => this.rightPicture());
+        //assign to the element with the right-button class a event listener -> if the element get's clicked call the method rightPicture which is down in the method section 
         this.left.addEventListener('click', () => this.leftPicture());
+        // same like one line up
         this.index = 0;
+        // assign to this.index the number 0 to have a index for the methods which we need to get the different images
         this.img[0].style.display = "block";
+        // show at the beginning the first picture
     }
 
     rightPicture() {
         this.img[this.index].style.display = "none";
+        // The current image gets the style display none that get it away from the screen
         this.index += 1;
+        //1 get's added to this.index 
         if (this.index > 3) {
+            // If the index get's higher than 3 (we have only 4 pictures in our case so from 0 started to 3)
             this.index -= 4;
+            // make this.index -4 ( is it than at the start again which is 0 because 4 is the only number which get's triggered in the if statement)
         }
         this.img[this.index].style.display = "block";
+        // if this.index got not added to 4 show us the picture with the current number from this.index
     }
 
     leftPicture() {
         this.img[this.index].style.display = "none";
+        // The current image gets the style display none that get it away from the screen
         this.index -= 1;
+        // -1 gets subtracted from this.index 
         if (this.index < 0) {
             this.index += 4;
+            // if this.index gets smaller than 0 add 4 to this.index
         }
         this.img[this.index].style.display = "block";
+        // if this.index got not subctracted to -1 show us the picture with the current number from this.index
     }
 }
 
 let carousel = document.querySelectorAll(".carousel").forEach(el => new Carousel(el));
+// get the element with the carousel class and loop through with the forEach method
 
 // TAB SECTION
 class TabLink {
