@@ -362,7 +362,22 @@ close.forEach(el => el.addEventListener("click", () => el.parentElement.style.di
 
 // Create element when add button get clicked
 const addBtn = document.querySelectorAll(".addBtn");
+// select all elements with the class addBTN
+const AddIndexForReduceMethod = [0, 0, 0];
+// Added this Index for counting how often the add button got clicked and to get experience with reduce method
 addBtn.forEach((button) => button.addEventListener("click", (event) => {
+    //take the variable addBtb which are the add buttons -> loop through and add on each the event listener
+    AddIndexForReduceMethod.push(1);
+    // push the number 1 to the array AddIndexForReduceMethod if the add button got clicked
+    const addButtonCounter = AddIndexForReduceMethod.reduce((acc, val) => acc + val, 0);
+    // sum all numbers from the pushed array AddIndexForReduceMethod together and assign it to the variable addButtonCounter
+    const paragraph = document.createElement("p");
+    // create element p and assign it to the variable paragraph
+    paragraph.textContent = `You added ${addButtonCounter} items so so far to all your lists`;
+    // assign to the p element the textContent with the actual sum which we got from the reduce method and saved in the variable addButtonCounter
+    paragraph.classList.add("count-Items");
+    // add the classlist count-Items for css reason
+
   // Get every add button and loop through -> add to each add button the event listener
   let inputElement = event.currentTarget.parentNode.children[2].value;
   // safe what you wrote in the input element
@@ -391,6 +406,8 @@ addBtn.forEach((button) => button.addEventListener("click", (event) => {
     // if liValue is not empty assign to the new created li element the textcontent
     document.querySelector(`.${uLClassName}`).appendChild(li);
     // append the the li element with the textcontent to the current unordered list
+    document.querySelector(`.${uLClassName}`).appendChild(paragraph);
+    // append the paragraph with the counted number from the reduce method
     document.querySelectorAll(".input").forEach(input => input.value = '');
     // make the input field empty again
 

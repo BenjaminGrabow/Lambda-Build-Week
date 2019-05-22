@@ -837,6 +837,11 @@ header nav ul li a:hover {
 .middle-section1 .list .addBtn:hover {
   background-color: #bbb;
 }
+.middle-section1 .list .count-Items {
+  font-size: 2rem;
+  font-family: 'Orbitron', sans-serif;
+  text-align: center;
+}
 .middle-section1 .list .goBack {
   display: flex;
   justify-content: center;
