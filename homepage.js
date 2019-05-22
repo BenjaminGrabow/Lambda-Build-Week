@@ -332,20 +332,6 @@ buttons.forEach((button) => button.addEventListener('click', (event) => {
   });
 }));
 
-// When you click on the go back button -> show the category buttons
-const goBackBtn = document.querySelectorAll(".goBackBtn");
-// take every go back button -> loop through and add the eventlistener
-goBackBtn.forEach(button => button.addEventListener('click', () => {
-  //take every list for the category and loop through
-  lists.forEach(list => {
-    // if the list for the current category is visible -> make the list away and show the various category buttons
-    if (list.style.display === 'flex') {
-      list.style.display = "none";
-      buttonSection.style.display = "flex";
-    };
-  });
-}));
-
 // Create a "close" button and append it to each list item
 const myNodelist = document.querySelectorAll(".li");
 
@@ -423,4 +409,22 @@ addBtn.forEach((button) => button.addEventListener("click", (event) => {
     close.forEach(el => el.addEventListener("click", () => el.parentElement.style.display = "none"));
     // loop through all close buttons and add the eventlistener -> when the button get's clicked make the li element with the close button away
   }
+}));
+
+// When you click on the go back button -> show the category buttons
+const goBackBtn = document.querySelectorAll(".goBackBtn");
+const h4 = document.querySelector(".h4");
+// take every go back button -> loop through and add the eventlistener
+goBackBtn.forEach(button => button.addEventListener('click', () => {
+  //take every list for the category and loop through
+  lists.forEach(list => {
+    // if the list for the current category is visible -> make the list away and show the various category buttons
+    if (list.style.display === 'flex') {
+      list.style.display = "none";
+      buttonSection.style.display = "flex";
+      const anotherAddCounter = AddIndexForReduceMethod.reduce((acc, value) => acc + value, 0);
+      h4.textContent = `You added ${anotherAddCounter} items so far`;
+      h4.style.color = "green";
+    };
+  });
 }));

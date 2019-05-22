@@ -727,7 +727,7 @@ header nav ul li a:hover {
   /* Set all odd list items to a different color */
 }
 .categories h2 {
-  font-family: 'Archivo Black', sans-serif;
+  font-family: 'Orbitron', sans-serif;
 }
 .categories .btn {
   color: black;
@@ -759,6 +759,11 @@ header nav ul li a:hover {
 }
 .categories .btn:nth-child(odd) {
   background-color: #eaeaea;
+}
+.categories h4 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2.5rem;
+  color: red;
 }
 .middle-section1 {
   display: none;
