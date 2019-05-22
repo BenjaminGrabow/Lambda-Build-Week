@@ -485,9 +485,13 @@ header nav ul li a:hover {
   margin-top: 25rem;
   font-size: 10rem;
   text-align: center;
+  border-image: linear-gradient(88deg, #00aee9, #69fabd) 5;
+  border-style: solid;
+  border-width: 0 0 3px;
+  padding: 2rem 0;
 }
 .team {
-  margin-top: 20rem;
+  margin-top: 5rem;
 }
 .team .employee1,
 .team .employee2,
@@ -506,18 +510,22 @@ header nav ul li a:hover {
 .team .employee1 .employee img,
 .team .employee2 .employee img,
 .team .employee3 .employee img {
-  width: 5%;
-  height: 50px;
-  border-radius: 20rem;
+  width: 30%;
+  height: 200px;
+  border-radius: 50%;
 }
-.team .employee1 .employee .text h2,
-.team .employee2 .employee .text h2,
-.team .employee3 .employee .text h2 {
+.team .employee1 .employee h2,
+.team .employee2 .employee h2,
+.team .employee3 .employee h2 {
   font-size: 4rem;
+  border-image: linear-gradient(88deg, #00aee9, #69fabd) 5;
+  border-style: solid;
+  border-width: 0 0 3px;
+  padding: 2rem 0;
 }
-.team .employee1 .employee .text p,
-.team .employee2 .employee .text p,
-.team .employee3 .employee .text p {
+.team .employee1 .employee p,
+.team .employee2 .employee p,
+.team .employee3 .employee p {
   font-size: 2.5rem;
 }
 .categories {
