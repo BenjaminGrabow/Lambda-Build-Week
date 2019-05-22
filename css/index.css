@@ -211,10 +211,6 @@ header img {
     display: none;
   }
 }
-header .about a,
-header .user a {
-  color: black;
-}
 header nav {
   align-self: center;
   width: 70%;
