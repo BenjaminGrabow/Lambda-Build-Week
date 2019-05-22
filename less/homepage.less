@@ -17,6 +17,11 @@
     display      : none;
     border-radius: 4rem;
 
+    @media @phone {
+      height: auto;
+      width : 90%;
+    }
+
     .avatar {
       width        : 100px;
       height       : 100px;
@@ -104,6 +109,11 @@
     display      : none;
     border-radius: 4rem;
 
+    @media @phone {
+      height: auto;
+      width : 90%;
+    }
+
     .avatar {
       width        : 100px;
       height       : 100px;
@@ -174,7 +184,7 @@
   position       : relative;
   overflow       : hidden;
 
-  
+
   .left-button,
   .right-button {
     display         : flex;
@@ -187,37 +197,37 @@
     width           : 50px;
     height          : 50px;
     cursor          : pointer;
-    
+
     &:hover {
       color           : #333;
       background-color: #fff;
       border          : 2px solid #333;
     }
   }
-  
+
   .left-button {
     top      : 50%;
     left     : 25px;
     transform: translate(0, -50%);
   }
-  
+
   .right-button {
     top      : 50%;
     right    : 25px;
     transform: translate(0, -50%);
   }
-  
+
   img {
-    height:100%; 
-    width:auto; 
-    display: none;
+    height   : 100%;
+    width    : auto;
+    display  : none;
     max-width: 1200px;
-    height: auto;
+    height   : auto;
 
     @media @phone {
       height: auto;
-      width: 100%;
-  }
+      width : 100%;
+    }
   }
 }
 
@@ -233,17 +243,17 @@
   margin         : 3rem 0 1rem 0;
 
   @media @phone {
-    height: auto;
+    height    : auto;
     margin-top: 0;
-}
+  }
 
   .topics {
     display: flex;
 
     @media @phone {
-      display: flex;
+      display       : flex;
       flex-direction: column;
-  }
+    }
 
     .tab {
       .button(@bg-color: #eeeeee, @radius: 9rem);
@@ -258,11 +268,11 @@
       text-align       : center;
 
       @media @phone {
-        width: 300%;
-        margin: 1rem 0;
-        padding: 0;
+        width     : 300%;
+        margin    : 1rem 0;
+        padding   : 0;
         align-self: center;
-    }
+      }
 
       &:hover {
         text-decoration: underline;
@@ -287,8 +297,8 @@
   margin-top     : 1.6rem;
   flex-wrap      : wrap;
 
-  
-  
+
+
   .card {
     border-bottom   : 0.1rem solid lightgrey;
     background-color: #fff;
@@ -296,26 +306,34 @@
     padding         : 0 2.4rem 2.4rem 2.4rem;
     display         : flex;
     align-self      : center;
-    width: 80%;
+    width           : 100%;
+
+    @media @750px {
+      flex-direction : column;
+      justify-content: center;
+      align-items    : center;
+    }
+
+
     
     @media @phone {
-      flex-direction: column;
+      flex-direction : column;
       justify-content: center;
-    align-items: center;    
-  }
+      align-items    : center;
+    }
 
     .middle-part {
       width: 60%;
 
-      @media @phone {
+      @media @750px {
         width: 100%;
         order: 1;
+      }
     }
-    }
-    
+
     img {
       width : 35rem;
-      height: 30rem;
+      height    : 100%;
       margin: 0 1.5rem;
     }
 
@@ -328,34 +346,35 @@
 
     h4 {
 
-      font-size    : 2.5rem;
-      margin: 1.5rem 0;
+      font-size  : 2.5rem;
+      margin     : 1.5rem 0;
       font-family: 'Orbitron', sans-serif;
     }
 
     p {
-      padding  : 1rem 1rem 1rem 0;
-      font-size: 2.5rem;
+      padding    : 1rem 1rem 1rem 0;
+      font-size  : 2.5rem;
       font-family: 'Nunito', sans-serif;
 
     }
 
+  
     ul {
-      list-style-type: disc; 
-      list-style-position: inside; 
-      font-size: 2.5rem;
-      font-family: 'Nunito', sans-serif;
-      color    : #000;
-      padding  : 1rem 1rem 1rem 0;
+      list-style-type    : disc;
+      list-style-position: inside;
+      font-size          : 2.5rem;
+      font-family        : 'Nunito', sans-serif;
+      color              : #000;
+      padding            : 1rem 1rem 1rem 0;
     }
 
     ol {
-      font-family: 'Nunito', sans-serif;
-      list-style-type: decimal; 
-      list-style-position: inside; 
-      font-size: 2.5rem;
-      color    : #000;
-      padding  : 1rem 1rem 1rem 0;
+      font-family        : 'Nunito', sans-serif;
+      list-style-type    : decimal;
+      list-style-position: inside;
+      font-size          : 2.5rem;
+      color              : #000;
+      padding            : 1rem 1rem 1rem 0;
     }
 
     li {
@@ -368,81 +387,79 @@
 .container {
   max-width: 1200px;
 
-.heading-about {
+  .heading-about {
 
-  h1 {
-    font-family: 'Nunito', sans-serif;
-    margin-top  : 20rem;
-    font-size   : 8rem;
-    text-align  : center;
-    border-image: linear-gradient(88deg, #00aee9, #69fabd) 5;
-    border-style: solid;
-    border-width: 0 0 3px;
-    padding     : 2rem 0;
-
-    @media @630px {
-      margin: 0;
-      font-size: 5rem;
-  }
-  }
-}
-
-.team {
-  margin-top: 5rem;
-  
-  .employee1,
-  .employee2,
-  .employee3 {
-    display        : flex;
-    justify-content: center;
-    align-items    : baseline;
-
-    @media @630px {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-  }
-    
-    .employee {
-      width          : 35%;
-      display        : flex;
-      flex-direction : column;
-      justify-content: center;
-      align-items    : center;
-      margin         : 2rem 6rem;
+    h1 {
+      font-family : 'Nunito', sans-serif;
+      margin-top  : 20rem;
+      font-size   : 8rem;
+      text-align  : center;
+      border-image: linear-gradient(88deg, #00aee9, #69fabd) 5;
+      border-style: solid;
+      border-width: 0 0 3px;
+      padding     : 2rem 0;
 
       @media @630px {
-        width: 100%;
-        text-align: center;
+        margin   : 0;
+        font-size: 5rem;
+      }
     }
-      
-      img {
-        width        : 70%;
-        height       : 240px;
-        border-radius: 50%;
-      }
-      
-      h2 {
-        font-family: 'Bree Serif', serif;
-        
-        font-size   : 4rem;
-        border-image: linear-gradient(88deg, #00aee9, #69fabd) 5;
-        border-style: solid;
-        border-width: 0 0 3px;
-        padding     : 2rem 0;
-      }
+  }
 
-      p {
-        margin: 1rem;
-        font-size: 2.5rem;
+  .team {
+    margin-top: 5rem;
 
+    .employee1,
+    .employee2,
+    .employee3 {
+      display        : flex;
+      justify-content: center;
+      align-items    : baseline;
+
+      @media @630px {
+        display       : flex;
+        flex-direction: column;
+        align-items   : center;
       }
 
+      .employee {
+        width          : 35%;
+        display        : flex;
+        flex-direction : column;
+        justify-content: center;
+        align-items    : center;
+        margin         : 2rem 6rem;
 
+        @media @630px {
+          width     : 100%;
+          text-align: center;
+        }
+
+        img {
+          width        : 70%;
+          height       : 240px;
+          border-radius: 50%;
+        }
+
+        h2 {
+          font-family: 'Bree Serif', serif;
+
+          font-size   : 4rem;
+          border-image: linear-gradient(88deg, #00aee9, #69fabd) 5;
+          border-style: solid;
+          border-width: 0 0 3px;
+          padding     : 2rem 0;
+        }
+
+        p {
+          margin   : 1rem;
+          font-size: 2.5rem;
+        }
+      }
     }
   }
 }
-}
+
 // Userpage / user.html
 // buttons for various categories
 .categories {
