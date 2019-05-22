@@ -12,6 +12,14 @@ footer {
         align-self: center;
         margin    : 1rem 0 3.5rem 0;
 
+        @media @phone {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            margin: 1rem 0;;
+            height: auto;
+        }
+
         .box {
             width        : 25%;
             height       : 50px;
@@ -71,6 +79,12 @@ footer {
         border-radius   : 4rem;
         width           : 100%;
 
+        @media @phone {
+            display: flex;
+           flex-direction: column;
+            width: 100%;
+        }
+
             h3 {
                 color : white;
                 margin: 0 0 2rem 0;
@@ -80,6 +94,10 @@ footer {
             .newsletter-container2 {
                 margin-left: 14rem;
 
+                @media @phone {
+                    margin: 0;
+                }
+
                 #mail {
                     border-radius: 2.7rem;
                     font-size    : 1.6rem;
@@ -87,6 +105,12 @@ footer {
                     height       : 5.6rem;
                     outline      : none;
                     padding      : 0 16rem 0 2.3rem;
+
+                    @media @phone {
+                        width: 90%;
+                        font-size: 1.2rem;
+                        height: 7rem;
+                    }
                 }
 
                 .button-Subcribe {
@@ -102,6 +126,13 @@ footer {
                     width: 10%;
                     font-size: 2.5rem;
                     text-align: center;
+
+                    @media @phone {
+                        left: 70%;
+                        font-size: 1.2rem;
+                        height: 7rem;
+                        width: 40%;
+                    }
 
                     &:hover {
                         box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .5);

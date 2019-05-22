@@ -225,7 +225,7 @@ header nav ul {
   header nav ul {
     display: flex;
     flex-direction: column;
-    padding: 1rem 0 2.5rem 0;
+    padding: 0 0 2.5rem 0;
   }
 }
 header nav ul li {
@@ -1657,6 +1657,15 @@ footer #wrapper {
   align-self: center;
   margin: 1rem 0 3.5rem 0;
 }
+@media (max-width: 500px) {
+  footer #wrapper {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: 1rem 0;
+    height: auto;
+  }
+}
 footer #wrapper .box {
   width: 25%;
   height: 50px;
@@ -1708,6 +1717,13 @@ footer .newsletter {
   border-radius: 4rem;
   width: 100%;
 }
+@media (max-width: 500px) {
+  footer .newsletter {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+}
 footer .newsletter h3 {
   color: white;
   margin: 0 0 2rem 0;
@@ -1716,6 +1732,11 @@ footer .newsletter h3 {
 footer .newsletter .newsletter-container2 {
   margin-left: 14rem;
 }
+@media (max-width: 500px) {
+  footer .newsletter .newsletter-container2 {
+    margin: 0;
+  }
+}
 footer .newsletter .newsletter-container2 #mail {
   border-radius: 2.7rem;
   font-size: 1.6rem;
@@ -1723,6 +1744,13 @@ footer .newsletter .newsletter-container2 #mail {
   height: 5.6rem;
   outline: none;
   padding: 0 16rem 0 2.3rem;
+}
+@media (max-width: 500px) {
+  footer .newsletter .newsletter-container2 #mail {
+    width: 90%;
+    font-size: 1.2rem;
+    height: 7rem;
+  }
 }
 footer .newsletter .newsletter-container2 .button-Subcribe {
   background-color: #00aee9;
@@ -1737,6 +1765,14 @@ footer .newsletter .newsletter-container2 .button-Subcribe {
   width: 10%;
   font-size: 2.5rem;
   text-align: center;
+}
+@media (max-width: 500px) {
+  footer .newsletter .newsletter-container2 .button-Subcribe {
+    left: 70%;
+    font-size: 1.2rem;
+    height: 7rem;
+    width: 40%;
+  }
 }
 footer .newsletter .newsletter-container2 .button-Subcribe:hover {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
