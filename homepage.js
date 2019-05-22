@@ -1,11 +1,15 @@
 // LogInBoxGenerator 
 class LogInBoxGenerator {
     constructor(logInElement) {
+    // constructor function
         this.logInElement = logInElement;
+        // assign the loginelement which is the div with the loginBox class to this.loginElement
         this.createImage();
+        // call the createImage method which is in the method section of the LogInBoxGenerator
         this.createH1();
         this.createForm();
         this.form = document.querySelector(".logInForm");
+        // when the form got created from the createForm method -> assign it to this.form with a querySelector to get access to the form element for the next methods
         this.createParagraph();
         this.createInput();
         this.createParagraph2();
@@ -18,9 +22,13 @@ class LogInBoxGenerator {
 
     createImage() {
         const image = document.createElement("img");
+        // create a img element
         image.src = "/pictures/Top4.png";
+        // assign to the image the src
         image.classList.add("avatar");
+        // add the class "avatar" to the image
         this.logInElement.append(image);
+        // append the created image to this.loginElement(the div with the class loginBox )
     }
 
     createH1() {
@@ -34,12 +42,14 @@ class LogInBoxGenerator {
         form.classList.add("logInForm");
         form.action = "user.html";
         this.logInElement.insertAdjacentElement('beforeend', form);
+        // now we created the form and must assign the form to thisForm to have access to the form in the next methods
     }
 
     createParagraph() {
         const paragraph = document.createElement("p");
         paragraph.textContent = "Username";
         this.form.insertAdjacentElement('beforeend', paragraph);
+        // we must now append (append method would also be usable like with that method) the p to the form and not to this.loginBox because we want it to append inside the form
     }
 
     createInput() {
@@ -89,10 +99,12 @@ class LogInBoxGenerator {
 }
 
 document.querySelectorAll(".logInBox").forEach(login => new LogInBoxGenerator(login));
+// get the loginbox class from the div which is in the html file -> loop through and generate a new loginbox
 
 // RegisterBoxGenerator
 class RegisterBoxGenerator {
     constructor(registerElement) {
+        // same use like with the LogInBoxGenerator at the top
         this.registerElement = registerElement;
         this.createImage();
         this.createH1();
@@ -177,14 +189,22 @@ document.querySelectorAll(".registerBox").forEach(register => new RegisterBoxGen
 
 // Show loginBox
 const logInButton = document.querySelectorAll("a");
-const logInBox = document.querySelector(".logInBox")
+// get every a element and assign it to loginButton 
+const logInBox = document.querySelector(".logInBox");
+// get the the element with the class loginBox and assign it to logInBox
 logInButton[2].addEventListener("click", () => {
+    // we take the third a element ([2]) and give the element a event listener (when a element get's clicked)
     registerBox.style.display = "none";
+    // if the third a element get's clicked assign to the element which have the class registerBox the style display none to get it out of the window
     logInBox.style.display = "block";
+    // also give the element with the class logInbox the style display block so you can see it
     TweenMax.to(".logInBox", 2, { x: "-50%", ease: Bounce.easeOut });
+    // GSAP effect : the element is in default (from the CSS outside the window and on the y axis -50% which is the middle on the y axis on the page)
+    // now make the element to the position x axis : -50% which is also the middle of the page on the x axis
 });
 
 // Show registerBox
+// same logic like with the logInBox up
 const registerButton = document.querySelectorAll("a");
 const registerBox = document.querySelector(".registerBox")
 logInButton[3].addEventListener("click", () => {
