@@ -172,6 +172,8 @@ header {
 @media (max-width: 630px) {
   header {
     position: static;
+    display: flex;
+    flex-direction: column;
   }
 }
 header img {
@@ -193,15 +195,23 @@ header img {
     display: none;
   }
 }
+@media (max-width: 630px) {
+  header img {
+    display: flex;
+    order: -1;
+    align-self: center;
+    width: 50%;
+    height: 25rem;
+  }
+}
 @media (max-width: 800px) {
   header .logo1 {
     display: none;
   }
 }
-header .about,
-header .user {
-  background: black;
-  border-radius: 5rem;
+header .about a,
+header .user a {
+  color: black;
 }
 header nav {
   align-self: center;
@@ -580,6 +590,7 @@ header nav ul li a:hover {
 @media (max-width: 500px) {
   .cards-container .card .middle-part {
     width: 100%;
+    order: 1;
   }
 }
 .cards-container .card img {

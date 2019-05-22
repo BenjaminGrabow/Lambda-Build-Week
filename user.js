@@ -89,3 +89,11 @@ addBtn.forEach((button) => button.addEventListener("click", (event) => {
     // loop through all close buttons and add the eventlistener -> when the button get's clicked make the li element with the close button away
   }
 }));
+
+// Subcribe effect 
+const subcribe = document.querySelector(".button-Subcribe");
+subcribe.addEventListener("click", () => {
+    TweenMax.to(".button-Subcribe", 10, { x: "-80%", ease: Bounce.easeOut });
+    subcribe.value = "Thank you";
+    subcribe.style.width = "25%";
+});
