@@ -34,6 +34,10 @@ footer {
             margin       : 1rem 3rem 0 4rem;
             transition   : 1s;
 
+            @media @400px {
+                margin: 0;
+            }
+
             &:hover {
                 color     : #fff;
                 transform : scale(1.15);
@@ -85,10 +89,20 @@ footer {
             width: 100%;
         }
 
+        @media @400px {
+            padding: .7rem;
+            height: 40rem;
+        }
+
             h3 {
                 color : white;
                 margin: 0 0 2rem 0;
                 font-family: 'Orbitron', sans-serif;
+
+                @media @400px {
+                    padding: .6rem .4rem 0 .4;
+                    width: 100%;
+                }
             }
 
             .newsletter-container2 {
@@ -110,6 +124,13 @@ footer {
                         width: 90%;
                         font-size: 1.2rem;
                         height: 7rem;
+                    }
+
+                    @media @400px {
+                   padding: 0;
+                   width: 100%;
+                   text-align: center;
+                   font-size: 2.5rem;
                     }
                 }
 
@@ -134,6 +155,14 @@ footer {
                         width: 40%;
                     }
 
+                    @media @400px {
+                        position: relative;
+                        left            : 0;
+                        padding: 0;
+                        width: 100%;
+                        font-size: 2.5rem;
+                    }
+
                     &:hover {
                         box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .5);
                     }
@@ -153,6 +182,10 @@ footer {
         p {
             font-size  : 2.5rem;
             font-weight: bold;
+
+            @media @400px {
+                font-size: 2rem;
+            }
         }
     }
 }

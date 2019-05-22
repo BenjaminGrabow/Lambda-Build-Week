@@ -5,11 +5,13 @@ header {
     left    : 0;
     z-index : 10;
     width   : 100%;
+    background: black;
 
     @media @630px {
         position: static;
         display: flex;
         flex-direction: column;
+        background: white;
     }
 
     img {
@@ -21,7 +23,7 @@ header {
         }
 
         @media @800px {
-            border-radius: 4rem;
+            width: 20%;
         }
 
         @media @700px {
@@ -100,7 +102,7 @@ header {
                 
                 @media @phone {
                     font-size  : 1.7rem;
-                    padding    : 1rem 1.2rem;
+                    padding    : 0 0 1.2rem 0;
                     font-weight: 700;
             }
 

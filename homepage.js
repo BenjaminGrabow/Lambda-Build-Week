@@ -307,13 +307,17 @@ class TabCard {
 
 let tabs = document.querySelectorAll(".tab").forEach(tab => new TabLink(tab));
 
-// Subcribe effect 
+// Subcribe effect for min width of 750px
 const subcribe = document.querySelector(".button-Subcribe");
-subcribe.addEventListener("click", () => {
-    TweenMax.to(".button-Subcribe", 10, { x: "-80%", ease: Bounce.easeOut });
-    subcribe.value = "Thank you";
-    subcribe.style.width = "25%";
-});
+var minWidthforEvent = window.matchMedia("(min-width: 750px)");
+if (minWidthforEvent.matches) {
+    subcribe.addEventListener("click", () => {
+        TweenMax.to(".button-Subcribe", 10, { x: "-80%", ease: Bounce.easeOut });
+        subcribe.value = "Thank you";
+        subcribe.style.width = "25%";
+    });
+}
+
 
 // USERPAGE FUNCTIONALITY
 const buttons = document.querySelectorAll(".btn");

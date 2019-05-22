@@ -168,12 +168,14 @@ header {
   left: 0;
   z-index: 10;
   width: 100%;
+  background: black;
 }
 @media (max-width: 630px) {
   header {
     position: static;
     display: flex;
     flex-direction: column;
+    background: white;
   }
 }
 header img {
@@ -187,7 +189,7 @@ header img {
 }
 @media (max-width: 800px) {
   header img {
-    border-radius: 4rem;
+    width: 20%;
   }
 }
 @media (max-width: 700px) {
@@ -269,7 +271,7 @@ header nav ul li {
 @media (max-width: 500px) {
   header nav ul li {
     font-size: 1.7rem;
-    padding: 1rem 1.2rem;
+    padding: 0 0 1.2rem 0;
     font-weight: 700;
   }
 }
@@ -1772,6 +1774,11 @@ footer #wrapper .box {
   margin: 1rem 3rem 0 4rem;
   transition: 1s;
 }
+@media (max-width: 400px) {
+  footer #wrapper .box {
+    margin: 0;
+  }
+}
 footer #wrapper .box:hover {
   color: #fff;
   transform: scale(1.15);
@@ -1816,10 +1823,22 @@ footer .newsletter {
     width: 100%;
   }
 }
+@media (max-width: 400px) {
+  footer .newsletter {
+    padding: 0.7rem;
+    height: 40rem;
+  }
+}
 footer .newsletter h3 {
   color: white;
   margin: 0 0 2rem 0;
   font-family: 'Orbitron', sans-serif;
+}
+@media (max-width: 400px) {
+  footer .newsletter h3 {
+    padding: 0.6rem 0.4rem 0 0.4;
+    width: 100%;
+  }
 }
 footer .newsletter .newsletter-container2 {
   margin-left: 14rem;
@@ -1844,6 +1863,14 @@ footer .newsletter .newsletter-container2 #mail {
     height: 7rem;
   }
 }
+@media (max-width: 400px) {
+  footer .newsletter .newsletter-container2 #mail {
+    padding: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 2.5rem;
+  }
+}
 footer .newsletter .newsletter-container2 .button-Subcribe {
   background-color: #00aee9;
   border: 0;
@@ -1866,6 +1893,15 @@ footer .newsletter .newsletter-container2 .button-Subcribe {
     width: 40%;
   }
 }
+@media (max-width: 400px) {
+  footer .newsletter .newsletter-container2 .button-Subcribe {
+    position: relative;
+    left: 0;
+    padding: 0;
+    width: 100%;
+    font-size: 2.5rem;
+  }
+}
 footer .newsletter .newsletter-container2 .button-Subcribe:hover {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
 }
@@ -1881,4 +1917,9 @@ footer .copyright {
 footer .copyright p {
   font-size: 2.5rem;
   font-weight: bold;
+}
+@media (max-width: 400px) {
+  footer .copyright p {
+    font-size: 2rem;
+  }
 }
