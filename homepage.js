@@ -19,7 +19,7 @@ class LogInBoxGenerator {
         this.createLineBreak();
         this.createAnchor2();
     }
-    
+
     createImage() {
         const image = document.createElement("img");
         // create a img element
@@ -30,13 +30,13 @@ class LogInBoxGenerator {
         this.logInElement.append(image);
         // append the created image to this.loginElement(the div with the class loginBox )
     }
-    
+
     createH1() {
         const h1 = document.createElement("h1");
         h1.textContent = "Login Here";
         this.logInElement.insertAdjacentElement('beforeend', h1);
     }
-    
+
     createForm() {
         const form = document.createElement("form");
         form.classList.add("logInForm");
@@ -44,52 +44,52 @@ class LogInBoxGenerator {
         this.logInElement.insertAdjacentElement('beforeend', form);
         // now we created the form and must assign the form to thisForm to have access to the form in the next methods
     }
-    
+
     createParagraph() {
         const paragraph = document.createElement("p");
         paragraph.textContent = "Username";
         this.form.insertAdjacentElement('beforeend', paragraph);
         // we must now append (append method would also be usable like with that method) the p to the form and not to this.loginBox because we want it to append inside the form
     }
-    
+
     createInput() {
         const input = document.createElement("input");
         input.type = "text";
         input.placeholder = "Enter Username";
         this.form.insertAdjacentElement('beforeend', input);
     }
-    
+
     createParagraph2() {
         const paragraph2 = document.createElement("p");
         paragraph2.textContent = "Password";
         this.form.insertAdjacentElement('beforeend', paragraph2);
     }
-    
+
     createInput2() {
         const input2 = document.createElement("input");
         input2.type = "password";
         input2.placeholder = "Enter Password";
         this.form.insertAdjacentElement('beforeend', input2);
     }
-    
+
     createButton() {
         const button = document.createElement("button");
         button.textContent = "Login"
         this.form.insertAdjacentElement('beforeend', button);
     }
-    
+
     createAnchor() {
         const anchor = document.createElement("a");
         anchor.href = "#";
         anchor.textContent = "Lost your password?";
         this.form.insertAdjacentElement('beforeend', anchor);
     }
-    
+
     createLineBreak() {
         const br = document.createElement("br");
         this.form.insertAdjacentElement('beforeend', br);
     }
-    
+
     createAnchor2() {
         const anchor2 = document.createElement("a");
         anchor2.href = "#";
@@ -282,7 +282,7 @@ class TabLink {
         this.cards = Array.from(this.cards).map(card => new TabCard(card))
         this.tabElement.addEventListener("click", () => this.selectTab());
     }
-    
+
     selectTab() {
         const tabs = document.querySelectorAll(".tab");
         tabs.forEach(tab => tab.classList.remove("active-tab"));
@@ -297,7 +297,7 @@ class TabCard {
     constructor(cardElement) {
         this.cardElement = cardElement;
     }
-    
+
     selectCard() {
         const cardsContainer = document.querySelector(".cards-container");
         cardsContainer.style.display = "flex";
@@ -322,24 +322,24 @@ const buttonSection = document.querySelector(".categories");
 
 //Show me the list if I click on the category button
 buttons.forEach((button) => button.addEventListener('click', (event) => {
-  // display none to all category buttons
-  buttonSection.style.display = "none";
-  //loop for all list items - assign to current one display flex
-  lists.forEach((list) => {
-    if (list.children[0].children[0].children[1].textContent === event.target.textContent) {
-      list.style.display = "flex";
-    }
-  });
+    // display none to all category buttons
+    buttonSection.style.display = "none";
+    //loop for all list items - assign to current one display flex
+    lists.forEach((list) => {
+        if (list.children[0].children[0].children[1].textContent === event.target.textContent) {
+            list.style.display = "flex";
+        }
+    });
 }));
 
 // Create a "close" button and append it to each list item
 const myNodelist = document.querySelectorAll(".li");
 
 myNodelist.forEach(el => {
-  const button = document.createElement("button");
-  button.classList.add("close");
-  button.textContent = "X";
-  el.appendChild(button);
+    const button = document.createElement("button");
+    button.classList.add("close");
+    button.textContent = "X";
+    el.appendChild(button);
 })
 
 // Click on a close button to hide the current list item
@@ -364,67 +364,71 @@ addBtn.forEach((button) => button.addEventListener("click", (event) => {
     paragraph.classList.add("count-Items");
     // add the classlist count-Items for css reason
 
-  // Get every add button and loop through -> add to each add button the event listener
-  let inputElement = event.currentTarget.parentNode.children[2].value;
-  // safe what you wrote in the input element
-  let inputClass = event.currentTarget.parentNode.children[2];
-  // Get the input element 
-  let inputClassName = inputClass.getAttribute('class');
-  // Get the input element class
-  let li = document.createElement("li");
-  // create a new li element which get's later added to the unordered list
-  let EveryInputElement = document.querySelectorAll(`.${inputClassName}`);
-  // get every input element
-  let liValue;
-  let uLTarget = event.target.parentNode.parentNode.children[1];
-  // Get the unordered list element where the li element gets appended
+    // Get every add button and loop through -> add to each add button the event listener
+    let inputElement = event.currentTarget.parentNode.children[2].value;
+    // safe what you wrote in the input element
+    let inputClass = event.currentTarget.parentNode.children[2];
+    // Get the input element 
+    let inputClassName = inputClass.getAttribute('class');
+    // Get the input element class
+    let li = document.createElement("li");
+    // create a new li element which get's later added to the unordered list
+    let EveryInputElement = document.querySelectorAll(`.${inputClassName}`);
+    // get every input element
+    let liValue;
+    let uLTarget = event.target.parentNode.parentNode.children[1];
+    // Get the unordered list element where the li element gets appended
 
-  EveryInputElement.forEach((currentvalue) => { liValue = li.textContent = currentvalue.value; })
-  // The for each method loops through every input element and the actual input which is written down get's assigned to the liValue variable
-  let uLClassName = uLTarget.getAttribute('class');
-  // Get from the unordered list the class
+    EveryInputElement.forEach((currentvalue) => { liValue = li.textContent = currentvalue.value; })
+    // The for each method loops through every input element and the actual input which is written down get's assigned to the liValue variable
+    let uLClassName = uLTarget.getAttribute('class');
+    // Get from the unordered list the class
 
-  if (liValue === inputElement && liValue === "") {
-    // if the actual liValue is the inputElement (without the line it would alert every time) and if the liValue is empty make a alert
-    alert("You must write something!");
-  } else {
-    li.textContent = inputElement;
-    // if liValue is not empty assign to the new created li element the textcontent
-    document.querySelector(`.${uLClassName}`).appendChild(li);
-    // append the the li element with the textcontent to the current unordered list
-    document.querySelector(`.${uLClassName}`).appendChild(paragraph);
-    // append the paragraph with the counted number from the reduce method
-    document.querySelectorAll(".input").forEach(input => input.value = '');
-    // make the input field empty again
+    if (liValue === inputElement && liValue === "") {
+        // if the actual liValue is the inputElement (without the line it would alert every time) and if the liValue is empty make a alert
+        alert("You must write something!");
+    } else {
+        li.textContent = inputElement;
+        // if liValue is not empty assign to the new created li element the textcontent
+        document.querySelector(`.${uLClassName}`).appendChild(li);
+        // append the the li element with the textcontent to the current unordered list
+        document.querySelector(`.${uLClassName}`).appendChild(paragraph);
+        // append the paragraph with the counted number from the reduce method
+        document.querySelectorAll(".input").forEach(input => input.value = '');
+        // make the input field empty again
 
-    const button = document.createElement("button");
-    // create a new button
-    button.textContent = "X";
-    // make the textcontent to a x for style reason 
-    button.className = "close";
-    // add the class close to the button
-    li.appendChild(button);
-    // append the button to the new created li element
-    const close = document.querySelectorAll(".close");
-    close.forEach(el => el.addEventListener("click", () => el.parentElement.style.display = "none"));
-    // loop through all close buttons and add the eventlistener -> when the button get's clicked make the li element with the close button away
-  }
+        const button = document.createElement("button");
+        // create a new button
+        button.textContent = "X";
+        // make the textcontent to a x for style reason 
+        button.className = "close";
+        // add the class close to the button
+        li.appendChild(button);
+        // append the button to the new created li element
+        const close = document.querySelectorAll(".close");
+        close.forEach(el => el.addEventListener("click", () => el.parentElement.style.display = "none"));
+        // loop through all close buttons and add the eventlistener -> when the button get's clicked make the li element with the close button away
+    }
 }));
 
 // When you click on the go back button -> show the category buttons
 const goBackBtn = document.querySelectorAll(".goBackBtn");
 const h4 = document.querySelector(".h4");
-// take every go back button -> loop through and add the eventlistener
+// take the element with class h4 and assign to h4
 goBackBtn.forEach(button => button.addEventListener('click', () => {
-  //take every list for the category and loop through
-  lists.forEach(list => {
-    // if the list for the current category is visible -> make the list away and show the various category buttons
-    if (list.style.display === 'flex') {
-      list.style.display = "none";
-      buttonSection.style.display = "flex";
-      const anotherAddCounter = AddIndexForReduceMethod.reduce((acc, value) => acc + value, 0);
-      h4.textContent = `You added ${anotherAddCounter} items so far`;
-      h4.style.color = "green";
-    };
-  });
+    // take every go back button -> loop through and add the eventlistener
+    lists.forEach(list => {
+        //take every list for the category and loop through
+        if (list.style.display === 'flex') {
+            list.style.display = "none";
+            buttonSection.style.display = "flex";
+            // if the list for the current category is visible -> make the list away and show the various category buttons
+            const anotherAddCounter = AddIndexForReduceMethod.reduce((acc, value) => acc + value, 0);
+            // sum all numbers from AddIndexForReduceMethod together (on every click on add button the variable gets a 1 added) and assign it to anotherAddCounter
+            h4.textContent = `You added ${anotherAddCounter} items so far`;
+            // change the textcontent from h4 and add the summed number to the text;
+            h4.style.color = "green";
+            // make the color from h4 to green (at the start it is red)
+        };
+    });
 }));
