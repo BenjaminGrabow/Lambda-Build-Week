@@ -154,9 +154,12 @@ p {
   font-size: 1.6rem;
   line-height: 1.4;
 }
+body,
+html,
 .container {
-  max-width: 2200px;
+  max-width: 1200px;
   width: 100%;
+  margin: 0 auto;
 }
 header {
   display: flex;
@@ -167,7 +170,23 @@ header {
   width: 100%;
 }
 header img {
-  height: 15rem;
+  height: 10rem;
+  width: 10%;
+}
+@media (max-width: 900px) {
+  header img {
+    width: 15%;
+  }
+}
+@media (max-width: 800px) {
+  header img {
+    border-radius: 4rem;
+  }
+}
+@media (max-width: 800px) {
+  header .logo1 {
+    display: none;
+  }
 }
 header .about,
 header .user {
@@ -175,7 +194,8 @@ header .user {
   border-radius: 5rem;
 }
 header nav {
-  width: 100%;
+  align-self: center;
+  width: 70%;
   margin: 0 auto;
   display: flex;
   justify-content: center;
@@ -187,9 +207,20 @@ header nav ul {
   flex-direction: row;
 }
 header nav ul li {
-  padding: 1rem 1.7rem;
-  font-size: 4rem;
+  padding: 1rem 0.5rem;
+  font-size: 3rem;
   font-weight: 900;
+}
+@media (max-width: 1000px) {
+  header nav ul li {
+    font-weight: bolder;
+  }
+}
+@media (max-width: 900px) {
+  header nav ul li {
+    font-size: 2.5rem;
+    height: 3rem;
+  }
 }
 @media (max-width: 500px) {
   header nav ul li {
@@ -199,11 +230,20 @@ header nav ul li {
   }
 }
 header nav ul li a {
-  margin: 0 2rem;
-  padding: 0 4rem;
+  padding: 0 2rem;
   text-decoration: none;
   color: white;
   font-family: 'Orbitron', sans-serif;
+}
+@media (max-width: 1000px) {
+  header nav ul li a {
+    padding: 0 2rem;
+  }
+}
+@media (max-width: 1000px) {
+  header nav ul li a {
+    padding: 0 0.5rem;
+  }
 }
 header nav ul li a:hover {
   cursor: pointer;
@@ -396,8 +436,10 @@ header nav ul li a:hover {
 }
 .carousel img {
   height: 100%;
-  width: 100%;
+  width: auto;
   display: none;
+  max-width: 1200px;
+  max-height: 1200px;
 }
 .tabs {
   border-bottom: 1px solid lightgrey;
