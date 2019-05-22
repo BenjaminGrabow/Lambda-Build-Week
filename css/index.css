@@ -177,8 +177,8 @@ header {
   }
 }
 header img {
-  height: 10rem;
-  width: 10%;
+  height: 15rem;
+  width: 12%;
 }
 @media (max-width: 900px) {
   header img {
@@ -633,29 +633,47 @@ header nav ul li a:hover {
 .cards-container .card li {
   margin: 1rem;
 }
-.heading-about h1 {
+.container {
+  max-width: 1200px;
+}
+.container .heading-about h1 {
   font-family: 'Nunito', sans-serif;
   margin-top: 20rem;
-  font-size: 10rem;
+  font-size: 8rem;
   text-align: center;
   border-image: linear-gradient(88deg, #00aee9, #69fabd) 5;
   border-style: solid;
   border-width: 0 0 3px;
   padding: 2rem 0;
 }
-.team {
+@media (max-width: 630px) {
+  .container .heading-about h1 {
+    margin: 0;
+    font-size: 5rem;
+  }
+}
+.container .team {
   margin-top: 5rem;
 }
-.team .employee1,
-.team .employee2,
-.team .employee3 {
+.container .team .employee1,
+.container .team .employee2,
+.container .team .employee3 {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: baseline;
 }
-.team .employee1 .employee,
-.team .employee2 .employee,
-.team .employee3 .employee {
+@media (max-width: 630px) {
+  .container .team .employee1,
+  .container .team .employee2,
+  .container .team .employee3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.container .team .employee1 .employee,
+.container .team .employee2 .employee,
+.container .team .employee3 .employee {
   width: 35%;
   display: flex;
   flex-direction: column;
@@ -663,16 +681,24 @@ header nav ul li a:hover {
   align-items: center;
   margin: 2rem 6rem;
 }
-.team .employee1 .employee img,
-.team .employee2 .employee img,
-.team .employee3 .employee img {
-  width: 40%;
+@media (max-width: 630px) {
+  .container .team .employee1 .employee,
+  .container .team .employee2 .employee,
+  .container .team .employee3 .employee {
+    width: 100%;
+    text-align: center;
+  }
+}
+.container .team .employee1 .employee img,
+.container .team .employee2 .employee img,
+.container .team .employee3 .employee img {
+  width: 70%;
   height: 240px;
   border-radius: 50%;
 }
-.team .employee1 .employee h2,
-.team .employee2 .employee h2,
-.team .employee3 .employee h2 {
+.container .team .employee1 .employee h2,
+.container .team .employee2 .employee h2,
+.container .team .employee3 .employee h2 {
   font-family: 'Bree Serif', serif;
   font-size: 4rem;
   border-image: linear-gradient(88deg, #00aee9, #69fabd) 5;
@@ -680,9 +706,9 @@ header nav ul li a:hover {
   border-width: 0 0 3px;
   padding: 2rem 0;
 }
-.team .employee1 .employee p,
-.team .employee2 .employee p,
-.team .employee3 .employee p {
+.container .team .employee1 .employee p,
+.container .team .employee2 .employee p,
+.container .team .employee3 .employee p {
   margin: 1rem;
   font-size: 2.5rem;
 }
