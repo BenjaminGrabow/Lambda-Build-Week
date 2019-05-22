@@ -444,7 +444,7 @@ header nav ul li a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 90vh;
+  height: auto;
   position: relative;
   overflow: hidden;
 }
@@ -482,7 +482,13 @@ header nav ul li a:hover {
   width: auto;
   display: none;
   max-width: 1200px;
-  max-height: 1200px;
+  height: auto;
+}
+@media (max-width: 500px) {
+  .carousel img {
+    height: auto;
+    width: 100%;
+  }
 }
 .tabs {
   border-bottom: 1px solid lightgrey;
@@ -493,8 +499,20 @@ header nav ul li a:hover {
   height: 47px;
   margin: 3rem 0 1rem 0;
 }
+@media (max-width: 500px) {
+  .tabs {
+    height: auto;
+    margin-top: 0;
+  }
+}
 .tabs .topics {
   display: flex;
+}
+@media (max-width: 500px) {
+  .tabs .topics {
+    display: flex;
+    flex-direction: column;
+  }
 }
 .tabs .topics .tab {
   color: black;
@@ -513,6 +531,14 @@ header nav ul li a:hover {
   font-weight: bold;
   font-family: 'Dancing Script', cursive;
   text-align: center;
+}
+@media (max-width: 500px) {
+  .tabs .topics .tab {
+    width: 300%;
+    margin: 1rem 0;
+    padding: 0;
+    align-self: center;
+  }
 }
 .tabs .topics .tab:hover {
   text-decoration: underline;
@@ -541,8 +567,20 @@ header nav ul li a:hover {
   align-self: center;
   width: 80%;
 }
+@media (max-width: 500px) {
+  .cards-container .card {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
 .cards-container .card .middle-part {
   width: 60%;
+}
+@media (max-width: 500px) {
+  .cards-container .card .middle-part {
+    width: 100%;
+  }
 }
 .cards-container .card img {
   width: 35rem;

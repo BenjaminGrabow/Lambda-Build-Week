@@ -170,7 +170,7 @@
   display        : flex;
   justify-content: center;
   align-items    : center;
-  height         : 90vh;
+  height         : auto;
   position       : relative;
   overflow       : hidden;
 
@@ -212,7 +212,12 @@
     width:auto; 
     display: none;
     max-width: 1200px;
-    max-height: 1200px;
+    height: auto;
+
+    @media @phone {
+      height: auto;
+      width: 100%;
+  }
   }
 }
 
@@ -227,9 +232,18 @@
   height         : 47px;
   margin         : 3rem 0 1rem 0;
 
+  @media @phone {
+    height: auto;
+    margin-top: 0;
+}
 
   .topics {
     display: flex;
+
+    @media @phone {
+      display: flex;
+      flex-direction: column;
+  }
 
     .tab {
       .button(@bg-color: #eeeeee, @radius: 9rem);
@@ -242,6 +256,13 @@
       font-weight      : bold;
       font-family      : 'Dancing Script', cursive;
       text-align       : center;
+
+      @media @phone {
+        width: 300%;
+        margin: 1rem 0;
+        padding: 0;
+        align-self: center;
+    }
 
       &:hover {
         text-decoration: underline;
@@ -266,7 +287,8 @@
   margin-top     : 1.6rem;
   flex-wrap      : wrap;
 
-
+  
+  
   .card {
     border-bottom   : 0.1rem solid lightgrey;
     background-color: #fff;
@@ -275,11 +297,22 @@
     display         : flex;
     align-self      : center;
     width: 80%;
-
-  .middle-part {
-    width: 60%;
+    
+    @media @phone {
+      flex-direction: column;
+      justify-content: center;
+    align-items: center;    
   }
 
+    .middle-part {
+      width: 60%;
+
+      @media @phone {
+        width: 100%;
+        
+    }
+    }
+    
     img {
       width : 35rem;
       height: 30rem;
