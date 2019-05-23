@@ -135,14 +135,9 @@ html {
 }
 html,
 body {
-  color: #5E6164;
-}
-h1,
-h2,
-h3,
-h4,
-h5 {
-  color: #23293B;
+  max-width: 1600px;
+  width: 100%;
+  margin: 0 auto;
 }
 h2 {
   font-size: 3.2rem;
@@ -153,13 +148,6 @@ h3 {
 p {
   font-size: 1.6rem;
   line-height: 1.4;
-}
-body,
-html,
-.container {
-  max-width: 1600px;
-  width: 100%;
-  margin: 0 auto;
 }
 header {
   display: flex;
@@ -356,7 +344,7 @@ header nav ul li a:hover {
   width: 100%;
   margin-bottom: 2rem;
   border: none;
-  border-bottom: 0.1rem solid #fff;
+  border-bottom: 0.1rem solid 'Orbitron', sans-serif;
   background-color: white;
   outline: none;
   height: 40px;
@@ -372,7 +360,7 @@ header nav ul li a:hover {
   outline: none;
   height: 40px;
   background: #fb2525;
-  color: #fff;
+  color: 'Orbitron', sans-serif;
   font-size: 1.8rem;
   border-radius: 2rem;
 }
@@ -442,7 +430,7 @@ header nav ul li a:hover {
   width: 100%;
   margin-bottom: 2rem;
   border: none;
-  border-bottom: 0.1rem solid #fff;
+  border-bottom: 0.1rem solid 'Orbitron', sans-serif;
   background-color: white;
   outline: none;
   height: 40px;
@@ -457,7 +445,7 @@ header nav ul li a:hover {
   outline: none;
   height: 40px;
   background: #fb2525;
-  color: #fff;
+  color: 'Orbitron', sans-serif;
   font-family: 'Orbitron', sans-serif;
   font-size: 1.8rem;
   border-radius: 2rem;
@@ -512,7 +500,7 @@ header nav ul li a:hover {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: #fff;
+  color: 'Orbitron', sans-serif;
   font-size: 8rem;
 }
 .carousel .left-button .left-Arrow:hover {
@@ -529,7 +517,7 @@ header nav ul li a:hover {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: #fff;
+  color: 'Orbitron', sans-serif;
   font-size: 8rem;
   text-shadow: 0.1rem 0.1rem 1rem rgba(0, 0, 0, 0.5);
 }
@@ -652,7 +640,7 @@ header nav ul li a:hover {
 }
 .cards-container .card {
   border-bottom: 0.1rem solid lightgrey;
-  background-color: #fff;
+  background-color: 'Orbitron', sans-serif;
   margin-bottom: 1.6rem;
   padding: 0 2.4rem 2.4rem 2.4rem;
   display: flex;
