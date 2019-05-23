@@ -319,7 +319,6 @@ if (minWidthforEvent.matches) {
     });
 }
 
-
 // USERPAGE FUNCTIONALITY
 const buttons = document.querySelectorAll(".btn");
 const lists = document.querySelectorAll(".middle-section1");
