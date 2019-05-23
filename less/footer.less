@@ -10,7 +10,7 @@ footer {
         display   : flex;
         align-self: center;
         margin    : 1rem 0 3.5rem 0;
-        
+
         @media @900px {
             width: 60%;
         }
@@ -25,7 +25,7 @@ footer {
 
         @media @630px {
             margin: 1.5rem 0 1.5rem 0;
-        width: 100%;
+            width : 100%;
         }
 
         .box {
@@ -92,80 +92,80 @@ footer {
         width           : 100%;
 
         @media @450px {
-            display: flex;
-           flex-direction: column;
-            width: 100%;
-            padding: .7rem;
-            height: 40rem;
+            display       : flex;
+            flex-direction: column;
+            width         : 100%;
+            padding       : .7rem;
+            height        : 40rem;
         }
 
-            h3 {
-                color : white;
-                margin: 0 0 2rem 0;
-                font-family: 'Orbitron', sans-serif;
-                text-align: center;
+        h3 {
+            color      : white;
+            margin     : 0 0 2rem 0;
+            font-family: 'Orbitron', sans-serif;
+            text-align : center;
+
+            @media @450px {
+                padding: .6rem .4rem 0 .4;
+                width  : 100%;
+            }
+        }
+
+        .newsletter-container2 {
+            margin-left: 0;
+
+            #mail {
+                border-radius: 2.7rem;
+                font-size    : 1.6rem;
+                font-weight  : 300;
+                height       : 5.6rem;
+                outline      : none;
+                padding      : 0 16rem 0 2.3rem;
+                width        : 90%;
+                font-size    : 2.2rem;
+                height       : 7rem;
+
 
                 @media @450px {
-                    padding: .6rem .4rem 0 .4;
-                    width: 100%;
+                    padding   : 0;
+                    width     : 100%;
+                    text-align: center;
+                    font-size : 3rem;
                 }
             }
 
-            .newsletter-container2 {
-                margin-left: 0;
-               
-                #mail {
-                    border-radius: 2.7rem;
-                    font-size    : 1.6rem;
-                    font-weight  : 300;
-                    height       : 5.6rem;
-                    outline      : none;
-                    padding      : 0 16rem 0 2.3rem;
-                    width: 90%;
-                    font-size: 2.2rem;
-                    height: 7rem;
+            .button-Subcribe {
+                background-color: #00aee9;
+                border          : 0;
+                border-radius   : 2.7rem;
+                color           : #fff;
+                height          : 7rem;
+                padding         : 0 2.5rem;
+                position        : absolute;
+                left            : 56%;
+                font-family     : 'Dancing Script', cursive;
+                width           : 40%;
+                font-size       : 2.5rem;
+                text-align      : center;
 
-
-                    @media @450px {
-                   padding: 0;
-                   width: 100%;
-                   text-align: center;
-                   font-size: 3rem;
-                    }
+                @media @1400px {
+                    left: 67%;
                 }
 
-                .button-Subcribe {
-                    background-color: #00aee9;
-                    border          : 0;
-                    border-radius   : 2.7rem;
-                    color           : #fff;
-                    height: 7rem;
-                    padding         : 0 2.5rem;
-                    position        : absolute;
-                    left: 56%;
-                    font-family:  'Dancing Script', cursive;
-                    width: 40%;
-                    font-size: 2.5rem; 
-                    text-align: center;
 
-                    @media @1400px {
-                        left: 67%;
-                    }
-
-
-                    @media @450px {
-                        position: relative;
-                        left            : 0;
-                        padding: 0;
-                        width: 100%;
-                        font-size: 2.5rem;
-                    }
-
-                    &:hover {
-                        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .5);
-                    }
+                @media @450px {
+                    position : relative;
+                    left     : 0;
+                    padding  : 0;
+                    width    : 100%;
+                    font-size: 2.5rem;
                 }
-         }
+
+                &:hover {
+                    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .5);
+                }
+            }
+        }
     }
 
     .copyright {

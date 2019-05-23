@@ -1,12 +1,12 @@
 // Mixins Here
 .center() {
-    display: flex;
+    display        : flex;
     justify-content: center;
-    align-items: center; 
+    align-items    : center;
 }
 
 .center-only-justify() {
-    display: flex;
+    display        : flex;
     justify-content: center;
 }
 
@@ -16,13 +16,13 @@
     background-color: @bg-color;
     width           : @width;
     font-size       : @fs;
-    font-weight: @weight;
+    font-weight     : @weight;
     border-radius   : @radius;
-    font-family: 'Orbitron', sans-serif;
+    font-family     : 'Orbitron', sans-serif;
 }
 
 .animation(@bg-color: rgb(196, 24, 53), @percent: 10%, @color: black, @delay: 0.5) {
     background-color: lighten(@bg-color, @percent);
-    color: @color;
-    transition: @delay ease-in-out;
+    color           : @color;
+    transition      : @delay ease-in-out;
 }
