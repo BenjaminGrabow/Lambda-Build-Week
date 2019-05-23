@@ -496,6 +496,11 @@ header nav ul li a:hover {
     margin-top: 6rem;
   }
 }
+@media (max-width: 630px) {
+  .carousel {
+    margin-top: 0rem;
+  }
+}
 .carousel .left-button {
   top: 50%;
   left: 25px;
