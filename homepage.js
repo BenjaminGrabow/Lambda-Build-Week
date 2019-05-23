@@ -331,7 +331,7 @@ let tabs = document.querySelectorAll(".tab").forEach(tab => new TabLink(tab));
 
 // Subcribe effect for min width of 750px
 const subcribe = document.querySelector(".button-Subcribe");
-var minWidthforEvent = window.matchMedia("(min-width: 1200px)");
+const minWidthforEvent = window.matchMedia("(min-width: 1200px)");
 if (minWidthforEvent.matches) {
     subcribe.addEventListener("click", () => {
         TweenMax.to(".button-Subcribe", 4, { x: "-57%", ease: Bounce.easeOut });
