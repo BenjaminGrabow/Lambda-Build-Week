@@ -808,11 +808,26 @@ header nav ul li a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 13rem 0 2rem 0;
+  margin: 16rem 0 1rem 0;
   /* Set all odd list items to a different color */
+}
+@media (max-width: 700px) {
+  .categories {
+    margin-top: 12rem;
+  }
+}
+@media (max-width: 630px) {
+  .categories {
+    margin-top: 1rem;
+  }
 }
 .categories h2 {
   font-family: 'Orbitron', sans-serif;
+}
+@media (max-width: 630px) {
+  .categories h2 {
+    margin-bottom: 1rem;
+  }
 }
 .categories .btn {
   color: black;
@@ -860,6 +875,16 @@ header nav ul li a:hover {
   width: 80%;
   /* Set all odd list items to a different color */
   /* Clear floats after the header */
+}
+@media (max-width: 700px) {
+  .middle-section1 .list {
+    margin-top: 10rem;
+  }
+}
+@media (max-width: 630px) {
+  .middle-section1 .list {
+    margin-top: 1rem;
+  }
 }
 .middle-section1 .list ul li {
   cursor: pointer;
