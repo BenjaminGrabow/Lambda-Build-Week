@@ -56,7 +56,7 @@
       width           : 100%;
       margin-bottom   : 2rem;
       border          : none;
-      border-bottom   : 0.1rem solid @main-font;
+      border-bottom   : 0.1rem solid @white;
       background-color: @white;
       outline         : none;
       height          : 40px;
@@ -66,14 +66,14 @@
     }
 
     button {
-      font-family  : @main-font;
+      font-family  : @orbitron;
       width        : 100%;
       margin-bottom: 2rem;
       border       : none;
       outline      : none;
       height       : 40px;
       background   : #fb2525;
-      color        : @main-font;
+      color        : @white;
       font-size    : 1.8rem;
       border-radius: 2rem;
 
@@ -86,11 +86,11 @@
 
 
     a {
-      font-family    : @main-font;
+      font-family    : @orbitron;
       text-decoration: none;
       font-size      : 1.6rem;
       line-height    : 3rem;
-      color          : @@black;
+      color          : @black;
 
       &:hover {
         color: #f08a5d;
@@ -102,8 +102,8 @@
   .registerBox {
     width        : 38%;
     height       : 50%;
-    background   : @@black;
-    color        : @@white;
+    background   : @black;
+    color        : @white;
     top          : 50%;
     left         : 50%;
     position     : absolute;
@@ -134,13 +134,13 @@
       color      : @white;
       margin     : 0;
       padding    : 0 0 2rem;
-      font-family: @main-font;
+      font-family: @orbitron;
       text-align : center;
       font-size  : 2.2rem;
     }
 
     p {
-      font-family: @main-font;
+      font-family: @orbitron;
       margin     : 0;
       padding    : 0;
       font-weight: bold;
@@ -151,12 +151,12 @@
       width           : 100%;
       margin-bottom   : 2rem;
       border          : none;
-      border-bottom   : 0.1rem solid @main-font;
+      border-bottom   : 0.1rem solid @white;
       background-color: @white;
       outline         : none;
       height          : 40px;
       color           : @black;
-      font-family     : @main-font;
+      font-family     : @orbitron;
       font-size       : 1.6rem;
     }
 
@@ -167,8 +167,8 @@
       outline      : none;
       height       : 40px;
       background   : #fb2525;
-      color        : @main-font;
-      font-family  : @main-font;
+      color        : @white;
+      font-family  : @orbitron;
       font-size    : 1.8rem;
       border-radius: 2rem;
       text-align   : center;
@@ -206,11 +206,10 @@
   @media @700px {
     margin-top: 6rem;
   }
-
+  
   @media @630px {
     margin-top: 0rem;
   }
-
   .left-button {
     top      : 50%;
     left     : 25px;
@@ -222,7 +221,7 @@
       top      : 50%;
       left     : 50%;
       transform: translate(-50%, -50%);
-      color    : @main-font;
+      color    : @white;
       font-size: 8rem;
 
       &:hover {
@@ -242,7 +241,7 @@
       top        : 50%;
       left       : 50%;
       transform  : translate(-50%, -50%);
-      color      : @main-font;
+      color      : @white;
       font-size  : 8rem;
       text-shadow: .1rem .1rem 1rem rgba(0, 0, 0, .5);
 
@@ -312,16 +311,16 @@
       }
 
       @media @700px {
-        width    : 15rem;
-        padding  : 0;
-        margin   : 0 .9rem 3rem .9rem;
+        width  : 15rem;
+        padding: 0;
+        margin : 0 .9rem 3rem .9rem;
         font-size: 2.3rem;
       }
 
       @media @630px {
-        width    : 15rem;
-        padding  : 0;
-        margin   : 0 .9rem 3rem .9rem;
+        width  : 15rem;
+        padding: 0;
+        margin : 0 .9rem 3rem .9rem;
         font-size: 2.5rem;
       }
 
@@ -363,7 +362,7 @@
 
   .card {
     border-bottom   : 0.1rem solid lightgrey;
-    background-color: @main-font;
+    background-color: @white;
     margin-bottom   : 1.6rem;
     padding         : 0 2.4rem 2.4rem 2.4rem;
     display         : flex;
@@ -393,14 +392,14 @@
       margin-bottom: 1rem;
       font-size    : 3rem;
       font-weight  : 600;
-      font-family  : @main-font;
+      font-family  : @orbitron;
     }
 
     h4 {
 
       font-size  : 2.5rem;
       margin     : 1.5rem 0;
-      font-family: @main-font;
+      font-family: @orbitron;
     }
 
     p {
@@ -491,15 +490,15 @@
           border-radius: 50%;
 
           @media @800px {
-            width: 60%;
+            width     : 60%;
           }
 
           @media @630px {
-            width: 70%;
+            width     : 70%;
           }
 
           @media @400px {
-            width: 90%;
+            width     : 90%;
           }
         }
 
@@ -518,8 +517,6 @@
           font-size: 2.5rem;
 
         }
-
-
       }
     }
   }
@@ -534,7 +531,7 @@
   margin        : 16rem 0 1rem 0;
 
   @media @700px {
-    margin-top: 12rem;
+   margin-top: 12rem;
   }
 
   @media @630px {
@@ -542,8 +539,7 @@
   }
 
   h2 {
-    font-family: @main-font;
-
+    font-family: @orbitron;
     @media @630px {
       margin-bottom: 1rem;
     }
@@ -568,21 +564,36 @@
     }
   }
 
+  
   /* Set all odd list items to a different color */
   .btn:nth-child(odd) {
     background-color: #eaeaea;
   }
-
+  
   h4 {
-    font-family: @main-font;
+    font-family: @orbitron;
     font-size  : 2.5rem;
     color      : @red;
   }
 }
 
+.tween {
+  width: 100%;
+  height: 100rem;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+
+  span {
+    width: 10%;
+    height: 80px;
+    background: url(/pictures/employee4.jpg);
+    background-attachment: fixed;
+  }
+}
 // the lists for the categories
 .middle-section1 {
-
+  
   display       : none;
   flex-direction: column;
   align-items   : center;
@@ -618,13 +629,13 @@
     }
 
     .close {
-      position   : absolute;
-      right      : 0;
-      top        : 0;
-      padding    : 1.2rem 1.6rem 1.2rem 1.6rem;
+      position: absolute;
+      right   : 0;
+      top     : 0;
+      padding : 1.2rem 1.6rem 1.2rem 1.6rem;
       font-weight: bolder;
-      color      : @red;
-      font-size  : 1.5rem;
+      color: @red;
+      font-size: 1.5rem;
 
       &:hover {
         background-color: @black;
@@ -637,13 +648,13 @@
       text-align      : center;
 
       h2 {
-        font-family  : @main-font;
+        font-family  : @orbitron;
         color        : @black;
         margin-bottom: 1rem;
       }
 
       h3 {
-        font-family: @main-font;
+        font-family: @orbitron;
         margin     : 0.7rem 0;
       }
     }
@@ -666,15 +677,15 @@
     }
 
     .addBtn {
-      padding    : 1rem;
-      width      : 25%;
-      background : #d9d9d9;
-      color      : #555;
-      float      : left;
-      text-align : center;
-      font-size  : 1.6rem;
-      cursor     : pointer;
-      font-family: @main-font;
+      padding   : 1rem;
+      width     : 25%;
+      background: #d9d9d9;
+      color     : #555;
+      float     : left;
+      text-align: center;
+      font-size : 1.6rem;
+      cursor    : pointer;
+      font-family: @orbitron;
       font-weight: bold;
 
       border-radius: 0;
@@ -686,9 +697,9 @@
 
     .count-Items {
       font-size  : 2rem;
-      font-family: @main-font;
+      font-family: @orbitron;
       text-align : center;
-      margin     : 0.5rem 0;
+      margin: 0.5rem 0;
     }
 
     .goBack {
