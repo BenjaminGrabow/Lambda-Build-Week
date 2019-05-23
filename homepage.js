@@ -1,8 +1,30 @@
+const loginData = [
+    {
+      imageSrc: "/pictures/Top4.png",
+      imageClassList: "avatar",
+      h1textContent: "Login Here",
+      formClassList: "logInForm",
+      formAction: "user.html",
+      paragraphTextContent: "Username",
+      inputType: "text",
+      inputPlaceholder: "Enter Username",
+      paragraph2TextContent: "Password",
+      input2Type: "password",
+      input2Placeholder: "Enter Password",
+      buttonTextContent: "Login",
+      anchorHref: "#",
+      anchorTextContent: "Lost your password?",
+      anchor2Href: "#",
+      anchor2TextContent: "Don't have an account?",
+      },
+  ];
+
 // LogInBoxGenerator 
 class LogInBoxGenerator {
-    constructor(logInElement) {
+    constructor(logInElement, data) {
         // constructor function
         this.logInElement = logInElement;
+        this.data = data;
         // assign the loginelement which is the div with the loginBox class to this.loginElement
         this.createImage();
         // call the createImage method which is in the method section of the LogInBoxGenerator
@@ -23,9 +45,9 @@ class LogInBoxGenerator {
     createImage() {
         const image = document.createElement("img");
         // create a img element
-        image.src = "/pictures/Top4.png";
+        image.src = this.data.imageSrc;
         // assign to the image the src
-        image.classList.add("avatar");
+        image.classList.add(this.data.imageClassList);
         // add the class "avatar" to the image
         this.logInElement.append(image);
         // append the created image to this.loginElement(the div with the class loginBox )
@@ -33,55 +55,55 @@ class LogInBoxGenerator {
 
     createH1() {
         const h1 = document.createElement("h1");
-        h1.textContent = "Login Here";
+        h1.textContent = this.data.h1textContent;
         this.logInElement.insertAdjacentElement('beforeend', h1);
     }
 
     createForm() {
         const form = document.createElement("form");
-        form.classList.add("logInForm");
-        form.action = "user.html";
+        form.classList.add(this.data.formClassList);
+        form.action = this.data.formAction;
         this.logInElement.insertAdjacentElement('beforeend', form);
         // now we created the form and must assign the form to thisForm to have access to the form in the next methods
     }
 
     createParagraph() {
         const paragraph = document.createElement("p");
-        paragraph.textContent = "Username";
+        paragraph.textContent = this.data.paragraphTextContent;
         this.form.insertAdjacentElement('beforeend', paragraph);
         // we must now append (append method would also be usable like with that method) the p to the form and not to this.loginBox because we want it to append inside the form
     }
 
     createInput() {
         const input = document.createElement("input");
-        input.type = "text";
-        input.placeholder = "Enter Username";
+        input.type = this.data.inputType;
+        input.placeholder = this.data.inputPlaceholder;
         this.form.insertAdjacentElement('beforeend', input);
     }
 
     createParagraph2() {
         const paragraph2 = document.createElement("p");
-        paragraph2.textContent = "Password";
+        paragraph2.textContent = this.data.paragraph2TextContent;
         this.form.insertAdjacentElement('beforeend', paragraph2);
     }
 
     createInput2() {
         const input2 = document.createElement("input");
-        input2.type = "password";
-        input2.placeholder = "Enter Password";
+        input2.type = this.data.input2Type;
+        input2.placeholder = this.data.input2Placeholder;
         this.form.insertAdjacentElement('beforeend', input2);
     }
 
     createButton() {
         const button = document.createElement("button");
-        button.textContent = "Login"
+        button.textContent = this.data.buttonTextContent;
         this.form.insertAdjacentElement('beforeend', button);
     }
 
     createAnchor() {
         const anchor = document.createElement("a");
-        anchor.href = "#";
-        anchor.textContent = "Lost your password?";
+        anchor.href = this.data.anchorHref;
+        anchor.textContent = this.data.anchorTextContent;
         this.form.insertAdjacentElement('beforeend', anchor);
     }
 
@@ -92,13 +114,13 @@ class LogInBoxGenerator {
 
     createAnchor2() {
         const anchor2 = document.createElement("a");
-        anchor2.href = "#";
-        anchor2.textContent = "Don't have an account?";
+        anchor2.href = this.data.anchor2Href;
+        anchor2.textContent = this.data.anchor2TextContent;
         this.form.insertAdjacentElement('beforeend', anchor2);
     }
 }
 
-document.querySelectorAll(".logInBox").forEach(login => new LogInBoxGenerator(login));
+document.querySelectorAll(".logInBox").forEach((login, index) => new LogInBoxGenerator(login, loginData[index]));
 // get the loginbox class from the div which is in the html file -> loop through and generate a new loginbox
 // we must have the method where the new LogInBoxGenerator get's created under the constructor function because 
 // the console cannot access 'LogInBoxGenerator' before initialization
