@@ -476,6 +476,26 @@ header nav ul li a:hover {
   position: relative;
   overflow: hidden;
 }
+@media (max-width: 1000px) {
+  .carousel {
+    margin-top: 3rem;
+  }
+}
+@media (max-width: 900px) {
+  .carousel {
+    margin-top: 4rem;
+  }
+}
+@media (max-width: 800px) {
+  .carousel {
+    margin-top: 5rem;
+  }
+}
+@media (max-width: 700px) {
+  .carousel {
+    margin-top: 6rem;
+  }
+}
 .carousel .left-button {
   top: 50%;
   left: 25px;
@@ -519,7 +539,7 @@ header nav ul li a:hover {
   height: auto;
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8));
 }
-@media (max-width: 630px) {
+@media (max-width: 1200px) {
   .carousel img {
     height: auto;
     width: 100%;
