@@ -306,7 +306,7 @@ header nav ul li a:hover {
   /* REGISTERBOX */
 }
 .middle-section .logInBox {
-  width: 33%;
+  width: 38%;
   height: 50%;
   background: black;
   color: white;
@@ -318,6 +318,11 @@ header nav ul li a:hover {
   padding: 7rem 3rem;
   display: none;
   border-radius: 4rem;
+}
+@media (max-width: 1200px) {
+  .middle-section .logInBox {
+    width: 60%;
+  }
 }
 @media (max-width: 630px) {
   .middle-section .logInBox {
@@ -387,7 +392,7 @@ header nav ul li a:hover {
   color: #f08a5d;
 }
 .middle-section .registerBox {
-  width: 33%;
+  width: 38%;
   height: 50%;
   background: black;
   color: white;
@@ -399,6 +404,11 @@ header nav ul li a:hover {
   padding: 7rem 3rem;
   display: none;
   border-radius: 4rem;
+}
+@media (max-width: 1200px) {
+  .middle-section .registerBox {
+    width: 60%;
+  }
 }
 @media (max-width: 630px) {
   .middle-section .registerBox {
@@ -562,6 +572,18 @@ header nav ul li a:hover {
   font-weight: bold;
   font-family: 'Dancing Script', cursive;
   text-align: center;
+}
+@media (max-width: 850px) {
+  .tabs .topics .tab {
+    width: 20rem;
+  }
+}
+@media (max-width: 700px) {
+  .tabs .topics .tab {
+    width: 15rem;
+    padding: 0;
+    margin: 0 0.9rem 3rem 0.9rem;
+  }
 }
 @media (max-width: 630px) {
   .tabs .topics .tab {
@@ -1847,7 +1869,7 @@ footer .newsletter {
   border-radius: 4rem;
   width: 100%;
 }
-@media (max-width: 400px) {
+@media (max-width: 450px) {
   footer .newsletter {
     display: flex;
     flex-direction: column;
@@ -1862,7 +1884,7 @@ footer .newsletter h3 {
   font-family: 'Orbitron', sans-serif;
   text-align: center;
 }
-@media (max-width: 400px) {
+@media (max-width: 450px) {
   footer .newsletter h3 {
     padding: 0.6rem 0.4rem 0 0.4;
     width: 100%;
@@ -1882,7 +1904,7 @@ footer .newsletter .newsletter-container2 #mail {
   font-size: 2.2rem;
   height: 7rem;
 }
-@media (max-width: 400px) {
+@media (max-width: 450px) {
   footer .newsletter .newsletter-container2 #mail {
     padding: 0;
     width: 100%;
@@ -1898,13 +1920,18 @@ footer .newsletter .newsletter-container2 .button-Subcribe {
   height: 7rem;
   padding: 0 2.5rem;
   position: absolute;
-  left: 70%;
+  left: 56%;
   font-family: 'Dancing Script', cursive;
   width: 40%;
   font-size: 2.5rem;
   text-align: center;
 }
-@media (max-width: 400px) {
+@media (max-width: 1400px) {
+  footer .newsletter .newsletter-container2 .button-Subcribe {
+    left: 67%;
+  }
+}
+@media (max-width: 450px) {
   footer .newsletter .newsletter-container2 .button-Subcribe {
     position: relative;
     left: 0;
