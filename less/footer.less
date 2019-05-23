@@ -6,27 +6,26 @@ footer {
 
     #wrapper {
         width     : 35%;
-        height    : 50px;
-        margin    : 0rem;
+        height    : 5rem;
         display   : flex;
         align-self: center;
         margin    : 1rem 0 3.5rem 0;
         
-        @media @630px {
-            display: flex;
-            align-items: center;
-            width: 100%;
-            margin: 1rem 0;;
-            height: auto;
+        @media @900px {
+            width: 60%;
         }
 
+        @media @800px {
+            width: 70%;
+        }
 
-        @media @phone {
-            display: flex;
-            align-items: center;
-            width: 100%;
-            margin: 1rem 0;;
-            height: auto;
+        @media @700px {
+            width: 80%;
+        }
+
+        @media @630px {
+            margin: 1.5rem 0 1.5rem 0;
+        width: 100%;
         }
 
         .box {
@@ -38,12 +37,12 @@ footer {
             background   : #fff;
             text-align   : center;
             line-height  : 5rem;
-            font-size    : 2.5rem;
+            font-size    : 3rem;
             cursor       : pointer;
             margin       : 1rem 3rem 0 4rem;
             transition   : 1s;
 
-            @media @400px {
+            @media @630px {
                 margin: 0;
             }
 
@@ -91,15 +90,11 @@ footer {
         justify-content : center;
         border-radius   : 4rem;
         width           : 100%;
-        
 
-        @media @phone {
+        @media @400px {
             display: flex;
            flex-direction: column;
             width: 100%;
-        }
-
-        @media @400px {
             padding: .7rem;
             height: 40rem;
         }
@@ -108,6 +103,7 @@ footer {
                 color : white;
                 margin: 0 0 2rem 0;
                 font-family: 'Orbitron', sans-serif;
+                text-align: center;
 
                 @media @400px {
                     padding: .6rem .4rem 0 .4;
@@ -116,11 +112,7 @@ footer {
             }
 
             .newsletter-container2 {
-                margin-left: 14rem;
-
-                @media @630px {
-                    margin: 0;
-                }
+                margin-left: 0;
                
                 #mail {
                     border-radius: 2.7rem;
@@ -129,24 +121,16 @@ footer {
                     height       : 5.6rem;
                     outline      : none;
                     padding      : 0 16rem 0 2.3rem;
+                    width: 90%;
+                    font-size: 2.2rem;
+                    height: 7rem;
 
-                    @media @630px {
-                        width: 90%;
-                        font-size: 1.2rem;
-                        height: 7rem;
-                    }
-
-                    @media @phone {
-                        width: 90%;
-                        font-size: 1.2rem;
-                        height: 7rem;
-                    }
 
                     @media @400px {
                    padding: 0;
                    width: 100%;
                    text-align: center;
-                   font-size: 2.5rem;
+                   font-size: 3rem;
                     }
                 }
 
@@ -155,28 +139,15 @@ footer {
                     border          : 0;
                     border-radius   : 2.7rem;
                     color           : #fff;
-                    height          : 5.6rem;
+                    height: 7rem;
                     padding         : 0 2.5rem;
                     position        : absolute;
-                    left            : 56%;
+                    left: 70%;
                     font-family:  'Dancing Script', cursive;
-                    width: 10%;
-                    font-size: 2.5rem;
+                    width: 40%;
+                    font-size: 2.5rem; 
                     text-align: center;
 
-                    @media @630px {
-                        left: 70%;
-                        font-size: 1.2rem;
-                        height: 7rem;
-                        width: 40%;
-                    }
-
-                    @media @phone {
-                        left: 70%;
-                        font-size: 1.2rem;
-                        height: 7rem;
-                        width: 40%;
-                    }
 
                     @media @400px {
                         position: relative;

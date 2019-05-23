@@ -157,7 +157,7 @@ p {
 body,
 html,
 .container {
-  max-width: 1200px;
+  max-width: 1600px;
   width: 100%;
   margin: 0 auto;
 }
@@ -578,7 +578,7 @@ header nav ul li a:hover {
     align-self: center;
   }
 }
-@media (max-width: 430px) {
+@media (max-width: 330px) {
   .tabs .topics .tab {
     width: 300%;
   }
@@ -607,15 +607,10 @@ header nav ul li a:hover {
   margin-bottom: 1.6rem;
   padding: 0 2.4rem 2.4rem 2.4rem;
   display: flex;
-  align-self: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 80%;
-}
-@media (max-width: 900px) {
-  .cards-container .card {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
 }
 @media (max-width: 500px) {
   .cards-container .card {
@@ -624,24 +619,14 @@ header nav ul li a:hover {
 }
 .cards-container .card .middle-part {
   width: 60%;
-}
-@media (max-width: 900px) {
-  .cards-container .card .middle-part {
-    width: 100%;
-    order: 1;
-    text-align: justify;
-  }
+  width: 100%;
+  order: 1;
+  text-align: justify;
 }
 .cards-container .card img {
-  width: 35rem;
   height: 30rem;
-  margin: 0 1.5rem;
-}
-@media (max-width: 900px) {
-  .cards-container .card img {
-    width: 100%;
-    margin: 0;
-  }
+  width: 100%;
+  margin: 0;
 }
 .cards-container .card .headline {
   margin-bottom: 1rem;
@@ -678,7 +663,7 @@ header nav ul li a:hover {
   font-family: 'Montaga', serif;
 }
 .container {
-  max-width: 1200px;
+  max-width: 1600px;
 }
 .container .heading-about h1 {
   font-family: 'Nunito', sans-serif;
@@ -706,7 +691,7 @@ header nav ul li a:hover {
   justify-content: center;
   align-items: baseline;
 }
-@media (max-width: 630px) {
+@media (max-width: 800px) {
   .container .team .employee1,
   .container .team .employee2,
   .container .team .employee3 {
@@ -725,7 +710,7 @@ header nav ul li a:hover {
   align-items: center;
   margin: 2rem 6rem;
 }
-@media (max-width: 630px) {
+@media (max-width: 800px) {
   .container .team .employee1 .employee,
   .container .team .employee2 .employee,
   .container .team .employee3 .employee {
@@ -1780,28 +1765,30 @@ footer {
 }
 footer #wrapper {
   width: 35%;
-  height: 50px;
-  margin: 0rem;
+  height: 5rem;
   display: flex;
   align-self: center;
   margin: 1rem 0 3.5rem 0;
 }
-@media (max-width: 630px) {
+@media (max-width: 900px) {
   footer #wrapper {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    margin: 1rem 0;
-    height: auto;
+    width: 60%;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   footer #wrapper {
-    display: flex;
-    align-items: center;
+    width: 70%;
+  }
+}
+@media (max-width: 700px) {
+  footer #wrapper {
+    width: 80%;
+  }
+}
+@media (max-width: 630px) {
+  footer #wrapper {
+    margin: 1.5rem 0 1.5rem 0;
     width: 100%;
-    margin: 1rem 0;
-    height: auto;
   }
 }
 footer #wrapper .box {
@@ -1813,12 +1800,12 @@ footer #wrapper .box {
   background: #fff;
   text-align: center;
   line-height: 5rem;
-  font-size: 2.5rem;
+  font-size: 3rem;
   cursor: pointer;
   margin: 1rem 3rem 0 4rem;
   transition: 1s;
 }
-@media (max-width: 400px) {
+@media (max-width: 630px) {
   footer #wrapper .box {
     margin: 0;
   }
@@ -1860,15 +1847,11 @@ footer .newsletter {
   border-radius: 4rem;
   width: 100%;
 }
-@media (max-width: 500px) {
+@media (max-width: 400px) {
   footer .newsletter {
     display: flex;
     flex-direction: column;
     width: 100%;
-  }
-}
-@media (max-width: 400px) {
-  footer .newsletter {
     padding: 0.7rem;
     height: 40rem;
   }
@@ -1877,6 +1860,7 @@ footer .newsletter h3 {
   color: white;
   margin: 0 0 2rem 0;
   font-family: 'Orbitron', sans-serif;
+  text-align: center;
 }
 @media (max-width: 400px) {
   footer .newsletter h3 {
@@ -1885,12 +1869,7 @@ footer .newsletter h3 {
   }
 }
 footer .newsletter .newsletter-container2 {
-  margin-left: 14rem;
-}
-@media (max-width: 630px) {
-  footer .newsletter .newsletter-container2 {
-    margin: 0;
-  }
+  margin-left: 0;
 }
 footer .newsletter .newsletter-container2 #mail {
   border-radius: 2.7rem;
@@ -1899,27 +1878,16 @@ footer .newsletter .newsletter-container2 #mail {
   height: 5.6rem;
   outline: none;
   padding: 0 16rem 0 2.3rem;
-}
-@media (max-width: 630px) {
-  footer .newsletter .newsletter-container2 #mail {
-    width: 90%;
-    font-size: 1.2rem;
-    height: 7rem;
-  }
-}
-@media (max-width: 500px) {
-  footer .newsletter .newsletter-container2 #mail {
-    width: 90%;
-    font-size: 1.2rem;
-    height: 7rem;
-  }
+  width: 90%;
+  font-size: 2.2rem;
+  height: 7rem;
 }
 @media (max-width: 400px) {
   footer .newsletter .newsletter-container2 #mail {
     padding: 0;
     width: 100%;
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 3rem;
   }
 }
 footer .newsletter .newsletter-container2 .button-Subcribe {
@@ -1927,30 +1895,14 @@ footer .newsletter .newsletter-container2 .button-Subcribe {
   border: 0;
   border-radius: 2.7rem;
   color: #fff;
-  height: 5.6rem;
+  height: 7rem;
   padding: 0 2.5rem;
   position: absolute;
-  left: 56%;
+  left: 70%;
   font-family: 'Dancing Script', cursive;
-  width: 10%;
+  width: 40%;
   font-size: 2.5rem;
   text-align: center;
-}
-@media (max-width: 630px) {
-  footer .newsletter .newsletter-container2 .button-Subcribe {
-    left: 70%;
-    font-size: 1.2rem;
-    height: 7rem;
-    width: 40%;
-  }
-}
-@media (max-width: 500px) {
-  footer .newsletter .newsletter-container2 .button-Subcribe {
-    left: 70%;
-    font-size: 1.2rem;
-    height: 7rem;
-    width: 40%;
-  }
 }
 @media (max-width: 400px) {
   footer .newsletter .newsletter-container2 .button-Subcribe {
