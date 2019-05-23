@@ -767,6 +767,27 @@ header nav ul li a:hover {
   height: 240px;
   border-radius: 50%;
 }
+@media (max-width: 800px) {
+  .container .team .employee1 .employee img,
+  .container .team .employee2 .employee img,
+  .container .team .employee3 .employee img {
+    width: 60%;
+  }
+}
+@media (max-width: 630px) {
+  .container .team .employee1 .employee img,
+  .container .team .employee2 .employee img,
+  .container .team .employee3 .employee img {
+    width: 70%;
+  }
+}
+@media (max-width: 400px) {
+  .container .team .employee1 .employee img,
+  .container .team .employee2 .employee img,
+  .container .team .employee3 .employee img {
+    width: 90%;
+  }
+}
 .container .team .employee1 .employee h2,
 .container .team .employee2 .employee h2,
 .container .team .employee3 .employee h2 {
