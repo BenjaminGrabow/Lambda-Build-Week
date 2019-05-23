@@ -203,7 +203,7 @@ header img {
     order: -1;
     align-self: center;
     width: 50%;
-    height: 25rem;
+    height: 20rem;
   }
 }
 @media (max-width: 800px) {
@@ -509,9 +509,15 @@ header nav ul li a:hover {
   height: auto;
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8));
 }
-@media (max-width: 500px) {
+@media (max-width: 630px) {
   .carousel img {
     height: auto;
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .carousel img {
+    height: 30rem;
     width: 100%;
   }
 }
@@ -557,12 +563,24 @@ header nav ul li a:hover {
   font-family: 'Dancing Script', cursive;
   text-align: center;
 }
+@media (max-width: 630px) {
+  .tabs .topics .tab {
+    width: 15rem;
+    padding: 0;
+    margin: 0 0.9rem 3rem 0.9rem;
+  }
+}
 @media (max-width: 500px) {
   .tabs .topics .tab {
-    width: 300%;
+    width: 350%;
     margin: 1rem 0;
     padding: 0;
     align-self: center;
+  }
+}
+@media (max-width: 430px) {
+  .tabs .topics .tab {
+    width: 300%;
   }
 }
 .tabs .topics .tab:hover {
@@ -597,6 +615,11 @@ header nav ul li a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+}
+@media (max-width: 500px) {
+  .cards-container .card {
+    width: 100%;
   }
 }
 .cards-container .card .middle-part {
@@ -1763,6 +1786,15 @@ footer #wrapper {
   align-self: center;
   margin: 1rem 0 3.5rem 0;
 }
+@media (max-width: 630px) {
+  footer #wrapper {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: 1rem 0;
+    height: auto;
+  }
+}
 @media (max-width: 500px) {
   footer #wrapper {
     display: flex;
@@ -1855,7 +1887,7 @@ footer .newsletter h3 {
 footer .newsletter .newsletter-container2 {
   margin-left: 14rem;
 }
-@media (max-width: 500px) {
+@media (max-width: 630px) {
   footer .newsletter .newsletter-container2 {
     margin: 0;
   }
@@ -1867,6 +1899,13 @@ footer .newsletter .newsletter-container2 #mail {
   height: 5.6rem;
   outline: none;
   padding: 0 16rem 0 2.3rem;
+}
+@media (max-width: 630px) {
+  footer .newsletter .newsletter-container2 #mail {
+    width: 90%;
+    font-size: 1.2rem;
+    height: 7rem;
+  }
 }
 @media (max-width: 500px) {
   footer .newsletter .newsletter-container2 #mail {
@@ -1896,6 +1935,14 @@ footer .newsletter .newsletter-container2 .button-Subcribe {
   width: 10%;
   font-size: 2.5rem;
   text-align: center;
+}
+@media (max-width: 630px) {
+  footer .newsletter .newsletter-container2 .button-Subcribe {
+    left: 70%;
+    font-size: 1.2rem;
+    height: 7rem;
+    width: 40%;
+  }
 }
 @media (max-width: 500px) {
   footer .newsletter .newsletter-container2 .button-Subcribe {
