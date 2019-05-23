@@ -319,6 +319,11 @@ header nav ul li a:hover {
   display: none;
   border-radius: 4rem;
 }
+@media (max-width: 630px) {
+  .middle-section .logInBox {
+    width: 85%;
+  }
+}
 .middle-section .logInBox .avatar {
   width: 100px;
   height: 100px;
@@ -395,6 +400,11 @@ header nav ul li a:hover {
   display: none;
   border-radius: 4rem;
 }
+@media (max-width: 630px) {
+  .middle-section .registerBox {
+    width: 85%;
+  }
+}
 .middle-section .registerBox .avatar {
   width: 100px;
   height: 100px;
@@ -456,12 +466,6 @@ header nav ul li a:hover {
   position: relative;
   overflow: hidden;
 }
-.carousel .left-button:hover,
-.carousel .right-button:hover {
-  color: #333;
-  background-color: #fff;
-  border: 2px solid #333;
-}
 .carousel .left-button {
   top: 50%;
   left: 25px;
@@ -475,6 +479,9 @@ header nav ul li a:hover {
   transform: translate(-50%, -50%);
   color: #fff;
   font-size: 8rem;
+}
+.carousel .left-button .left-Arrow:hover {
+  color: red;
 }
 .carousel .right-button {
   top: 50%;
@@ -490,6 +497,9 @@ header nav ul li a:hover {
   color: #fff;
   font-size: 8rem;
   text-shadow: 0.1rem 0.1rem 1rem rgba(0, 0, 0, 0.5);
+}
+.carousel .right-button .right-Arrow:hover {
+  color: red;
 }
 .carousel img {
   height: 100%;
@@ -623,12 +633,10 @@ header nav ul li a:hover {
   list-style-type: disc;
   list-style-position: inside;
   font-size: 2.5rem;
-  font-family: 'Nunito', sans-serif;
   color: #000;
   padding: 1rem 1rem 1rem 0;
 }
 .cards-container .card ol {
-  font-family: 'Nunito', sans-serif;
   list-style-type: decimal;
   list-style-position: inside;
   font-size: 2.5rem;
@@ -637,6 +645,7 @@ header nav ul li a:hover {
 }
 .cards-container .card li {
   margin: 1rem;
+  font-family: 'Montaga', serif;
 }
 .container {
   max-width: 1200px;
