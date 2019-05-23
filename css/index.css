@@ -592,7 +592,7 @@ header nav ul li a:hover {
   align-self: center;
   width: 80%;
 }
-@media (max-width: 500px) {
+@media (max-width: 900px) {
   .cards-container .card {
     flex-direction: column;
     justify-content: center;
@@ -602,16 +602,23 @@ header nav ul li a:hover {
 .cards-container .card .middle-part {
   width: 60%;
 }
-@media (max-width: 500px) {
+@media (max-width: 900px) {
   .cards-container .card .middle-part {
     width: 100%;
     order: 1;
+    text-align: justify;
   }
 }
 .cards-container .card img {
   width: 35rem;
   height: 30rem;
   margin: 0 1.5rem;
+}
+@media (max-width: 900px) {
+  .cards-container .card img {
+    width: 100%;
+    margin: 0;
+  }
 }
 .cards-container .card .headline {
   margin-bottom: 1rem;
