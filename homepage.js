@@ -334,7 +334,7 @@ const subcribe = document.querySelector(".button-Subcribe");
 const minWidthforEvent = window.matchMedia("(min-width: 1200px)");
 if (minWidthforEvent.matches) {
     subcribe.addEventListener("click", () => {
-        TweenMax.to(".button-Subcribe", 4, { x: "-57%", ease: Bounce.easeOut });
+        TweenMax.to(".button-Subcribe", 4, { x: "-15%", ease: Bounce.easeOut });
         subcribe.value = "Thank you";
         subcribe.style.width = "140%";
         subcribe.style.fontSize = "6rem";
